@@ -1,0 +1,29 @@
+/**
+ * HEADER CSS
+ */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#lang {
+  width: 36px;
+  font-size: 12px;
+}
+#basket {
+  height: 25px;
+  width: 25px;
+  background: center / cover no-repeat url('../../../svg/basket.svg');
+}
+#title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+span:first-of-type {
+  font-size: 15vw;
+  font-family: 'kallinsharegular';
+  margin-bottom: 20px;
+}
