@@ -1,6 +1,6 @@
-import facebook from '../../svg/facebook.svg'
-import instagram from '../../svg/instagram.svg'
-import pinterest from '../../svg/pinterest.svg'
+import facebook from '../../img/svg/facebook.svg'
+import instagram from '../../img/svg/instagram.svg'
+import pinterest from '../../img/svg/pinterest.svg'
 
 const Footer = () => {
   const alfred = {

@@ -8,11 +8,11 @@ const Header = ({ title, subTitle, categories }) => {
         <div id="lang">FR</div>
         <div id="basket"></div>
         <Menu categories={categories} />
+        <div id="title">
+          <span>{title}</span>
+          <span>{subTitle}</span>
+        </div>
       </header>
-      <div id="title">
-        <span>{title}</span>
-        <span>{subTitle}</span>
-      </div>
     </>
   )
 }

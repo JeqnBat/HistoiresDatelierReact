@@ -38,15 +38,16 @@ const Menu = ({ categories }) => {
 
         <ul className="main-menu">
           {categories.map((cat) => (
-            cat.hasOwnProperty("subCategories")
-            ?
-            <li key={cat.id} onClick={() => {displaySubMenu(cat.id)}} className={subMenuVis[cat.id] ? "has-sub-menu minus" : "has-sub-menu"}>{cat.name}
+            cat.hasOwnProperty("subCategories") ? (
+            <li key={cat.id} onClick={() => {displaySubMenu(cat.id)}} className={subMenuVis[cat.id] ? "has-sub-menu minus" : "has-sub-menu"}>
+                {cat.name}
               <ul className={subMenuVis[cat.id] ? "sub-menu display" : "sub-menu"}>
                 {cat.subCategories.map((sub) => (<li key={sub.id}>{sub.name}</li>))}
               </ul>
             </li>
-            :
+            ) : (
             <li key={cat.id}>{cat.name}</li>
+            )
           ))}
         </ul>
         
