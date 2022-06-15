@@ -1,8 +1,6 @@
 {
-  "home" : {
-    "title" : "Histoires d'atelier",
-    "subtitle" : "création"
-  },
+  "title" : "Histoires d'atelier",
+  "subtitle" : "création",
   "categories" : [
     {
       "id"  : 0,
@@ -67,12 +65,6 @@
       "name"  : "contact"
     }
   ],
-  "icons" : {
-    "mail"      : "svg/mailbox.svg",
-    "pinMap"    : "svg/pin-map.svg",
-    "whatsApp"  : "svg/whatsapp.svg",
-    "linkedin"  : "svg/linkedin.svg"
-  },
   "coordinates" : {
     "address"   : "rue du comte de Tourville<br> 49100, ANGERS",
     "mail"      : "contact@histoiresdatelier.fr",

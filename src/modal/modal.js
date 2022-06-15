@@ -1,11 +1,19 @@
 import { state, action, thunk } from 'easy-peasy'
+import { v4 as uuidv4 } from 'uuid'
 
 const modal = {
+  // STATE
   error: null,
-  test: [],
+  responsive: undefined,
+  loaded: undefined,
+  appData: [],
   // ACTIONS
+  pickLayout: action((state, payload) => {
+    state.responsive = payload
+  }),
   load: action((state, payload) => {
-    state.test = payload
+    state.appData = payload
+    state.loaded = true
   }),
   setError: action((state, payload) => {
     state.error = payload
@@ -13,12 +21,13 @@ const modal = {
   // THUNK
   fetchData: thunk(async actions => {
     try {
-      const res = await fetch('./data.json')
+      const res = await fetch('data.json')
       const db = await res.json()
       actions.load(db)
-      console.log(db);
     } catch(e) {
       actions.setError(e.message)
     }
   })
 }
+
+export default modal
