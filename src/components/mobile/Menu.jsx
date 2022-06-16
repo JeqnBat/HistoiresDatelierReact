@@ -3,13 +3,8 @@ import './css/menu.css'
 
 const Menu = ({ categories }) => {
   const [menuIsActive, setMenu] = useState(false)
-  const [subMenuVis, setSubMenuVis] = useState(
-    [
-      false,
-      false,
-      false
-    ]
-  )
+  const [subMenuVis, setSubMenuVis] = useState([false,false,false])
+  
   const displayMenu = () => {
     setMenu(!menuIsActive)
   }
@@ -38,9 +33,13 @@ const Menu = ({ categories }) => {
 
         <ul className="main-menu">
           {categories.map((cat) => (
-            cat.hasOwnProperty("subCategories") ? (
-            <li key={cat.id} onClick={() => {displaySubMenu(cat.id)}} className={subMenuVis[cat.id] ? "has-sub-menu minus" : "has-sub-menu"}>
-                {cat.name}
+            cat.subCategories.length > 0 ? (
+            <li 
+              key={cat.id}
+              onClick={() => {displaySubMenu(cat.id)}}
+              className={subMenuVis[cat.id] ? "has-sub-menu minus" : "has-sub-menu"}
+            >
+              {cat.name}
               <ul className={subMenuVis[cat.id] ? "sub-menu display" : "sub-menu"}>
                 {cat.subCategories.map((sub) => (<li key={sub.id}>{sub.name}</li>))}
               </ul>

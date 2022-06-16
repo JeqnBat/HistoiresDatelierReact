@@ -29,7 +29,7 @@ const Fork = () => {
 
   if(loaded) {
     return (
-      responsive ? <Mobile app={appData} /> : <Desktop />
+      responsive ? <Mobile app={appData} /> : <Desktop app={appData}/>
     )
   }
   return (

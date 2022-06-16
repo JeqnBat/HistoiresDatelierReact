@@ -1,0 +1,26 @@
+/**
+ * MOBILE > MOBILE.CSS
+ */
+@media only screen and (max-width: 550px) {
+  #m-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: auto;
+  }
+  #values {
+    display: flex;
+    flex-direction: column;
+  }
+  #values > p:nth-child(odd) {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+  }
+  #values > p:nth-child(even) {
+    font-size: 2rem;
+    line-height: 1rem;
+    margin: 0 auto;
+  }
+}

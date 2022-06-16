@@ -3,71 +3,92 @@
   "subtitle" : "création",
   "categories" : [
     {
-      "id"  : 0,
-      "name"  : "faire-parts",
+      "name"          : "papeterie",
+      "id"            : 0,
+      "highlight"     : true,
+      "img"           : "img/mobile/papeterie.jpg",
+      "descr"         : "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
       "subCategories" : [
         { 
           "id"  : 0,
-          "name" : "mariage"
+          "name": "faire-part"
         },
         { 
           "id"  : 1,
-          "name" : "naissance"
-        },
-        { 
-          "id"  : 2,
-          "name" : "anniversaire"
+          "name": "papeterie décorative"
         }
       ]
     },
     {
-      "id"  : 1,
-      "name" : "stylisme - photo",
+      "name"          : "wedding design",
+      "id"            : 1,
+      "highlight"     : true,
+      "img"           : "img/mobile/wedding-design.jpg",
+      "descr"         : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
+      "subCategories" : []
+    },
+    {
+      "name"          : "professionnels",
+      "id"            : 2,
+      "highlight"     : true,
+      "img"           : "img/mobile/professionnels.png",
+      "descr"         : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
       "subCategories" : [
         { 
           "id"  : 0,
-          "name" : "aze"
+          "name": "set design"
         },
         { 
           "id"  : 1,
-          "name" : "zae"
-        },
-        { 
-          "id"  : 2,
-          "name" : "rez3"
+          "name": "event design"
         }
       ]
     },
     {
-      "id"  : 2,
-      "name"  : "décoration",
-      "subCategories" : [
-        { 
-          "id"  : 0,
-          "name" : "erezrze"
-        },
-        { 
-          "id"  : 1,
-          "name" : "reez"
-        },
-        { 
-          "id"  : 2,
-          "name" : "gthgft"
-        }
-      ]
+      "name"          : "l'atelier",
+      "id"            : 3,
+      "highlight"     : false,
+      "img" : "",
+      "subCategories" : []
     },
     {
-      "id"  : 3,
-      "name" : "à propos"
-    },
-    {
-      "id"  : 4,
-      "name"  : "contact"
+      "name"          : "contact",
+      "id"            : 4,
+      "highlight"     : false,
+      "img" : "",
+      "subCategories" : []
     }
   ],
-  "coordinates" : {
+  "homePage" : {
+    "quote"         : "Chez Histoires d’atelier, nous sommes attachées à l’artisanat, au savoir-faire et au made in France",
+    "latelier"      : "L'atelier",
+    "latelierdescr" : "Depuis plus de 11 ans, Histoires d’atelier propose ses services en Anjou et dans les Pays de La Loire pour votre mariage ou vos événements, avec à cœur de créer avec vous votre histoire. Nous pouvons créer et installer toute la décoration de votre événement, jusqu’au moindre détail grâce à la création de papeterie décorative. Nous proposons aussi nos services en Set design, pour les entreprises à la recherche d’un professionnel qui saura imaginer un univers autour d’un sujet à photographier.",
+    "services"      : "Nos prestations",
+    "papeteriedescr": "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
+    "weddingdescr"  : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
+    "prodescr"      : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
+    "values" : {
+      "title" : "Nos valeurs",
+      "one"   : "made in france",
+      "two"   : "artisanat",
+      "three" : "qualité"
+    },
+    "whatsNew": "Notre actualité"
+  },
+  "testimonials" : [
+    { 
+      "date"    : "avril 2022",
+      "id"      : "undefined",
+      "author"  : "Émilie & Clément",
+      "subject" : "À propos du faire-part",
+      "message" : "Nous nous sommes tout de suite sentis à l’écoute et à l’aise avec Stéphanie. Nous sommes ravis d’avoir fait appel à Histoires d’atelier pour la réalisation de nos faire-part."
+    }
+  ],
+  "contact" : {
     "address"   : "rue du comte de Tourville<br> 49100, ANGERS",
     "mail"      : "contact@histoiresdatelier.fr",
-    "whatsApp"  : "+33 6 55 44 22 11"
+    "whatsApp"  : "+33 6 55 44 22 11",
+    "instgram"  : "https://www.instagram.com/histoiresdatelier/",
+    "facebook"  : "https://www.facebook.com/HistoiresdAtelier"
   }
 }

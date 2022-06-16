@@ -1,16 +1,16 @@
 import Menu from './Menu'
 import './css/header.css'
 
-const Header = ({ title, subTitle, categories }) => {
+const Header = ({ data }) => {
   return (
     <>
-      <header>
+      <header id="m-header">
         <div id="lang">FR</div>
         <div id="basket"></div>
-        <Menu categories={categories} />
+        <Menu categories={data.categories} />
         <div id="title">
-          <span>{title}</span>
-          <span>{subTitle}</span>
+          <span>{data.title}</span>
+          <span>{data.subTitle}</span>
         </div>
       </header>
     </>

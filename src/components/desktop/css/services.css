@@ -1,0 +1,43 @@
+/**
+ * DESKTOP > SERVICES.CSS
+ */
+#squares {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.square-service {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  color: var(--primary);
+  z-index: 1;
+  cursor: pointer;
+}
+.square-service > p {
+  z-index: 2;
+}
+.square-service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: .8;
+  z-index: 0;
+  transition: all .2s ease-in-out;
+}
+.square-service:hover::before {
+  opacity: 0;
+}
+.service-descr {
+  position: absolute;
+  text-transform: none;
+  color: var(--secondary);
+}

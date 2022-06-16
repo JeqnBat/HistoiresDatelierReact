@@ -9,7 +9,6 @@
  
  1. HTML & BODY
  2. CUSTOM FONTS
- 3. MAIN & FOOTER TAG STYLING
  
 */
  
@@ -26,8 +25,24 @@ body {
 	color: var(--secondary);
 	height: 100%;
   margin: 0;
-	padding: 15px;
+	padding: 20px 20px 0 20px;
   font-family: var(--arnopro);
+	font-size: 1.5rem;
+	text-align: justify;
+}
+h1 {
+	font-family: var(--kalinsha);
+	font-size: 3.5rem;
+	font-weight: lighter;
+}
+p {
+	margin: 2rem auto;
+}
+h2 {
+	font-family: serif;
+	font-size: 1.75rem;
+	font-weight: lighter;
+	font-style: italic;
 }
 /* 2. CUSTOM FONTS
 ________________________________________________________ */
@@ -45,25 +60,4 @@ ________________________________________________________ */
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
-}
-/* 3. MAIN & FOOTER TAGS STYLING
-________________________________________________________ */
-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin: 30px 0;
-}
-footer {
-	margin-top: 60px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-footer > p {
-	width: 100%;
-	margin-top: 40px;
-	text-align: center;
 }
