@@ -67,21 +67,26 @@
     "papeteriedescr": "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
     "weddingdescr"  : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
     "prodescr"      : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
-    "values" : {
-      "title" : "Nos valeurs",
-      "one"   : "made in france",
-      "two"   : "artisanat",
-      "three" : "qualité"
-    },
     "whatsNew": "Notre actualité"
   },
-  "testimonials" : [
+  "values" : {
+    "title" : "Nos valeurs",
+    "one"   : ["made in france","•", "artisanat","•", "qualité"]
+  },
+  "testimonies" : [
     { 
       "date"    : "avril 2022",
-      "id"      : "undefined",
+      "id"      : "0",
       "author"  : "Émilie & Clément",
       "subject" : "À propos du faire-part",
       "message" : "Nous nous sommes tout de suite sentis à l’écoute et à l’aise avec Stéphanie. Nous sommes ravis d’avoir fait appel à Histoires d’atelier pour la réalisation de nos faire-part."
+    },
+    { 
+      "date"    : "mai 2022",
+      "id"      : "1",
+      "author"  : "Sailor & Lula",
+      "subject" : "À propos du faire-part",
+      "message" : "Note that the development build is not optimized. To create a production build, use npm run build. Note that the development build is not optimized. To create a production build, use npm run build."
     }
   ],
   "contact" : {

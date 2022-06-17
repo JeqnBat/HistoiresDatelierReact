@@ -1,0 +1,63 @@
+/**
+ * DESKTOP > TESTIMONIES.CSS
+ */
+#d-testimonies-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: inherit;
+}
+#d-testimonies-wrapper > div:first-child {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#d-testimonies-wrapper > div:first-child > h3 {
+  padding: 15px;
+  border-left: 2px solid var(--secondary);
+}
+#d-testimonies-wrapper > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+/* Left column spans */
+#d-testimonies-wrapper > div:nth-child(2) > span {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+/* Author span */
+#d-testimonies-wrapper > div:nth-child(2) > span:first-child {
+  font-size: 2.2rem;
+  font-family: var(--kalinsha);
+}
+/* Block quote */
+#d-testimonies-wrapper > div:nth-child(3) {
+  width: 600px;
+  line-height: 40px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+/* Right arrow */
+#d-testimonies-wrapper > div:nth-child(4) {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+#d-testimonies-wrapper > div:nth-child(4):hover {
+  transform: translateX(-4px);
+}
+/* Left arrow */
+#d-testimonies-wrapper > div:nth-child(5) {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+#d-testimonies-wrapper > div:nth-child(5):hover {
+  transform: translateX(4px);
+}

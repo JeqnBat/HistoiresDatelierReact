@@ -12,13 +12,13 @@
 #d-main h1 {
   text-align: center;
 }
-#spacer {
+#d-spacer {
   margin: 0;
   padding: 0;
   width: inherit;
   height: calc(100vh - 220px);
 }
-#quote {
+#d-quote {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,18 +26,18 @@
   width: 630px;
   text-align: center;
 }
-#quote > span {
+#d-quote > span {
   font-size: 5rem;
 }
-#quote > span:last-child {
+#d-quote > span:last-child {
   padding-top: 120px;
 }
-#descr > h1 {
+#d-descr > h1 {
   margin-top: 0;
 }
-#descr {
+#d-descr {
   width: 800px;
 }
-#services {
+#d-services {
   width: inherit;
 }
