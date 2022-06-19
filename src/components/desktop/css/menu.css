@@ -17,6 +17,10 @@
 #d-menu > span:hover {
   border-bottom: 2px solid var(--secondary);
 }
+#d-menu > span > i {
+  font-size: 1rem;
+  margin: 4px;
+}
 #d-menu > span > span {
   padding-left: 5px;
   padding-bottom: 5px;

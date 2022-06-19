@@ -6,7 +6,7 @@ const Menu = ({ data }) => {
       {data.categories.map((el) => (
         el.subCategories.length > 0 ? (
           <span key={el.id}>
-            {el.name} <span>⌵</span>
+            {el.name} <i className="fa-solid fa-chevron-down"></i>
             <ul>
               {el.subCategories.map((subCat) => (
                 <li key={subCat.id}>{subCat.name}</li>

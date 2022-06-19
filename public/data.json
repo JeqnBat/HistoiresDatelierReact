@@ -67,7 +67,9 @@
     "papeteriedescr": "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
     "weddingdescr"  : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
     "prodescr"      : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
-    "whatsNew": "Notre actualité"
+    "whatsNew"      : "Notre actualité",
+    "followInsta"   : "retrouvez-nous sur instagram",
+    "followUs"      : "Suivez-nous"
   },
   "values" : {
     "title" : "Nos valeurs",
