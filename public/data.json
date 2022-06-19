@@ -6,7 +6,7 @@
       "name"          : "papeterie",
       "id"            : 0,
       "highlight"     : true,
-      "img"           : "img/mobile/papeterie.jpg",
+      "img"           : "./img/categories/papeterie.jpg",
       "descr"         : "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
       "subCategories" : [
         { 
@@ -23,7 +23,7 @@
       "name"          : "wedding design",
       "id"            : 1,
       "highlight"     : true,
-      "img"           : "img/mobile/wedding-design.jpg",
+      "img"           : "./img/categories/wedding-design.jpg",
       "descr"         : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
       "subCategories" : []
     },
@@ -31,7 +31,7 @@
       "name"          : "professionnels",
       "id"            : 2,
       "highlight"     : true,
-      "img"           : "img/mobile/professionnels.png",
+      "img"           : "./img/categories/professionnels.png",
       "descr"         : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
       "subCategories" : [
         { 
@@ -97,5 +97,31 @@
     "whatsApp"  : "+33 6 55 44 22 11",
     "instgram"  : "https://www.instagram.com/histoiresdatelier/",
     "facebook"  : "https://www.facebook.com/HistoiresdAtelier"
+  },
+  "footer"  : {
+    "visitCard" : [
+      "Créatrice de papeterie",
+      "•",
+      "Décoratrice événementielle",
+      "•",
+      "Set Designer pour les professionnels"
+    ],
+    "infos" : [
+      "INFORMATIONS",
+      "•",
+      "Politique de confidentialité",
+      "CGV"
+    ],
+    "address" : [
+      "L'ATELIER",
+      "•",
+      "91 rue de la Chalouère",
+      "49 100 Angers"
+    ],
+    "contact" : [
+      "CONTACT",
+      "•",
+      "contact@histoiresdatelier.com"
+    ]
   }
 }

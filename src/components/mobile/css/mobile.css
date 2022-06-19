@@ -7,19 +7,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     width: auto;
   }
   #values {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   #values > p:nth-child(odd) {
-    font-size: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
     text-transform: uppercase;
   }
   #values > p:nth-child(even) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1rem;
     margin: 0 auto;
   }

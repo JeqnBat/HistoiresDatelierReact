@@ -8,25 +8,3 @@
   height: 200px;
   width: inherit;
 }
-#main-logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: inherit;
-  width: 290px;
-  background: center / contain no-repeat url('../../../img/desktop/bgContain.png');
-}
-#main-logo > span:nth-child(1) {
-  font-family: var(--kalinsha);
-  font-size: 3rem;
-  font-weight: lighter;
-  margin-top: 10px;
-}
-#main-logo > span:nth-child(2) {
-  font-family: var(--arnopro);
-  font-size: .9rem;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  transform: translateY(12px);
-}

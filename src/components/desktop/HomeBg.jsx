@@ -1,8 +1,6 @@
-import bgWrapper from '../../img/desktop/bg-wrapper.webp'
-
 const HomeBg = () => {
   const style = {
-    backgroundImage: `url(${bgWrapper})`,
+    backgroundImage: `url(img/desktop/bg-wrapper.webp)`,
     backgroundSize: 'cover',
     position: 'absolute',
     inset: '0',

@@ -20,7 +20,7 @@ const SquareSections = ({ data }) => {
       >
         <div
           className={hidden[idx] ? 'square-sections-item hide' : 'square-sections-item'}
-          style={{backgroundImage: `url(${process.env.PUBLIC_URL + el.img})`}}
+          style={{backgroundImage: `url(${el.img})`}}
         >
           <p>{el.name}</p>
         </div>

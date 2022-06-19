@@ -1,0 +1,38 @@
+/**
+ *  GLOBAL > FOOTER.CSS
+ */
+@media only screen and (max-width: 550px) {
+  footer > div {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-size: 1.25rem;
+  text-align: center;
+  background: var(--secondary);
+  color: var(--primary);
+}
+footer > div:not(:first-child) {
+  margin-top: 95px;
+}
+footer > div > section#title {
+  margin: 0 auto!important;
+  width: 190px;
+  background-size: 60%!important;
+}
+footer > div > section#title > span:first-child {
+  font-size: 2rem;
+}
+footer > div > section#title > span:nth-child(2) {
+  font-size: .75rem;
+}

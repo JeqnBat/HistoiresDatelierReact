@@ -1,6 +1,9 @@
 /**
  * DESKTOP > SERVICES.CSS
  */
+#d-services > h1 {
+  text-align: center;
+}
 #squares {
   width: inherit;
   display: flex;
@@ -41,7 +44,7 @@
   text-transform: none;
   color: var(--secondary);
   font-size: 17px;
-  inset: 0;
+  top: 0;
   opacity: 0;
   transform: translateY(0);
   transition: transform .3s ease-in-out, opacity .3s ease-in-out .1s;

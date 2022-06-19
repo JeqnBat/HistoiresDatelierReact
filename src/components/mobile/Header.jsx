@@ -1,17 +1,17 @@
 import Menu from './Menu'
+import MainLogo from '../global/MainLogo'
 import './css/header.css'
 
 const Header = ({ data }) => {
   return (
     <>
       <header id="m-header">
-        <div id="lang">FR</div>
-        <div id="basket"></div>
-        <Menu categories={data.categories} />
-        <div id="title">
-          <span>{data.title}</span>
-          <span>{data.subTitle}</span>
+        <div id="m-top">
+          <div id="lang">FR</div>
+          <i className="fa-solid fa-bag-shopping"></i>
+          <Menu categories={data.categories} />
         </div>
+        <MainLogo data={data} />
       </header>
     </>
   )

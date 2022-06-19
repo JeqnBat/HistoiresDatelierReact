@@ -1,13 +1,11 @@
-import './css/header.css'
 import Menu from './Menu'
+import MainLogo from '../global/MainLogo'
+import './css/header.css'
 
 const Header = ({ data }) => {
   return (
     <header id="d-header">
-      <div id="main-logo">
-        <span>{data.title}</span>
-        <span>{data.subtitle}</span>
-      </div>
+      <MainLogo data={data} />
       <Menu data={data} />
     </header>
   )

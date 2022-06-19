@@ -1,13 +1,12 @@
-import Instagram from '../global/Instagram'
-import './css/whatsnew.css'
+import Instagram from './Instagram'
+import './css/whats-new.css'
 
 const Whatsnew = ({ data }) => {
   return (
-    <section id='d-whats-new'>
+    <section id='g-whats-new'>
       <h1>{data.homePage.whatsNew}</h1>
-      <div id='d-check-insta'>
+      <div id='g-check-insta'>
         <a href='https://www.instagram.com/histoiresdatelier/' target='blank'>
-          <i></i>
         {data.homePage.followInsta} <i className="fa-brands fa-instagram"></i>
         </a>
       </div>

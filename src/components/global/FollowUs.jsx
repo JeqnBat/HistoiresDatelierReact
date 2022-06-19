@@ -1,4 +1,4 @@
-import './followus.css'
+import './css/followus.css'
 
 const FollowUs = ({ data }) => {
   return (

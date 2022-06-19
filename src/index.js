@@ -5,5 +5,6 @@ import App from './App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
+  // enable strict mode for production build
   <App />
 )

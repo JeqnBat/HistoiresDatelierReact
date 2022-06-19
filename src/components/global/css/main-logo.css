@@ -1,0 +1,25 @@
+/**
+ * GLOBAL > MAIN-LOGO.CSS
+ */
+ #title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 230px;
+  margin: 40px 0 20px 0;
+}
+#title > span:first-of-type {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  font-size: 3.5rem;
+  font-family: var(--kalinsha);
+}
+#title > span:nth-child(2) {
+  line-height: 15px;
+  font-size: .9rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
