@@ -20,13 +20,11 @@
 }
 #d-menu > span > i {
   font-size: 1rem;
-  margin-left: 4px;
+  margin-left: 8px;
 }
-#d-menu > span > span {
-  padding-left: 5px;
-  padding-bottom: 5px;
-  font-weight: bolder;
-  font-size: 1rem;
+#d-menu > span > a {
+  color: var(--secondary);
+  text-decoration: none;
 }
 #d-menu > span > ul {
   position: absolute;
@@ -43,6 +41,10 @@
 }
 #d-menu > span > ul > li {
   padding: 10px;
+}
+#d-menu > span > ul > li > a {
+  color: var(--secondary);
+  text-decoration: none;
 }
 #d-menu > span > ul > li:first-child {
   border-bottom: 1px solid lightgray;

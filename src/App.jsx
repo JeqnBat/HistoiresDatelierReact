@@ -1,5 +1,5 @@
 import { StoreProvider, createStore } from 'easy-peasy'
-import modal from './modal/modal'
+import modal from './scripts/modal'
 import Fork from './components/Fork'
 
 const store = createStore(modal)

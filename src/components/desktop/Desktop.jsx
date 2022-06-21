@@ -1,7 +1,7 @@
 import HomeBg from './HomeBg'
 import Header from './Header'
-import Quote from './Quote'
 import Services from './Services'
+import Quote from '../global/Quote'
 import Testimonies from '../global/Testimonies'
 import Values from '../global/Values'
 import Whatsnew from '../global/Whatsnew'
@@ -15,7 +15,7 @@ const Desktop = ({ app }) => {
     <main id="d-main">
       <HomeBg />
       <Header data={app} />
-      <section id="d-spacer"></section>
+      <div id="d-spacer"></div>
       <Quote data={app} />
       <Services data={app} />
       <div className="spacer"></div>

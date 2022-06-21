@@ -1,4 +1,4 @@
-import { paragraphs } from '../../logic/logic.js'
+import { paragraphs } from '../../scripts/logic.js'
 
 const Quote = ({ data }) => {
   return (

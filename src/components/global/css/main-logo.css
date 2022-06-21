@@ -1,7 +1,7 @@
 /**
  * GLOBAL > MAIN-LOGO.CSS
  */
- #logo {
+#logo {
   display: flex;
   flex-direction: column;
   justify-content: center;

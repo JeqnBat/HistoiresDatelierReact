@@ -6,7 +6,7 @@ import Testimonies from '../global/Testimonies'
 import Whatsnew from '../global/Whatsnew'
 import FollowUs from '../global/FollowUs'
 import Footer from '../global/Footer'
-import { paragraphs } from '../../logic/logic.js'
+import { paragraphs } from '../../scripts/logic.js'
 import './css/mobile.css'
 
 const Mobile = ({ app }) => {

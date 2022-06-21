@@ -5,23 +5,27 @@
     {
       "name"          : "papeterie",
       "id"            : 0,
+      "link"          : "papeterie",
       "highlight"     : true,
       "img"           : "./img/categories/papeterie.jpg",
       "descr"         : "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
       "subCategories" : [
         { 
           "id"  : 0,
-          "name": "faire-part"
+          "name": "faire-part",
+          "link": "fairePart"
         },
         { 
           "id"  : 1,
-          "name": "papeterie décorative"
+          "name": "papeterie décorative",
+          "link": "papeterieDecorative"
         }
       ]
     },
     {
       "name"          : "wedding design",
       "id"            : 1,
+      "link"          : "weddingDesign",
       "highlight"     : true,
       "img"           : "./img/categories/wedding-design.jpg",
       "descr"         : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
@@ -30,23 +34,27 @@
     {
       "name"          : "professionnels",
       "id"            : 2,
+      "link"          : "pro",
       "highlight"     : true,
       "img"           : "./img/categories/professionnels.png",
       "descr"         : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
       "subCategories" : [
         { 
           "id"  : 0,
-          "name": "set design"
+          "name": "set design",
+          "link": "setDesign"
         },
         { 
           "id"  : 1,
-          "name": "event design"
+          "name": "event design",
+          "link": "eventDesign"
         }
       ]
     },
     {
       "name"          : "l'atelier",
       "id"            : 3,
+      "link"          : "presentation",
       "highlight"     : false,
       "img" : "",
       "subCategories" : []
@@ -54,6 +62,7 @@
     {
       "name"          : "contact",
       "id"            : 4,
+      "link"          : "contact",
       "highlight"     : false,
       "img" : "",
       "subCategories" : []
