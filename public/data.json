@@ -101,26 +101,31 @@
   "footer"  : {
     "visitCard" : [
       "Créatrice de papeterie",
-      "•",
+      ".",
       "Décoratrice événementielle",
-      "•",
+      ".",
       "Set Designer pour les professionnels"
+    ],
+    "sitemap" : [
+      "PLAN DU SITE",
+      "Papeterie",
+      "Wedding design",
+      "Professionnels",
+      "L'atelier",
+      "Contact"
     ],
     "infos" : [
       "INFORMATIONS",
-      "•",
       "Politique de confidentialité",
       "CGV"
     ],
     "address" : [
       "L'ATELIER",
-      "•",
       "91 rue de la Chalouère",
       "49 100 Angers"
     ],
     "contact" : [
       "CONTACT",
-      "•",
       "contact@histoiresdatelier.com"
     ]
   }

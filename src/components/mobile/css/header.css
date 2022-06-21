@@ -18,9 +18,8 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    top: 0;
-    left: 19px;
-    right: 19px;
+    inset: 0;
+    padding: 5px 20px;
     background: var(--primary);
     height: 50px;
     z-index: 8;

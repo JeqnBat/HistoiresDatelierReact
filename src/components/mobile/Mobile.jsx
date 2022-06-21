@@ -12,8 +12,9 @@ import './css/mobile.css'
 const Mobile = ({ app }) => {
   return (
     <>
-      <Header data={app} />
       <main id='m-main'>
+        <Header data={app} />
+        <div className='spacinho'></div>
         <BubbleSections data={app} />
         <h1>{app.homePage.latelier}</h1>
         <div>{paragraphs(app.homePage.latelierdescr)}</div>
@@ -26,9 +27,8 @@ const Mobile = ({ app }) => {
         <Whatsnew data={app} />
         <div className='spacinho'></div>
         <FollowUs data={app} />
-        <div className='spacinho'></div>
-        <Footer data={app} />
       </main>
+        <Footer data={app} />
     </>
   )
 }

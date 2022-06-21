@@ -5,12 +5,13 @@ import './css/header.css'
 const Header = ({ data }) => {
   return (
     <>
-      <header id="m-header">
-        <div id="m-top">
-          <div id="lang">FR</div>
-          <i className="fa-solid fa-bag-shopping"></i>
+      <header id='m-header'>
+        <div id='m-top'>
+          <div id='lang'>FR</div>
+          <i className='fa-solid fa-bag-shopping'></i>
           <Menu categories={data.categories} />
         </div>
+        <div className='spacinho'></div>
         <MainLogo data={data} />
       </header>
     </>
