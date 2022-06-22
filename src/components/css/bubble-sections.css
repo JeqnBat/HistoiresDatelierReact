@@ -1,0 +1,30 @@
+/**
+ * BUBBLE SECTIONS CSS
+ */
+@media only screen and (max-width: 550px) {
+  #bubbles {
+    display: flex;
+  }
+  .bubble-item {
+    display: flex;
+    flex-direction: column;
+    width: 96px;
+    margin: 0 12px;
+  }
+  .bubble-item div:nth-child(1) {
+    height: 92px;
+    border-radius: 48px;
+    background-size: cover;
+    background-position: center;
+    border: 2px solid transparent;
+  }
+  .bubble-item div:nth-child(1):active {
+    border: 2px solid var(--secondary);
+  }
+  .bubble-item div:nth-child(2) {
+    font-size: .8rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 20px 0;
+  }
+}

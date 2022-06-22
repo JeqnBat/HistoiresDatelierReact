@@ -1,13 +1,13 @@
 import { StoreProvider, createStore } from 'easy-peasy'
 import modal from './scripts/modal'
-import Fork from './components/Fork'
+import Router from './Router'
 
 const store = createStore(modal)
 
 const App = () => {
   return (
     <StoreProvider store={store}>
-      <Fork />
+      <Router />
     </StoreProvider>
   )
 }

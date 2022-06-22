@@ -1,0 +1,67 @@
+/**
+ * DESKTOP > SERVICES.CSS
+ */
+#services {
+  width: inherit;
+}
+#services > h1 {
+  text-align: center;
+}
+#squares {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px 0;
+}
+.square-service {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 230px;
+  width: 230px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-transform: uppercase;
+  color: var(--primary);
+  z-index: 1;
+  cursor: pointer;
+}
+.square-service > p {
+  z-index: 2;
+  transition: all .3s ease-in-out;
+}
+.square-service::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: black;
+  opacity: .8;
+  z-index: 0;
+  transition: all .3s ease-in-out;
+}
+.service-descr {
+  position: absolute;
+  text-transform: none;
+  color: var(--secondary);
+  font-size: 17px;
+  top: 0;
+  opacity: 0;
+  transform: translateY(0);
+  transition: transform .3s ease-in-out, opacity .3s ease-in-out .1s;
+}
+/* Square Hover's affects 4 different elements */
+.square-service:hover p {
+  color: var(--secondary);
+  transform: translateY(150px);
+}
+.square-service:hover::before {
+  opacity: 0;
+}
+.square-service:hover .service-descr {
+  transform: translateY(290px);
+  opacity: 1;
+}
+

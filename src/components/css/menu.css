@@ -1,0 +1,183 @@
+/**
+ * MENU.CSS
+ */
+#menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 700px;
+}
+#menu > span {
+  position: relative;
+  font-size: 18px;
+  text-transform: uppercase;
+  border-bottom: 2px solid transparent;
+  padding: 16px 0;
+  transition: all .1s ease-in-out;
+}
+#menu > span:hover {
+  border-bottom: 2px solid var(--secondary);
+}
+#menu > span > i {
+  font-size: 1rem;
+  margin-left: 8px;
+}
+#menu > span > a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+#menu > span > ul {
+  position: absolute;
+  list-style: none;
+  text-transform: none;
+  width: 200px;
+  padding: 15px 20px;
+  transform: translateX(-10px);
+  background: var(--primary);
+  display: none;
+}
+#menu > span:hover > ul {
+  display: block;
+}
+#menu > span > ul > li {
+  padding: 10px;
+}
+#menu > span > ul > li > a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+#menu > span > ul > li:first-child {
+  border-bottom: 1px solid lightgray;
+}
+#menu > span > ul > li::first-letter {
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 550px) {
+  .active {
+    transform: translateX(0)!important;
+  }
+  #hamburger {
+    position: relative;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+  }
+  .rectangle {
+    width: 26px;
+    height: 2px;
+    margin: 5px 0;
+    background: var(--secondary);
+  }
+  #main-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    font-family: monospace;
+    text-transform: uppercase;
+    background: var(--primary);
+    transform: translateX(-100vw);
+    transition: transform .2s ease-in-out .1s;
+  }
+  #main-menu > div:not(:first-child) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    color: rgb(40, 42, 44, .75);
+    padding: 10px 30px;
+  }
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    color: rgb(40, 42, 44, .75);
+    padding: 0px 30px;
+  }
+  #menu > p {
+    margin: 10px 25px;
+    padding-bottom: 3px;
+  }
+  #menu > p::first-letter {
+    font-size: 2rem;
+  }
+  #cross :nth-child(1) {
+    transform: rotate(45deg);
+    width: 19px;
+    height: 1px;
+    margin: 0 0 -1px 0;
+    background: rgb(40, 42, 44);
+  }
+  #cross :nth-child(2) {
+    transform: rotate(-45deg);
+    width: 19px;
+    height: 1px;
+    margin: 0;
+    background: rgb(40, 42, 44);
+  }
+  .main-menu {
+    list-style: none;
+    font-size: 1.25rem;
+    color: rgb(40, 42, 44, .8);
+  }
+  .main-menu > li {
+    line-height: 50px;
+  }
+  .main-menu li > a {
+    text-decoration: none;
+    color: rgb(120, 122, 124);
+  }
+  .has-sub-menu::before {
+    position: absolute;
+    right: 34px;
+    font-family: 'arnoPro';
+    font-size: 1.25rem;
+    color: rgb(150, 152, 154);
+    content: '+';
+  }
+  .has-sub-menu.minus::before {
+    position: absolute;
+    right: 35px;
+    font-family: 'arnoPro';
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: rgb(100, 102, 104);
+    content: '--';
+  }
+  .sub-menu {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height .5s ease-in-out;
+  }
+  .sub-menu > li {
+    list-style: none;
+    font-size: 1.1rem;
+    text-decoration: none;
+  }
+  .display {
+    max-height: 400px;
+  }
+  #contact-box {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    opacity: .75;
+  }
+  .full-width {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+  }
+  .full-width > img {
+    padding-right: 10px;
+  }
+}

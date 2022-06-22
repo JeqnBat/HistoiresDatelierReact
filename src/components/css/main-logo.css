@@ -1,0 +1,24 @@
+/**
+ * MAIN-LOGO.CSS
+ */
+#logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 190px;
+}
+#logo > span:first-of-type {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  font-size: 3rem;
+  font-family: var(--kalinsha);
+}
+#logo > span:nth-child(2) {
+  line-height: 15px;
+  font-size: .9rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}

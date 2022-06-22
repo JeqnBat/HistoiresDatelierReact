@@ -1,0 +1,38 @@
+/**
+ * HEADER CSS
+ */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: inherit;
+}
+#home-spacer {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: calc(100vh - 220px);
+}
+/* RESPONSIVE */
+@media only screen and (max-width: 550px) {
+  header {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #lang {
+    width: 36px;
+    font-size: 12px;
+  }
+  #fixed-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    inset: 0;
+    padding: 5px 20px;
+    background: var(--primary);
+    height: 50px;
+    z-index: 8;
+  }
+}

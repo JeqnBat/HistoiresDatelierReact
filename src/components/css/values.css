@@ -1,0 +1,24 @@
+/**
+ * VALUES.CSS
+ */
+#values {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  width: inherit;
+}
+#values > h1 {
+  width: 100%;
+}
+#values > div {
+  text-transform: uppercase;
+  font-size: 1.75rem;
+}
+#values > div:nth-child(even) {
+  width: 222px;
+  text-align: center;
+}
+@media only screen and (max-width: 550px) {
+}
