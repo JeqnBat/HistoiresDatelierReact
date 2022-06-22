@@ -10,12 +10,11 @@ import Testimonies from '../components/Testimonies'
 import Whatsnew from '../components/Whatsnew'
 import FollowUs from '../components/FollowUs'
 import Footer from '../components/Footer'
-import { useStoreState } from 'easy-peasy'
+import { Outlet } from 'react-router-dom'
 // Styles for this page are stored in '../index.css'
 
-const HomePage = ({ feed }) => {
-  const { responsive } = useStoreState(state => state)
-  if (responsive) {
+const HomePage = ({ feed, layout}) => {
+  if (layout) {
     return (
       <>
         <main>
@@ -40,6 +39,7 @@ const HomePage = ({ feed }) => {
   } else {
     return (
       <>
+        <Outlet />
         <main>
           <HomeBg />
           <HeaderD data={feed} />

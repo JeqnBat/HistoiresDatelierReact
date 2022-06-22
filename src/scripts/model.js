@@ -1,7 +1,7 @@
 import { state, action, thunk } from 'easy-peasy'
 import { v4 as uuidv4 } from 'uuid'
 
-const modal = {
+const model = {
   // STATE
   error: null,
   responsive: undefined,
@@ -25,9 +25,9 @@ const modal = {
       const db = await res.json()
       actions.load(db)
     } catch(e) {
-      actions.setError(e.message)
+      actions.setError(e.message + 'kikoo')
     }
   })
 }
 
-export default modal
+export default model

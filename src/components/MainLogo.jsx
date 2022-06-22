@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 import './css/main-logo.css'
 
 const MainLogo = ({ data, footer }) => {
@@ -10,10 +10,12 @@ const MainLogo = ({ data, footer }) => {
   }
 
   return (
-    <section id="logo" style={footer ? secondaryBackground : primaryBackground}>
+    <Link to='/'>
+    <section id='logo' style={footer ? secondaryBackground : primaryBackground}>
       <span>{data.title}</span>
       <span>{data.subtitle}</span>
     </section>
+    </Link>
   )
 }
 

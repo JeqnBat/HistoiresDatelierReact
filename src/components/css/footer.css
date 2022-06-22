@@ -19,6 +19,9 @@ footer {
   font-size: 1.25rem;
   text-align: center;
 }
+#footer-wrapper a {
+  color: var(--primary);
+}
 #footer-wrapper > div:first-child {
   width: 100%;
   display: flex;
@@ -33,13 +36,13 @@ footer {
   margin-bottom: 20px;
   border-bottom: 1px solid var(--primary);
 }
-#footer-wrapper > div > section#logo {
+#footer-wrapper > div > a > section#logo {
   width: 190px;
 }
-#footer-wrapper > div > section#logo > span:first-child {
+#footer-wrapper > div > a > section#logo > span:first-child {
   font-size: 2rem;
 }
-#footer-wrapper > div > section#logo > span:nth-child(2) {
+#footer-wrapper > div > a > section#logo > span:nth-child(2) {
   font-size: .75rem;
 }
 /* RESPONSIVE */
@@ -61,7 +64,7 @@ footer {
   #footer-wrapper > div:first-child {
     flex-direction: column;
   }
-  #footer-wrapper > div > section#logo {
+  #footer-wrapper > div > a > section#logo {
     width: 200px;
     margin-bottom: 10px;
   }

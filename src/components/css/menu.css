@@ -97,6 +97,7 @@
     font-size: 1.6rem;
     color: rgb(40, 42, 44, .75);
     padding: 0px 30px;
+    width: auto;
   }
   #menu > p {
     margin: 10px 25px;
