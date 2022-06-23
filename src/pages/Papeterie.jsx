@@ -1,14 +1,12 @@
 import { Routes, Route } from "react-router-dom"
-import PapeterieDecorative from "./papeterieDecorative"
+import PapeterieDecorative from "./PapeterieDecorative"
 
 const Papeterie = () => {
   return (
     <div>
       <p>papeterie</p>
       <Routes>
-        <Route path='/' element={<></>} >
-          <Route path='salut' element={<PapeterieDecorative />} />
-        </Route>
+        <Route path='salut' element={<PapeterieDecorative />} />
       </Routes>
     </div>
   )

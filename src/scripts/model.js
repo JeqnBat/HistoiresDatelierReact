@@ -25,7 +25,7 @@ const model = {
       const db = await res.json()
       actions.load(db)
     } catch(e) {
-      actions.setError(e.message + 'kikoo')
+      actions.setError(e.message)
     }
   })
 }

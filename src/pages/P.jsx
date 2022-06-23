@@ -1,7 +1,8 @@
 import Footer from '../components/Footer'
 import HeaderD from '../components/HeaderD'
 import HeaderM from '../components/HeaderM'
-import { Outlet } from 'react-router-dom'
+import { Outlet, Routes, Route } from 'react-router-dom'
+import FairePart from './FairePart'
 
 const P = ({ feed, layout }) => {
   if (layout) {
@@ -9,7 +10,7 @@ const P = ({ feed, layout }) => {
       <>
         <main>
           <HeaderM data={feed} />
-          <p>p</p>
+          <p>{feed.title}</p>
           <Outlet />
         </main>
         <Footer data={feed} />
@@ -20,8 +21,10 @@ const P = ({ feed, layout }) => {
       <>
         <main>
           <HeaderD data={feed} />
-          <p>p</p>
-          <Outlet />
+          <p>{feed.title}</p>
+          <Routes>
+            <Route path='faire-part' element={<FairePart data={feed} />} />
+          </Routes>
         </main>
         <Footer data={feed} />
       </>

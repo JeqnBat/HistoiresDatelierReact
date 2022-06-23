@@ -4,9 +4,8 @@ import { probe } from './scripts/logic.js'
 import Tree from './Tree'
 
 const App = () => {
-  const { appData, loaded, responsive } = useStoreState(state => ({
+  const { appData, responsive } = useStoreState(state => ({
     appData: state.appData,
-    loaded: state.loaded,
     responsive: state.responsive
   }))
   const { pickLayout, fetchData } = useStoreActions(actions => ({
@@ -20,7 +19,7 @@ const App = () => {
   }, [])
   return (
     // Factoriser ça en une seule variable tx
-    <Tree data={appData} loaded={loaded} responsive={responsive} />
+    <Tree data={appData} responsive={responsive} />
   )
 }
 
