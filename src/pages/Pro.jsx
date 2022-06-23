@@ -1,6 +1,11 @@
+import { Outlet } from "react-router-dom"
+
 const Pro = () => {
   return (
-    <div>Pro</div>
+    <>
+      <div>Pro</div>
+      <Outlet />
+    </>
   )
 }
 

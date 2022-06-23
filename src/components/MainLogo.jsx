@@ -3,10 +3,10 @@ import './css/main-logo.css'
 
 const MainLogo = ({ data, footer }) => {
   const primaryBackground = {
-    background: 'center / contain no-repeat url("./img/logo/logo-bg.png")'
+    background: `center / contain no-repeat url("/img/logo/logo-bg.png")`
   }
   const secondaryBackground = {
-    background: 'center / contain no-repeat url("./img/logo/logo-bg-white.png")'
+    background: `center / contain no-repeat url("/img/logo/logo-bg-white.png")`
   }
 
   return (

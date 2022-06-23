@@ -52,7 +52,7 @@
   transform: translateY(0);
   transition: transform .3s ease-in-out, opacity .3s ease-in-out .1s;
 }
-/* Square Hover's affects 4 different elements */
+/* Square Hover's affects 3 different elements */
 .square-service:hover p {
   color: var(--secondary);
   transform: translateY(150px);

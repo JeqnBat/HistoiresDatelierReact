@@ -41,13 +41,13 @@ const MenuM = ({ categories }) => {
               <ul className={subMenuVis[cat.id] ? "sub-menu display" : "sub-menu"}>
                 {cat.subCategories.map((sub) => (
                   <li key={sub.id}>
-                    <Link to={`${cat.link}/${sub.link}`}>{sub.name}</Link>
+                    <Link to={`${cat.link}/${sub.link}`} onClick={displayMenu}>{sub.name}</Link>
                   </li>))}
               </ul>
             </li>
             ) : (
               <li key={cat.id}>
-                <Link to={cat.link}>{cat.name}</Link>
+                <Link to={cat.link} onClick={displayMenu}>{cat.name}</Link>
               </li>
             )
           ))}

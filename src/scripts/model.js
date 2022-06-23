@@ -4,8 +4,8 @@ import { v4 as uuidv4 } from 'uuid'
 const model = {
   // STATE
   error: null,
-  responsive: undefined,
-  loaded: undefined,
+  responsive: null,
+  loaded: false,
   appData: [],
   // ACTIONS
   pickLayout: action((state, payload) => {
@@ -21,7 +21,7 @@ const model = {
   // THUNK
   fetchData: thunk(async actions => {
     try {
-      const res = await fetch('data.json')
+      const res = await fetch('/data.json')
       const db = await res.json()
       actions.load(db)
     } catch(e) {

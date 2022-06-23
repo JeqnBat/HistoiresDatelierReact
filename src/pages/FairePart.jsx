@@ -1,6 +1,6 @@
 const FairePart = ({ feed }) => {
   return (
-      <div>{feed.title}</div>
+      <div>Faire Part</div>
     )
   }
 export default FairePart

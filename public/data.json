@@ -1,13 +1,14 @@
 {
-  "title" : "Histoires d'atelier",
+  "title"    : "Histoires d'atelier",
   "subtitle" : "création",
+  "base"     : "p/",
   "categories" : [
     {
       "name"          : "papeterie",
       "id"            : 0,
       "link"          : "papeterie",
       "highlight"     : true,
-      "img"           : "./img/categories/papeterie.jpg",
+      "img"           : "/img/categories/papeterie.jpg",
       "descr"         : "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
       "subCategories" : [
         { 
@@ -18,7 +19,7 @@
         { 
           "id"  : 1,
           "name": "papeterie décorative",
-          "link": "papeterieDecorative"
+          "link": "papeterie-decorative"
         }
       ]
     },
@@ -27,16 +28,16 @@
       "id"            : 1,
       "link"          : "wedding-design",
       "highlight"     : true,
-      "img"           : "./img/categories/wedding-design.jpg",
+      "img"           : "/img/categories/wedding-design.jpg",
       "descr"         : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
       "subCategories" : []
     },
     {
       "name"          : "professionnels",
       "id"            : 2,
-      "link"          : "pro",
+      "link"          : "professionnels",
       "highlight"     : true,
-      "img"           : "./img/categories/professionnels.png",
+      "img"           : "/img/categories/professionnels.png",
       "descr"         : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
       "subCategories" : [
         { 
@@ -54,7 +55,7 @@
     {
       "name"          : "l'atelier",
       "id"            : 3,
-      "link"          : "presentation",
+      "link"          : "latelier",
       "highlight"     : false,
       "img" : "",
       "subCategories" : []
@@ -82,7 +83,7 @@
   },
   "values" : {
     "title" : "Nos valeurs",
-    "one"   : ["made in france","•", "artisanat","•", "qualité"]
+    "items"   : ["made in france","•", "artisanat","•", "qualité"]
   },
   "testimonies" : [
     { 
@@ -99,6 +100,11 @@
       "subject" : "À propos du faire-part",
       "message" : "Note that the development build is not optimized. To create a production build, use npm run build. Note that the development build is not optimized. To create a production build, use npm run build."
     }
+  ],
+  "_COMMENT" : [ 
+    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓",
+    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓",
+    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓"
   ],
   "contact" : {
     "address"   : "rue du comte de Tourville<br> 49100, ANGERS",

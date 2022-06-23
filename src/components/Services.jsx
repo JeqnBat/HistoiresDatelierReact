@@ -9,7 +9,7 @@ const Services = ({ data }) => {
       <div id='squares'>
         {mainCats.map((el) => (
           <Link key={el.id}  to={el.link}>
-            <div className='square-service' style={{backgroundImage: `url(${process.env.PUBLIC_URL + el.img})`}}>
+            <div className='square-service' style={{backgroundImage: `url(${el.img})`}}>
               <p>{el.name}</p>
               <div className='service-descr'>
                 {el.descr}

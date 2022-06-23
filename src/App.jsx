@@ -1,11 +1,12 @@
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import React, { useEffect } from 'react'
 import { probe } from './scripts/logic.js'
-import Tree from './Tree'
+import Router from './Router'
 
 const App = () => {
-  const { appData, responsive } = useStoreState(state => ({
+  const { appData, loaded, responsive } = useStoreState(state => ({
     appData: state.appData,
+    loaded: state.loaded,
     responsive: state.responsive
   }))
   const { pickLayout, fetchData } = useStoreActions(actions => ({
@@ -19,7 +20,7 @@ const App = () => {
   }, [])
   return (
     // Factoriser ça en une seule variable tx
-    <Tree data={appData} responsive={responsive} />
+    <Router data={appData} responsive={responsive} loaded={loaded} />
   )
 }
 

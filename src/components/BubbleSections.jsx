@@ -7,7 +7,7 @@ const BubbleSections = ({ data }) => {
     <section id="bubbles">
       {mainCats.map((el) => (
         <div key={el.id} className='bubble-item'>
-          <Link to={el.link}>
+          <Link to={`${el.link}`}>
             <div style={{backgroundImage: `url(${el.img})`}}></div>
             <div>{el.name}</div>
           </Link>

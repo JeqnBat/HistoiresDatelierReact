@@ -4,7 +4,7 @@ const Values = ({ data }) => {
   return (
     <section id="values">
     <h1>{data.values.title}</h1>
-      {data.values.one.map((el, idx) => (
+      {data.values.items.map((el, idx) => (
         <div key={idx}>{el}</div>
       ))}
     </section>
