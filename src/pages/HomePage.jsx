@@ -8,8 +8,15 @@ import Services from '../components/Services'
 import Testimonies from '../components/Testimonies'
 import Whatsnew from '../components/Whatsnew'
 import FollowUs from '../components/FollowUs'
+import { useStoreActions } from 'easy-peasy'
+import { useEffect } from 'react'
 
 const HomePage = ({ feed, layout}) => {
+  const { setPageName } = useStoreActions(actions => actions)
+  useEffect(() => {
+    setPageName('home-page')
+  }, [])
+
   if (layout) {
     return (
       <>

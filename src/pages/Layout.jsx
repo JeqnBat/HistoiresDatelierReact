@@ -2,8 +2,11 @@ import HeaderD from '../components/HeaderD'
 import HeaderM from '../components/HeaderM'
 import Footer from '../components/Footer'
 import { Outlet } from 'react-router-dom'
+import { useStoreState } from 'easy-peasy'
 
 const Layout = ({ feed, layout }) => {
+  const { pageName } = useStoreState(state => state)
+
   if (layout) {
     return (
       <>
@@ -18,7 +21,7 @@ const Layout = ({ feed, layout }) => {
     return (
       <>
         <main>
-          <HeaderD data={feed} />
+          <HeaderD data={feed} pageName={pageName} />
           <Outlet />
         </main>
         <Footer data={feed} />

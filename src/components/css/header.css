@@ -1,5 +1,5 @@
 /**
- * HEADER CSS
+ * HEADER.CSS
  */
 header {
   display: flex;
@@ -7,6 +7,11 @@ header {
   justify-content: space-between;
   height: 200px;
   width: inherit;
+  transition: all .3s ease-in-out;
+}
+header.small-header {
+  height: 142px;
+  margin-top: -20px;
 }
 #home-spacer {
   margin: 0;

@@ -1,53 +1,35 @@
 import { Outlet } from 'react-router-dom'
-import '../components/css/navigator.css'
-import '../components/css/grid.css'
+import { useStoreActions, useStoreState } from 'easy-peasy'
+import { useEffect } from 'react'
+import Navigator from '../components/Navigator'
+import Grid from '../components/Grid'
 
-const FairePart = ({ feed }) => {
-  return (
-      <>
-        <div>Votre faire-part</div>
-        <nav id='navigator'>
-          <div>
-          <i className='fa-solid fa-champagne-glasses'></i>
-            <span>Mariage</span>
-          </div>
-          <div>
-            <i className='fa-solid fa-baby-carriage'></i>
-            <span>Naissance</span>
-          </div>
-          <div>
-            <i className='fa-solid fa-church'></i>
-            <span>Baptême</span>
-          </div>
-          <div>
-            <i className='fa-solid fa-compass-drafting'></i>
-            <span>Sur-mesure</span>
-          </div>
-        </nav>
-        <section id='wrapper'>
-          <div id='grid'>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-            <div>item</div>
-          </div>
-        </section>
-        <div>potentiellement filtres supplémentaires</div>
-        <div>the grid</div>
-      <Outlet />
-      </>
-    )
+const FairePart = () => {
+  const { faireParts, loaded } = useStoreState(state => ({
+    faireParts: state.fairePart.products,
+    loaded: state.loaded.fairePart
+  }))
+  const { setPageName, fetchFairePartData } = useStoreActions(actions => ({
+    setPageName: actions.setPageName,
+    fetchFairePartData: actions.fetchFairePartData
+  }))
+  useEffect(() => {
+    setPageName('faire-part')
+    fetchFairePartData()
+  }, [])
+
+  if (loaded) {
+    return (
+        <>
+          <Navigator products={faireParts} />
+          <h4>Votre faire-part</h4>
+          <Grid products={faireParts} />
+          <Outlet />
+        </>
+      )
+  } else {
+    return <p>loading…</p>
   }
+}
+
 export default FairePart

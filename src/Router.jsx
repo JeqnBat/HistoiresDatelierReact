@@ -19,9 +19,9 @@ const Router = ({ data, responsive, loaded }) => {
           <Route path='/' element={<Layout feed={data} layout={responsive} />}>
             <Route index element ={<HomePage feed={data} layout={responsive} />} />
             <Route path='home' element={<HomePage feed={data} layout={responsive} />} />
-            <Route path='papeterie/*' element={<Papeterie />}>
-              <Route path='faire-part/*' element={<FairePart />} />
-              <Route path='papeterie-decorative' element={<PapeterieDecorative />} />
+            <Route path='papeterie/*' element={<Papeterie feed={data} layout={responsive} />}>
+              <Route path='faire-part/*' element={<FairePart layout={responsive} />} />
+              <Route path='papeterie-decorative' element={<PapeterieDecorative feed={data} layout={responsive} />} />
               <Route path='*' element={<h1>404</h1> } />
             </Route>
             <Route path='wedding-design' element={<WeddingDesign />} />

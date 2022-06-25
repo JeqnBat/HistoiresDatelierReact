@@ -1,6 +1,6 @@
 {
-  "title"    : "Histoires d'atelier",
-  "subtitle" : "création",
+  "title"       : "Histoires d'atelier",
+  "subtitle"    : "création",
   "categories" : [
     {
       "name"          : "papeterie",
@@ -66,13 +66,6 @@
       "highlight"     : false,
       "img" : "",
       "subCategories" : []
-    }
-  ],
-  "faire-part" : [
-    {
-      "naissance" : {
-        "item1" : "eza"
-      }
     }
   ],
   "homePage" : {

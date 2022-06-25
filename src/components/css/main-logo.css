@@ -8,6 +8,7 @@
   align-items: center;
   width: 290px;
   height: 190px;
+  transition: all .3s ease-in-out;
 }
 #logo > span:first-of-type {
   display: flex;
@@ -21,4 +22,8 @@
   font-size: .9rem;
   letter-spacing: 6px;
   text-transform: uppercase;
+}
+/* Not Homepage */
+#logo.small {
+  transform: scale(.75);
 }

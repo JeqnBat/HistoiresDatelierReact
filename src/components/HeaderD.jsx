@@ -2,10 +2,10 @@ import MenuD from './MenuD'
 import MainLogo from './MainLogo'
 import './css/header.css'
 
-const HeaderD = ({ data }) => {
+const HeaderD = ({ data, pageName }) => {
   return (
-    <header>
-      <MainLogo data={data} />
+    <header className={pageName === 'home-page' ? '' : 'small-header'}>
+      <MainLogo data={data} small={pageName === 'home-page' ? false : true} />
       <MenuD data={data} />
     </header>
   )
