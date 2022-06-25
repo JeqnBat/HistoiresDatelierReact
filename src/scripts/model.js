@@ -1,4 +1,4 @@
-import { state, action, thunk } from 'easy-peasy'
+import { action, thunk } from 'easy-peasy'
 import { v4 as uuidv4 } from 'uuid'
 
 const model = {

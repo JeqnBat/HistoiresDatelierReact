@@ -2,9 +2,11 @@
  * FOOTER.CSS
  */
 footer {
+  position: relative;
   width: 100%;
   background: linear-gradient(var(--secondary), black);
   color: var(--primary);
+  z-index: 1;
 }
 #footer-wrapper {
   display: flex;

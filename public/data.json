@@ -1,7 +1,6 @@
 {
   "title"    : "Histoires d'atelier",
   "subtitle" : "création",
-  "base"     : "p/",
   "categories" : [
     {
       "name"          : "papeterie",
@@ -69,14 +68,18 @@
       "subCategories" : []
     }
   ],
+  "faire-part" : [
+    {
+      "naissance" : {
+        "item1" : "eza"
+      }
+    }
+  ],
   "homePage" : {
     "quote"         : "Chez Histoires d’atelier, nous sommes attachées à l’artisanat, au savoir-faire et au made in France",
     "latelier"      : "L'atelier",
     "latelierdescr" : "Depuis plus de 11 ans, Histoires d’atelier propose ses services en Anjou et dans les Pays de La Loire pour votre mariage ou vos événements, avec à cœur de créer avec vous votre histoire. Nous pouvons créer et installer toute la décoration de votre événement, jusqu’au moindre détail grâce à la création de papeterie décorative. Nous proposons aussi nos services en Set design, pour les entreprises à la recherche d’un professionnel qui saura imaginer un univers autour d’un sujet à photographier.",
     "services"      : "Nos prestations",
-    "papeteriedescr": "Faire-part, invitations, menus, noms de tables, plans de tables, marque-places, cartes de remerciements, livret de cérémonie et panneau de bienvenue signalétique. Retrouvez toute notre papeterie par ici.",
-    "weddingdescr"  : "Décoration, création d’ambiance, sélection d’accessoires, papeterie décorative, coordination, installation, démontage. Nous imaginons avec vous toute la décoration de votre mariage.",
-    "prodescr"      : "Stylisme photo, mise en scène produit, décoration évènementielle. Nous mettons en valeur vos produits à travers des shooting photos sur mesure (set design) et votre image, lors de vos événements d’entreprises (event design).",
     "whatsNew"      : "Notre actualité",
     "followInsta"   : "@histoiresdatelier",
     "followUs"      : "Suivez-nous"
@@ -100,11 +103,6 @@
       "subject" : "À propos du faire-part",
       "message" : "Note that the development build is not optimized. To create a production build, use npm run build. Note that the development build is not optimized. To create a production build, use npm run build."
     }
-  ],
-  "_COMMENT" : [ 
-    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓",
-    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓",
-    "↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓ APPS CONTENT STARTS HERE ↓↓"
   ],
   "contact" : {
     "address"   : "rue du comte de Tourville<br> 49100, ANGERS",

@@ -1,0 +1,118 @@
+/** 
+ * GRID.CSS
+ */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  grid-template-rows: repeat(12, 60px);
+  height: inherit;
+  gap: 10px;
+}
+
+#grid > div {
+  min-height: 120px;
+  grid-column: span 2;
+  grid-row: span 3;
+  opacity: 0.7;
+}
+
+#grid > div:nth-child(1n) {
+  background: lightblue;
+}
+
+#grid > div:nth-child(2n) {
+  background: lightgrey;
+}
+
+#grid > div:nth-child(3n) {
+  background: lightpink;
+}
+
+#grid > div:nth-child(1),
+#grid > div:nth-child(6),
+#grid > div:nth-child(3),
+#grid > div:nth-child(7) {
+  grid-row: span 2;
+}
+
+#grid > div:nth-child(2),
+#grid > div:nth-child(5),
+#grid > div:nth-child(25) {
+  grid-row: span 4;
+}
+
+#grid > div:nth-child(15) {
+  grid-row: span 6;
+  grid-column: span 4;
+}
+
+#grid > div:nth-child(22),
+#grid > div:nth-child(23),
+#grid > div:nth-child(24) {
+  grid-row: span 6;
+}
+
+/* **************** */
+/* #grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+  height: auto;
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 300px;
+  width: inherit;
+}
+.row  >  div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 210px;
+  margin: 5px 10px 5px 0;
+  opacity: .5;
+}
+#grid  >  .row  >  div:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+#grid  >  .row  >  div:nth-child(1n) {
+  background-color: dodgerblue;
+}
+#grid  >  .row  >  div:nth-child(2n) {
+  background-color: lightpink;
+}
+#grid  >  .row  >  div:nth-child(3n) {
+  background-color: lightblue;
+}
+/* ROW 1 */
+/* #grid > .one > div:nth-child(1),
+#grid > .one > div:nth-child(2),
+#grid > .one > div:nth-child(4),
+#grid > .one > div:nth-child(5) {
+  height: 140px;
+} */
+
+/* ROW 2 */
+/* #grid > .two > div:nth-child(3) {
+  width: 430px;
+}
+
+#grid > .two > div:nth-child(5),
+#grid > .two > div:nth-child(6) {
+  height: 140px;
+}
+
+#grid > .three > div:nth-child(5),
+#grid > .three > div:nth-child(6) {
+  height: 140px;
+}
+
+.last {
+  width: auto;
+} */
+
+@media only screen and (max-width: 550px) {}

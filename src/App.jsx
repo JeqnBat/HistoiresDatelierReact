@@ -1,25 +1,27 @@
-import { useStoreActions, useStoreState } from 'easy-peasy'
+import { useStoreActions, useStoreState, useStoreRehydrated } from 'easy-peasy'
 import React, { useEffect } from 'react'
-import { probe } from './scripts/logic.js'
+import { probe } from './scripts/logic'
 import Router from './Router'
 
 const App = () => {
-  const { appData, loaded, responsive } = useStoreState(state => ({
+  const rehydrated = useStoreRehydrated()
+  const { appData, responsive, loaded } = useStoreState(state => ({
     appData: state.appData,
-    loaded: state.loaded,
-    responsive: state.responsive
+    responsive: state.responsive,
+    loaded: state.loaded
   }))
-  const { pickLayout, fetchData } = useStoreActions(actions => ({
+  const { fetchData, pickLayout } = useStoreActions(actions => ({
+    fetchData: actions.fetchData,
     pickLayout: actions.pickLayout,
-    fetchData: actions.fetchData
   }))
+  
   useEffect(() => {
     fetchData()
     pickLayout(probe())
     // eslint-disable-next-line
   }, [])
+
   return (
-    // Factoriser ça en une seule variable tx
     <Router data={appData} responsive={responsive} loaded={loaded} />
   )
 }

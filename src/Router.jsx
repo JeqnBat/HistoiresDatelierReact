@@ -22,14 +22,17 @@ const Router = ({ data, responsive, loaded }) => {
             <Route path='papeterie/*' element={<Papeterie />}>
               <Route path='faire-part/*' element={<FairePart />} />
               <Route path='papeterie-decorative' element={<PapeterieDecorative />} />
+              <Route path='*' element={<h1>404</h1> } />
             </Route>
             <Route path='wedding-design' element={<WeddingDesign />} />
             <Route path='professionnels/*' element={<Pro />}>
               <Route path='set-design' element={<SetDesign />} />
               <Route path='event-design' element={<EventDesign />} />
+              <Route path='*' element={<h1>404</h1> } />
             </Route>
             <Route path='latelier' element={<Atelier />} />
             <Route path='contact' element={<Contact />} />
+            <Route path='*' element={<h1>404</h1> } />
           </Route>
           <Route path='*' element={<h1>404</h1> } />
         </Routes>

@@ -1,4 +1,4 @@
-// Styles for this page are stored in '../index.css'
+// Styles for pages are stored in '../index.css'
 import HomeBg from '../components/HomeBg'
 import BubbleSections from '../components/BubbleSections'
 import SquareSections from '../components/SquareSections'
