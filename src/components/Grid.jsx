@@ -1,19 +1,22 @@
+import { useLocation, Outlet } from 'react-router-dom'
 import '../components/css/grid.css'
 
 const Grid = ({ products }) => {
+  const { pathname } = useLocation()
+  const url = pathname.match(/[^\/]*$/)[0]
+
   return (
-    <section id='wrapper'>
-      <div id='grid'>
-        {products.map((product) => (
-          <div 
-            key={product.id}
-            style={{backgroundImage: `url(${product.img[0]})`}}
-            className={product.highlighted ? '' : 'blur'}
-          > 
-          </div>
-        ))}
-      </div>
-    </section>
+    <div id='grid'  style={url === 'faire-part' ? {display: ''} : {display: 'none'}}>
+      <Outlet />
+      {products.map((product) => (
+        <div 
+          key={product.id}
+          style={{backgroundImage: `url(${product.img[0]})`}}
+          className={product.highlighted ? '' : 'blur'}
+        > 
+        </div>
+      ))}
+    </div>
   )
 }
 

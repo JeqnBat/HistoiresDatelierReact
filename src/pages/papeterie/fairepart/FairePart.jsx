@@ -1,8 +1,8 @@
 import { Outlet } from 'react-router-dom'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useEffect } from 'react'
-import Navigator from '../components/Navigator'
-import Grid from '../components/Grid'
+import Navigator from '../../../components/Navigator'
+import Grid from '../../../components/Grid'
 
 const FairePart = ({ data }) => {
   const { faireParts, loaded } = useStoreState(state => ({
@@ -23,8 +23,11 @@ const FairePart = ({ data }) => {
         <>
           <Navigator products={faireParts} app={data} />
           <h4>Votre faire-part</h4>
-          <Grid products={faireParts} />
-          <Outlet />
+          <section id='wrapper'>
+            {/* TROUVER UNE SOLUTION AUTRE QU UTILISER LE CONTEXTE ICI*/}
+            <Outlet context={faireParts} />
+            <Grid products={faireParts} />
+          </section>
         </>
       )
   } else {

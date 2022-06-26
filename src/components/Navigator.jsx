@@ -1,5 +1,6 @@
 import { useStoreActions } from 'easy-peasy'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import '../components/css/navigator.css'
 
 const Navigator = ({ products, app }) => {
@@ -74,14 +75,12 @@ const Navigator = ({ products, app }) => {
   return (
     <nav id='navigator'>
       {app.navigator.map((el) => (
-        <div 
-          key={el.id} id={el.divID}
-          onClick={(e) => handleClick(e)}
-          className={activeCat[el.divID] ? 'active' : ''}
-        >
-          <i className={el.icon}></i>
-          <span>{el.name}</span>
-        </div>
+        <Link to={el.link} key={el.id}>
+          <div id={el.divID}>
+            <i className={el.icon}></i>
+            <span>{el.name}</span>
+          </div>
+        </Link>
       ))}
     </nav>
   )

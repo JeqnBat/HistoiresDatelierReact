@@ -136,29 +136,40 @@
     ]
   },
   "navigator" : [
-    {
+    { 
       "id"    : 0,
-      "divID" : "mariage",
-      "icon"  : "fa-solid fa-champagne-glasses",
-      "name"  : "Mariage"
+      "divID" : "everything",
+      "icon"  : "fa-solid fa-infinity",
+      "name"  : "Tous",
+      "link"  : ""
     },
     {
       "id"    : 1,
-      "divID" : "naissance",
-      "icon"  : "fa-solid fa-baby-carriage",
-      "name"  : "Naissance"
+      "divID" : "mariage",
+      "icon"  : "fa-solid fa-champagne-glasses",
+      "name"  : "Mariage",
+      "link"  : "mariage"
     },
     {
       "id"    : 2,
-      "divID" : "bapteme",
-      "icon"  : "fa-solid fa-church",
-      "name"  : "Bapteme"
+      "divID" : "naissance",
+      "icon"  : "fa-solid fa-baby-carriage",
+      "name"  : "Naissance",
+      "link"  : "naissance"
     },
     {
       "id"    : 3,
+      "divID" : "bapteme",
+      "icon"  : "fa-solid fa-church",
+      "name"  : "Baptême",
+      "link"  : "bapteme"
+    },
+    {
+      "id"    : 4,
       "divID" : "surmesure",
       "icon"  : "fa-solid fa-compass-drafting",
-      "name"  : "Sur-mesure"
+      "name"  : "Sur-mesure",
+      "link"  : "sur-mesure"
     }
   ]
 }

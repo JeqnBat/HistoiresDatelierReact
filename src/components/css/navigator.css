@@ -12,7 +12,10 @@
   width: 100px;
   z-index: 0;
 }
-#navigator > div {
+#navigator > a {
+  width: inherit;
+}
+#navigator > a > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,17 +24,17 @@
   height: 100px;
   cursor: pointer;
 }
-#navigator > div.active {
+#navigator > a > div.active {
   background: lightgrey;
 }
-#navigator > div:hover {
+#navigator > a > div:hover {
   background: lightgrey;
 }
-#navigator > div > i {
+#navigator > a > div > i {
   font-size: 2rem;
   margin: 15px;
 }
-#navigator > div > span {
+#navigator > a > div > span {
   font-size: 1rem;
 }
 @media only screen and (max-width: 550px) {
