@@ -1,8 +1,13 @@
-import { Outlet } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useEffect } from 'react'
 import Navigator from '../../../components/Navigator'
 import Grid from '../../../components/Grid'
+import Loading from '../../../components/Loading'
+import Mariage from './Mariage'
+import Naissance from './Naissance'
+import Bapteme from './Bapteme'
+import SurMesure from './SurMesure'
 
 const FairePart = ({ data }) => {
   const { faireParts, loaded } = useStoreState(state => ({
@@ -16,22 +21,28 @@ const FairePart = ({ data }) => {
   useEffect(() => {
     setPageName('faire-part')
     fetchFairePartData()
+    // eslint-disable-next-line
   }, [])
 
   if (loaded) {
     return (
-        <>
-          <Navigator products={faireParts} app={data} />
-          <h4>Votre faire-part</h4>
-          <section id='wrapper'>
-            {/* TROUVER UNE SOLUTION AUTRE QU UTILISER LE CONTEXTE ICI*/}
-            <Outlet context={faireParts} />
-            <Grid products={faireParts} />
-          </section>
-        </>
-      )
+      <>
+        <Navigator products={faireParts} app={data} />
+        <h4>Votre faire-part</h4>
+        <section id='wrapper'>
+          <Routes>
+            <Route path='/' element={<Grid products={faireParts} />}>
+              <Route path='mariage' element={<Mariage products={faireParts} />} />
+              <Route path='naissance' element={<Naissance products={faireParts} />} />
+              <Route path='bapteme' element={<Bapteme products={faireParts} />} />
+              <Route path='sur-mesure' element={<SurMesure products={faireParts} />} />
+            </Route>
+          </Routes>
+        </section>
+      </>
+    )
   } else {
-    return <p>loading…</p>
+    return <Loading />
   }
 }
 

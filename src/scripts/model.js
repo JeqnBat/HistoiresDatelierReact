@@ -31,6 +31,7 @@ const model = {
     state.pageName = payload
   }),
   highlightProducts: action((state, payload) => {
+    console.log('kikoo');
     state.fairePart.products = payload
   }),
   // THUNK

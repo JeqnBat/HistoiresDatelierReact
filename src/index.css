@@ -88,7 +88,14 @@ ________________________________________________________ */
 }
 /* 4. PAGES TEMPLATE
 ________________________________________________________ */
-
+/* Loading screen */
+#loading {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100%;
+}
 /* HomePage*/
 main {
 	display: flex;

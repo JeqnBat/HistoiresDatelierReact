@@ -1,13 +1,9 @@
-import { useLocation, Outlet } from 'react-router-dom'
-import '../components/css/grid.css'
+import './css/grid.css'
 
 const Grid = ({ products }) => {
-  const { pathname } = useLocation()
-  const url = pathname.match(/[^\/]*$/)[0]
-
+  console.log('grid');
   return (
-    <div id='grid'  style={url === 'faire-part' ? {display: ''} : {display: 'none'}}>
-      <Outlet />
+    <div id='grid'>
       {products.map((product) => (
         <div 
           key={product.id}

@@ -1,6 +1,9 @@
-const Mariage = () => {
+import Grid from '../../../components/Grid'
+
+const Mariage = ({ products }) => {
+  const filteredItems = products.filter(el => el.category === 'mariage')
   return (
-    <div>Mariage</div>
+    <Grid products={filteredItems} />
   )
 }
 

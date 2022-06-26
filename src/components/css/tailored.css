@@ -1,0 +1,16 @@
+/**
+ * TAILORED.CSS
+ */
+#tailored {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 279px);
+}
+#tailored > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}

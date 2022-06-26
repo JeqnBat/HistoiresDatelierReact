@@ -1,6 +1,8 @@
+import Tailored from '../../../components/Tailored'
+
 const SurMesure = () => {
   return (
-    <div>SurMesure</div>
+    <Tailored />
   )
 }
 
