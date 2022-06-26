@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import Navigator from '../components/Navigator'
 import Grid from '../components/Grid'
 
-const FairePart = () => {
+const FairePart = ({ data }) => {
   const { faireParts, loaded } = useStoreState(state => ({
     faireParts: state.fairePart.products,
     loaded: state.loaded.fairePart
@@ -21,7 +21,7 @@ const FairePart = () => {
   if (loaded) {
     return (
         <>
-          <Navigator products={faireParts} />
+          <Navigator products={faireParts} app={data} />
           <h4>Votre faire-part</h4>
           <Grid products={faireParts} />
           <Outlet />

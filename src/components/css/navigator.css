@@ -21,16 +21,18 @@
   height: 100px;
   cursor: pointer;
 }
+#navigator > div.active {
+  background: lightgrey;
+}
 #navigator > div:hover {
   background: lightgrey;
 }
 #navigator > div > i {
-  font-size: 2.25rem;
+  font-size: 2rem;
   margin: 15px;
 }
 #navigator > div > span {
   font-size: 1rem;
 }
-
 @media only screen and (max-width: 550px) {
 }

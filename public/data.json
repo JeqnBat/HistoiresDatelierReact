@@ -134,5 +134,34 @@
       "CONTACT",
       "contact@histoiresdatelier.com"
     ]
-  }
+  },
+  "navigator" : [
+    {
+      "id"    : 0,
+      "divID" : "mariage",
+      "icon"  : "fa-solid fa-champagne-glasses",
+      "name"  : "Mariage"
+    },
+    {
+      "id"    : 1,
+      "divID" : "naissance",
+      "icon"  : "fa-solid fa-baby-carriage",
+      "name"  : "Naissance"
+    },
+    {
+      "id"    : 2,
+      "divID" : "bapteme",
+      "icon"  : "fa-solid fa-church",
+      "name"  : "Bapteme"
+    },
+    {
+      "id"    : 3,
+      "divID" : "surmesure",
+      "icon"  : "fa-solid fa-compass-drafting",
+      "name"  : "Sur-mesure"
+    }
+  ]
 }
+
+
+

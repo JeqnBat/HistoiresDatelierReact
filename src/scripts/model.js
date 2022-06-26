@@ -31,7 +31,6 @@ const model = {
     state.pageName = payload
   }),
   highlightProducts: action((state, payload) => {
-    console.log(payload);
     state.fairePart.products = payload
   }),
   // THUNK
