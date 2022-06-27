@@ -1,0 +1,548 @@
+{
+  "products" : [
+    {
+      "id"   : "0",
+      "name" : "article 1",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/naissance/1.webp",
+        "/img/products/fairepart/naissance/2.webp",
+        "/img/products/fairepart/naissance/3.webp",
+        "/img/products/fairepart/naissance/4.webp",
+        "/img/products/fairepart/naissance/5.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "1",
+      "name" : "article 2",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/naissance/2.webp",
+        "/img/products/fairepart/naissance/6.webp",
+        "/img/products/fairepart/naissance/7.webp",
+        "/img/products/fairepart/naissance/8.webp",
+        "/img/products/fairepart/naissance/1.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "2",
+      "name" : "article 3",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/naissance/3.webp",
+        "/img/products/fairepart/naissance/1.webp",
+        "/img/products/fairepart/naissance/2.webp",
+        "/img/products/fairepart/naissance/5.webp",
+        "/img/products/fairepart/naissance/4.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "3",
+      "name" : "article 4",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/naissance/4.webp",
+        "/img/products/fairepart/naissance/7.webp",
+        "/img/products/fairepart/naissance/8.webp",
+        "/img/products/fairepart/naissance/6.webp",
+        "/img/products/fairepart/naissance/5.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "4",
+      "name" : "article 5",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/naissance/5.webp",
+        "/img/products/fairepart/naissance/2.webp",
+        "/img/products/fairepart/naissance/3.webp",
+        "/img/products/fairepart/naissance/4.webp",
+        "/img/products/fairepart/naissance/6.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "5",
+      "name" : "article 6",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/bapteme/6.webp",
+        "/img/products/fairepart/bapteme/5.webp",
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/3.webp",
+        "/img/products/fairepart/bapteme/2.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "6",
+      "name" : "article 7",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/bapteme/7.webp",
+        "/img/products/fairepart/bapteme/5.webp",
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/3.webp",
+        "/img/products/fairepart/bapteme/2.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "7",
+      "name" : "article 8",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/bapteme/8.webp",
+        "/img/products/fairepart/bapteme/5.webp",
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/3.webp",
+        "/img/products/fairepart/bapteme/2.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "8",
+      "name" : "article 9",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/bapteme/2.webp",
+        "/img/products/fairepart/bapteme/5.webp",
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/3.webp",
+        "/img/products/fairepart/bapteme/2.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "9",
+      "name" : "article 10",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/5.webp",
+        "/img/products/fairepart/bapteme/4.webp",
+        "/img/products/fairepart/bapteme/3.webp",
+        "/img/products/fairepart/bapteme/2.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "10",
+      "name" : "article 11",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "11",
+      "name" : "article 12",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "12",
+      "name" : "article 13",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "13",
+      "name" : "article 14",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "14",
+      "name" : "article 15",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "15",
+      "name" : "article 16",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "16",
+      "name" : "article 17",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/3.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "17",
+      "name" : "article 18",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "18",
+      "name" : "article 19",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "19",
+      "name" : "article 20",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "20",
+      "name" : "article 21",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "21",
+      "name" : "article 22",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "22",
+      "name" : "article 23",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/3.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "23",
+      "name" : "article 24",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "24",
+      "name" : "article 25",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/4.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "25",
+      "name" : "article 26",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "26",
+      "name" : "article 27",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "27",
+      "name" : "article 28",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "28",
+      "name" : "article 29",
+      "category": "naissance",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "29",
+      "name" : "article 30",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "30",
+      "name" : "article 31",
+      "category": "mariage",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    },
+    {
+      "id"   : "31",
+      "name" : "article 32",
+      "category": "bapteme",
+      "format": "8cm x 11cm",
+      "papier": "Old Mill",
+      "price": "5€",
+      "imageUrl": [
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      "highlighted" : true,
+      "selected"    : false
+    }
+  ]
+}

@@ -9,6 +9,9 @@
   width: inherit;
   gap: 10px;
 }
+.hide {
+  display: none!important;
+}
 #grid > div {
   position: relative;
   display: flex;
@@ -21,7 +24,11 @@
   background-size: cover!important;
   background-position: center!important;
   background-repeat: no-repeat!important;
-  cursor: pointer;
+}
+#grid > div > a {
+  height: 100%;
+  width: 100%;
+  z-index: 5;
 }
 #grid > div::after {
   position: absolute;

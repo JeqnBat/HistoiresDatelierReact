@@ -1,4 +1,6 @@
+import { Outlet } from 'react-router-dom'
 import { useStoreActions } from 'easy-peasy'
+import React, { useEffect } from 'react'
 
 const Bapteme = ({ products }) => {
   const { highlightProducts } = useStoreActions(actions => actions)
@@ -11,12 +13,14 @@ const Bapteme = ({ products }) => {
         .filter((el) => el.category !== 'bapteme')
         .map(({highlighted, ...rest}) => ({highlighted: false, ...rest}))
   let newArr = [...stay, ...update]
-  console.log(stay, update);
 
+  useEffect(() => {
     highlightProducts(newArr.sort((a, b) => a.id - b.id))
+    // eslint-disable-next-line
+  }, [])
 
   return (
-    <div>kioko</div>
+    <Outlet />
   )
 }
 

@@ -1,0 +1,42 @@
+/**
+ * ITEM.CSS
+ */
+#item {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
+}
+#item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: inherit;
+}
+#item > div > div:first-child {
+  height: 394px;
+  width: 394px;
+  background-position: center!important;
+  background-size: cover!important;
+  cursor: pointer;
+}
+#item > div > div:not(first-child) {
+  width: 72px;
+  height: 72px;
+  background-position: center!important;
+  background-size: cover!important;
+  cursor: pointer;
+  border: 3px solid var(--primary);
+}
+#item > div > div:first-child:hover {
+  border: 3px solid var(--primary);
+}
+#item > div > div:hover {
+  border: 3px solid var(--secondary);
+}
+@media only screen and (max-width: 550px) {
+ 
+}

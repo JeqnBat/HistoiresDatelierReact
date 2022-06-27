@@ -1,9 +1,26 @@
-import Grid from '../../../components/Grid'
+import { Outlet } from 'react-router-dom'
+import { useStoreActions } from 'easy-peasy'
+import React, { useEffect } from 'react'
 
 const Naissance = ({ products }) => {
-  const filteredItems = products.filter(el => el.category === 'naissance')
+  const { highlightProducts } = useStoreActions(actions => actions)
+  let stay =
+    products
+      .filter((el) => el.category === 'naissance')
+      .map(({highlighted, ...rest}) => ({highlighted: true, ...rest}))
+  let update =
+      products
+        .filter((el) => el.category !== 'naissance')
+        .map(({highlighted, ...rest}) => ({highlighted: false, ...rest}))
+  let newArr = [...stay, ...update]
+
+  useEffect(() => {
+    highlightProducts(newArr.sort((a, b) => a.id - b.id))
+    // eslint-disable-next-line
+  }, [])
+
   return (
-    <Grid products={filteredItems} />
+    <Outlet />
   )
 }
 

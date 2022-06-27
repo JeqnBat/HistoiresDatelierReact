@@ -7,8 +7,9 @@ const model = {
   responsive: null,
   loaded: {
     homePage: false,
-    fairePart: false
+    fairePart: false,
   },
+  itemView: false,
   pageName: null,
   appData: [],
   fairePart: [],
@@ -31,13 +32,15 @@ const model = {
     state.pageName = payload
   }),
   highlightProducts: action((state, payload) => {
-    console.log('kikoo');
     state.fairePart.products = payload
+  }),
+  setItemView: action((state, payload) => {
+    state.itemView = payload
   }),
   // THUNK
   fetchAppData: thunk(async actions => {
     try {
-      const req = await fetch('/data.json')
+      const req = await fetch('/appData.json')
       const res = await req.json()
       actions.loadAppData(res)
     } catch(e) {
@@ -46,7 +49,7 @@ const model = {
   }),
   fetchFairePartData: thunk(async actions => {
     try {
-      const req = await fetch('/fairePart.json')
+      const req = await fetch('/products.json')
       const res = await req.json()
       actions.loadFairePartData(res)
     } catch(e) {

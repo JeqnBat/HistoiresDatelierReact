@@ -111,6 +111,7 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
 	width: inherit;
 	margin: 0;
 	padding: 0;

@@ -1,7 +1,7 @@
 /**
- * navigator.CSS
+ * controller.CSS
  */
-#navigator {
+#controller {
   position: fixed;
   left: 0;
   top: calc((100vh - 400px) / 2);
@@ -12,10 +12,10 @@
   width: 100px;
   z-index: 0;
 }
-#navigator > a {
+#controller > a {
   width: inherit;
 }
-#navigator > a > div {
+#controller > a > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,17 +24,17 @@
   height: 100px;
   cursor: pointer;
 }
-#navigator > a > div.active {
+#controller > a > div.active {
   background: lightgrey;
 }
-#navigator > a > div:hover {
+#controller > a > div:hover {
   background: lightgrey;
 }
-#navigator > a > div > i {
+#controller > a > div > i {
   font-size: 2rem;
   margin: 15px;
 }
-#navigator > a > div > span {
+#controller > a > div > span {
   font-size: 1rem;
 }
 @media only screen and (max-width: 550px) {

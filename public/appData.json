@@ -135,7 +135,7 @@
       "contact@histoiresdatelier.com"
     ]
   },
-  "navigator" : [
+  "controller" : [
     { 
       "id"    : 0,
       "divID" : "everything",
@@ -173,6 +173,3 @@
     }
   ]
 }
-
-
-
