@@ -122,4 +122,10 @@ main {
 		width: auto;
 		margin: 20px;
 	}
+	#wrapper > div:first-of-type {
+		width: 100%;
+	}
+	#wrapper > div:nth-child(3) {
+		display: none;
+	}
 }

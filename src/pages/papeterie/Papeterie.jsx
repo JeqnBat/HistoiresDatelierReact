@@ -1,8 +1,12 @@
-import { Outlet } from "react-router-dom"
+import { Outlet } from 'react-router-dom'
+
 
 const Papeterie = () => {
   return (
-    <Outlet />
+    <>
+      <span style={{width: '100%', fontSize: '1rem'}}>breadscrum incoming : papeterie</span>
+      <Outlet />
+    </>
   )
 }
 

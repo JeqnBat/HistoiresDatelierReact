@@ -22,7 +22,7 @@ const Router = ({ data, responsive, loaded }) => {
             <Route index element ={<HomePage feed={data} responsive={responsive} />} />
             {/* PAPETERIE 
             ________________________________________________________ */}
-            <Route path='papeterie/*' element={<Papeterie feed={data} layout={responsive} />}>
+            <Route path='papeterie' element={<Papeterie feed={data} layout={responsive} />} >
               <Route path='faire-part/*' element={<FairePart layout={responsive} data={data} />} />
               <Route path='papeterie-decorative' element={<PapeterieDecorative feed={data} layout={responsive} />} />
               <Route path='*' element={<h1>404</h1> } />
@@ -31,7 +31,7 @@ const Router = ({ data, responsive, loaded }) => {
             ________________________________________________________ */}
             <Route path='wedding-design' element={<WeddingDesign />} />
             {/* PROFESSIONNELS */}
-            <Route path='professionnels/*' element={<Pro />}>
+            <Route path='professionnels' element={<Pro />}>
               <Route path='set-design' element={<SetDesign />} />
               <Route path='event-design' element={<EventDesign />} />
               <Route path='*' element={<h1>404</h1> } />

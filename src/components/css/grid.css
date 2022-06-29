@@ -74,4 +74,17 @@
 #grid > div:nth-child(31) {
   grid-row: span 6;
 }
-@media only screen and (max-width: 550px) {}
+@media only screen and (max-width: 550px) {
+  #grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: none;
+    grid-template-rows: none;
+  }
+  #grid > div {
+    min-height: 180px;
+    width: calc((100% / 2) - 5px);
+  }
+}

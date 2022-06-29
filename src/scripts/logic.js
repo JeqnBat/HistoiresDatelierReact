@@ -30,5 +30,17 @@ const sortProducts = (products, category) => {
   
   return newArr
 }
+// Smooth transition to the viewport's top
+const smoothUp = () => {
+  if (window.scrollY > 100) {
+    window.scroll({
+      top: 0,
+      behavior: 'smooth'
+    })
+  } else {
+    return
+  }
+}
 
-export { paragraphs, probe, sortProducts }
+
+export { paragraphs, probe, sortProducts, smoothUp }

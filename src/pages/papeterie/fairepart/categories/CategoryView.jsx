@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import { useStoreActions } from 'easy-peasy'
-import { sortProducts } from '../../../../scripts/logic'
+import { smoothUp, sortProducts } from '../../../../scripts/logic'
 import Mariage from './Mariage'
 import Naissance from './Naissance'
 import Bapteme from './Bapteme'
@@ -20,12 +20,7 @@ const CategoryView = ({ products }) => {
     // Else display content
     } else if (category === 'sur-mesure' || category === 'conseils') {
       resetArr = products.map(({highlighted, ...rest}) => ({highlighted: true, ...rest}))
-      if (window.scrollY > 100) {
-        window.scroll({
-          top: 0,
-          behavior: 'smooth'
-        })
-      }
+      smoothUp()
     } else {
       return
     }

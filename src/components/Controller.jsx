@@ -14,7 +14,7 @@ const Controller = ({ data }) => {
 
   return (
     <nav id='controller' >
-      <span onClick={() => handleClick()}>Filtres
+      <span onClick={() => handleClick()}><div>Filtres</div>
         <i className={toggleMenu ? 'fa-solid fa-angle-left' : 'fa-solid fa-angle-right'}></i>
       </span>
       <div className={toggleMenu ? '' : 'show-menu'}>

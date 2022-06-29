@@ -1,17 +1,11 @@
-import { useParams } from 'react-router-dom'
 import React, { useEffect } from 'react'
+import { useParams } from 'react-router-dom'
+import { smoothUp } from '../../../../../scripts/logic'
 import Item from  '../../../../../components/Item'
 
 const ItemView = ({ products }) => {
   useEffect(() => {
-    if (window.scrollY > 100) {
-      window.scroll({
-        top: 0,
-        behavior: 'smooth'
-      })
-    } else {
-      return
-    }
+    smoothUp()
   }, [])
 
   let { id } = useParams('id')

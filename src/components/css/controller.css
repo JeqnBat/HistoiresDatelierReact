@@ -53,4 +53,59 @@
   font-size: 1rem;
 }
 @media only screen and (max-width: 550px) {
+  #controller {
+    width: 100%;
+    order: 2;
+    bottom: 0;
+    z-index: 10;
+    padding-bottom: 10px;
+    background: var(--primary);
+    border-top: 1px solid rgb(0, 0, 0, .15);
+  }
+  #controller > span:first-child {
+    position: relative;
+    flex-direction: column;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 0, 0, .25);
+    background: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    transform: translateY(-25px);
+    z-index: 20;
+  }
+  #controller > span > div {
+    display: none;
+  }
+  #controller > span > i {
+    transform: rotate(90deg);
+  }
+  #controller > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: auto;
+    max-height: 0;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: max-height .4s ease-in-out;
+  }
+  #controller > div.show-menu {
+    max-height: 500px;
+    transform: none;
+  }
+  #controller > div > a {
+    width: 30%;
+  }
+  #controller > div > a > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+    height: 90px;
+}
 }
