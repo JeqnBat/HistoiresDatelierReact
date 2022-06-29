@@ -16,10 +16,10 @@ const Router = ({ data, responsive, loaded }) => {
     return (
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout feed={data} layout={responsive} />}>
+          <Route path='/' element={<Layout feed={data} responsive={responsive} />}>
             {/* HOME 
             ________________________________________________________ */}
-            <Route index element ={<HomePage feed={data} layout={responsive} />} />
+            <Route index element ={<HomePage feed={data} responsive={responsive} />} />
             {/* PAPETERIE 
             ________________________________________________________ */}
             <Route path='papeterie/*' element={<Papeterie feed={data} layout={responsive} />}>

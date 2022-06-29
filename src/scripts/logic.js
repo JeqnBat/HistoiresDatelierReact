@@ -16,5 +16,19 @@ const paragraphs = (string) => {
     <p key={idx}>{e}</p>
   ))
 }
+// Sort products Array by category
+const sortProducts = (products, category) => {
+  let stay =
+    products
+      .filter((el) => el.category === category)
+      .map(({highlighted, ...rest}) => ({highlighted: true, ...rest}))
+  let update =
+    products
+      .filter((el) => el.category !== category)
+      .map(({highlighted, ...rest}) => ({highlighted: false, ...rest}))
+  let newArr = [...stay, ...update]
+  
+  return newArr
+}
 
-export { paragraphs, probe }
+export { paragraphs, probe, sortProducts }

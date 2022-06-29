@@ -9,6 +9,7 @@ const Quote = ({ data }) => {
       <h2>{data.homePage.quote}</h2>
       <span>”</span>
     </section>
+    <div className='spacinho'></div>
     <section id="descr">
       <h1>{data.homePage.latelier}</h1>
       <div>{paragraphs(data.homePage.latelierdescr)}</div>

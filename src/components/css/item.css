@@ -15,15 +15,17 @@
   flex-wrap: wrap;
   width: 400px;
   height: inherit;
+  margin: 0 10px;
 }
-#item > div > div:first-child {
+/* right section */
+#item > div.gallery > div:first-child {
   height: 394px;
   width: 394px;
   background-position: center!important;
   background-size: cover!important;
   cursor: pointer;
 }
-#item > div > div:not(first-child) {
+#item > div.gallery > div:not(first-child) {
   width: 72px;
   height: 72px;
   background-position: center!important;
@@ -31,12 +33,37 @@
   cursor: pointer;
   border: 3px solid var(--primary);
 }
-#item > div > div:first-child:hover {
-  border: 3px solid var(--primary);
-}
-#item > div > div:hover {
+#item > div.gallery > div.selected {
   border: 3px solid var(--secondary);
 }
+#item > div.gallery > div:first-child:hover {
+  border: 3px solid var(--primary);
+}
+#item > div.gallery > div:hover {
+  border: 3px solid var(--secondary);
+}
+/* left section */
+#item > div > p {
+  width: 100%;
+  text-align: center;
+}
+#item > div > div#accessories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#item > div > div#accessories > div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+}
+#item > div > div#accessories > div > div:first-child {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background: lightblue;
+  margin-bottom: 10px;
+}
 @media only screen and (max-width: 550px) {
- 
 }

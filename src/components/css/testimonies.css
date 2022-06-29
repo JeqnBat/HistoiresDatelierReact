@@ -1,37 +1,37 @@
 /**
  * TESTIMONIES.CSS
  */
-#testimonies-wrapper {
+#testimonies {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: inherit;
+  width: 1100px;
 }
-#testimonies-wrapper > div:first-child {
+#testimonies > div:first-child {
   width: 100%;
   margin-bottom: 10px;
 }
-#testimonies-wrapper > div:first-child > h3 {
+#testimonies > div:first-child > h3 {
   padding: 15px;
   border-left: 2px solid var(--secondary);
 }
-#testimonies-wrapper > div:nth-child(2) {
+#testimonies > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   width: 220px;
 }
 /* Left column spans */
-#testimonies-wrapper > div:nth-child(2) > span {
+#testimonies > div:nth-child(2) > span {
   margin: 5px;
   font-size: 1.2rem;
 }
 /* Author span */
-#testimonies-wrapper > div:nth-child(2) > span:first-child {
+#testimonies > div:nth-child(2) > span:first-child {
   font-size: 2.2rem;
   font-family: var(--kalinsha);
 }
 /* Block quote */
-#testimonies-wrapper > div:nth-child(3) {
+#testimonies > div:nth-child(3) {
   width: 600px;
   line-height: 40px;
   height: 220px;
@@ -40,39 +40,39 @@
   font-style: italic;
 }
 /* Right arrow */
-#testimonies-wrapper > div:nth-child(4) {
+#testimonies > div:nth-child(4) {
   width: 30px;
   height: 30px;
   align-self: center;
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
-#testimonies-wrapper > div:nth-child(4):hover {
+#testimonies > div:nth-child(4):hover {
   transform: translateX(-4px);
 }
 /* Left arrow */
-#testimonies-wrapper > div:nth-child(5) {
+#testimonies > div:nth-child(5) {
   width: 30px;
   height: 30px;
   align-self: center;
   transition: all .1s ease-in-out;
   cursor: pointer;
 }
-#testimonies-wrapper > div:nth-child(5):hover {
+#testimonies > div:nth-child(5):hover {
   transform: translateX(4px);
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 550px) {
-  #testimonies-wrapper {
+  #testimonies {
     width: 100%;
   }
-  #testimonies-wrapper > div:first-child {
+  #testimonies > div:first-child {
     margin-bottom: 0;
   }
-  #testimonies-wrapper > div:nth-child(2) > span {
+  #testimonies > div:nth-child(2) > span {
     letter-spacing: inherit;
   }
-  #testimonies-wrapper > div:nth-child(3) {
+  #testimonies > div:nth-child(3) {
     height: 300px;
   }
 }

@@ -6,12 +6,11 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 200px;
-  width: inherit;
+  width: var(--section-width);
   transition: all .3s ease-in-out;
 }
 header.small-header {
-  height: 142px;
-  margin-top: -20px;
+  height: 145px;
 }
 #home-spacer {
   margin: 0;
@@ -23,6 +22,7 @@ header.small-header {
 @media only screen and (max-width: 550px) {
   header {
     flex-wrap: wrap;
+    justify-content: center;
     height: auto;
   }
   #lang {

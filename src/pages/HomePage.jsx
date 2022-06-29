@@ -11,18 +11,17 @@ import FollowUs from '../components/FollowUs'
 import { useStoreActions } from 'easy-peasy'
 import { useEffect } from 'react'
 
-const HomePage = ({ feed, layout}) => {
+const HomePage = ({ feed, responsive}) => {
   const { setPageName } = useStoreActions(actions => actions)
   useEffect(() => {
     setPageName('home-page')
   }, [])
 
-  if (layout) {
+  if (responsive) {
     return (
       <>
         <div className='spacinho'></div>
         <BubbleSections data={feed} />
-        <div className='spacinho'></div>
         <Quote data={feed} />
         <div className='spacinho'></div>
         <SquareSections data={feed} />
@@ -40,12 +39,15 @@ const HomePage = ({ feed, layout}) => {
       <>
         <HomeBg />
         <div id='home-spacer'></div>
+        <div className='spacinho'></div>
         <Quote data={feed} />
+        <div className='spacinho'></div>
         <Services data={feed} />
         <div className='spacer'></div>
         <Values data={feed} />
         <div className='spacer'></div>
         <Testimonies data={feed} />
+        <div className='spacinho'></div>
         <Whatsnew data={feed} />
         <div className='spacer'></div>
         <FollowUs data={feed} />

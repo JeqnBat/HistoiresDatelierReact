@@ -19,7 +19,7 @@ const Testimonies = ({ data }) => {
     }
   }
   return (
-    <section id="testimonies-wrapper">
+    <section id="testimonies">
       <div><h3>Vos témoignages</h3></div>
       <div>
         <span>{data.testimonies[index].author}</span>

@@ -9,7 +9,6 @@ const model = {
     homePage: false,
     fairePart: false,
   },
-  itemView: false,
   pageName: null,
   appData: [],
   fairePart: [],

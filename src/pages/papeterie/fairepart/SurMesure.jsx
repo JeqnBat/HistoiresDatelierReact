@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 
 const SurMesure = () => {
   useEffect(() => {
-    if (window.scrollY > 0) {
+    if (window.scrollY > 100) {
       window.scroll({
         top: 0,
         behavior: 'smooth'

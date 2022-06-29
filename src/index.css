@@ -21,6 +21,7 @@ ________________________________________________________ */
   --secondary: #282a2c;
 	--kalinsha: 'kallinsharegular';
 	--arnopro: 'ArnoPro';
+	--section-width: 1100px;
 }
 body {
 	background-color: var(--primary);
@@ -96,30 +97,29 @@ ________________________________________________________ */
 	height: 100vh;
 	width: 100%;
 }
-/* HomePage*/
 main {
 	display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-	padding: 20px;
-  width: 1100px;
+	flex-wrap: wrap;
+  width: 100%;
   margin: 0 auto;
 }
-/* FairePart */
 #wrapper {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-start;
 	flex-wrap: wrap;
-	width: inherit;
+	width: 100vw;
 	margin: 0;
 	padding: 0;
 }
-
+#wrapper > div:first-of-type {
+	width: 1100px;
+}
 @media only screen and (max-width: 550px) {
-	/* HomePage */
 	main {
 		width: auto;
+		margin: 20px;
 	}
 }

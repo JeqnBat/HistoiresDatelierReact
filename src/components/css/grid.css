@@ -5,7 +5,6 @@
   display: grid;
   grid-template-columns: repeat(10, auto);
   grid-template-rows: repeat(12, 60px);
-  height: inherit;
   width: inherit;
   gap: 10px;
 }

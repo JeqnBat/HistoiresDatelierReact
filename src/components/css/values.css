@@ -7,7 +7,7 @@
   align-items: center;
   flex-wrap: wrap;
   text-align: center;
-  width: inherit;
+  width: var(--section-width);
 }
 #values > h1 {
   width: 100%;

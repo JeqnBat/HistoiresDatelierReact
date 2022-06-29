@@ -1,0 +1,80 @@
+/**
+ * ADVICE.CSS
+ */
+#advice-section {
+  position: relative;
+  display: flex;
+  min-height: 223px;
+  transition: all .2s ease-in-out;
+}
+#advice-section > div {
+  position: absolute;
+  inset: 0;
+}
+#advice-section > div  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+#advice-section > div.fade-in {
+  opacity: 1;
+}
+#advice-section > div > div {
+  padding: 10px;
+}
+#advice-section > div > div:first-child {
+  font-size: 6rem;
+  width: 5%;
+}
+#advice-section > div > div:nth-child(2) {
+  font-size: 1.75rem;
+  position: relative;
+  width: 40%;
+}
+#advice-section > div > div:nth-child(3) {
+  width: 50%;
+}
+#advice-section-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#advice-section-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  line-height: 0;
+  margin: 0 5px;
+  font-size: 1rem;
+  color: var(--primary);
+  background: var(--secondary);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+#advice-section-menu > div.active {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+#advice-section-menu > div:hover {
+  opacity: .9;
+}
+
+@media only screen and (max-width: 550px) {
+}
+
+/* Entry animation */
+@-webkit-keyframes fade-in {
+  0% { opacity: 0; }
+  .1% { opacity: 1; }
+  100% { opacity: 1; }
+}
+@keyframes fade-in {
+  0% { opacity: 0; }
+  .1% { opacity: 1; }
+  100% { opacity: 1; }
+}

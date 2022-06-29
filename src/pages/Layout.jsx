@@ -4,10 +4,10 @@ import Footer from '../components/Footer'
 import { Outlet } from 'react-router-dom'
 import { useStoreState } from 'easy-peasy'
 
-const Layout = ({ feed, layout }) => {
+const Layout = ({ feed, responsive }) => {
   const { pageName } = useStoreState(state => state)
 
-  if (layout) {
+  if (responsive) {
     return (
       <>
         <main>
@@ -22,6 +22,7 @@ const Layout = ({ feed, layout }) => {
       <>
         <main>
           <HeaderD data={feed} pageName={pageName} />
+          <div style={{width: '100px'}}></div>
           <Outlet />
         </main>
         <Footer data={feed} />

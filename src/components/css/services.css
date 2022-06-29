@@ -2,7 +2,7 @@
  * SERVICES.CSS
  */
 #services {
-  width: inherit;
+  width: var(--section-width);
 }
 #services > h1 {
   text-align: center;
