@@ -6,7 +6,7 @@ const Controller = ({ data }) => {
   const [toggleMenu, setToggleMenu] = useState(false)
   const location = useLocation()
   const url = location.pathname
-  const categories = ['mariage', 'naissance', 'bapteme', 'sur-mesure']
+  const categories = ['mariage', 'naissance', 'bapteme', 'sur-mesure', 'conseils']
 
   const handleClick = () => {
     setToggleMenu(!toggleMenu)

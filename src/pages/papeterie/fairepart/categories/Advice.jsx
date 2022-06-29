@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useStoreState } from 'easy-peasy'
-import '../../../components/css/advice.css'
+import '../../../../components/css/advice.css'
 
 const Advice = () => {
   const [active, setActive] = useState(0)
@@ -10,17 +10,6 @@ const Advice = () => {
   const handleClick = (idx) => {
     setActive(idx)
   }
-
-  useEffect(() => {
-    if (window.scrollY > 100) {
-      window.scroll({
-        top: 0,
-        behavior: 'smooth'
-      })
-    } else {
-      return
-    }
-  }, [])
 
   return (
     <>
