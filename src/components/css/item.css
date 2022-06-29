@@ -17,7 +17,7 @@
   height: inherit;
   margin: 0 10px;
 }
-/* right section */
+/* left section */
 #item > div.gallery > div:first-child {
   height: 394px;
   width: 394px;
@@ -42,7 +42,7 @@
 #item > div.gallery > div:hover {
   border: 3px solid var(--secondary);
 }
-/* left section */
+/* right section */
 #item > div > p {
   width: 100%;
   text-align: center;
@@ -66,4 +66,22 @@
   margin-bottom: 10px;
 }
 @media only screen and (max-width: 550px) {
+  #item {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  #item > div {
+    width: inherit;
+    height: auto;
+    margin: 0;
+  }
+  #item > div.gallery > div:first-child {
+    /* 1:1 aspect ratio trick */
+    height: calc(100vw - 40px);
+    width: calc(100vw - 40px);
+  }
+  #item > div.gallery > div:not(first-child) {
+    width: 60px;
+    height: 60px;
+  }
 }

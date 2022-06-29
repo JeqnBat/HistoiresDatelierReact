@@ -12,7 +12,7 @@
   transform: translateX(0);
   transition: all .2s ease-in-out
 }
-#controller > div.show-menu {
+#controller > div.hide-menu {
   transform: translateX(-90px);
 }
 #controller > span {
@@ -78,7 +78,7 @@
     display: none;
   }
   #controller > span > i {
-    transform: rotate(90deg);
+    transform: rotate(-90deg);
   }
   #controller > div {
     position: relative;
@@ -88,13 +88,13 @@
     flex-wrap: wrap;
     margin: 0 auto;
     width: auto;
-    max-height: 0;
+    max-height: 300px;
     margin-top: -30px;
     overflow: hidden;
     transition: max-height .4s ease-in-out;
   }
-  #controller > div.show-menu {
-    max-height: 500px;
+  #controller > div.hide-menu {
+    max-height: 0;
     transform: none;
   }
   #controller > div > a {

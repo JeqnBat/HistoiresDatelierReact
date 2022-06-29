@@ -65,6 +65,37 @@
 }
 
 @media only screen and (max-width: 550px) {
+  /* Outside of Scope careful */
+  main > div.spacer {
+    display: none;
+  }
+  #wrapper > div > div.spacinho:first-child {
+    display: none;
+  }
+  /* */
+  #advice-section {
+    height: 300px;
+  }
+  #advice-section > div {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+  #advice-section > div > div:first-child {
+    font-size: 4rem;
+    text-align: center;
+    width: 8%;
+  }
+  #advice-section > div > div:nth-child(2) {
+    line-height: 4rem;
+    font-size: 1.25rem;
+    position: relative;
+    width: 80%;
+  }
+  #advice-section > div > div:nth-child(3) {
+    font-size: 1.25rem;
+    width: 100%;
+    height: auto;
+  }
 }
 
 /* Entry animation */

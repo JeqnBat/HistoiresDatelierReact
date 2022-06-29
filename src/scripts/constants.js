@@ -134,7 +134,7 @@ const appData =
     },
     {
       id: "5",
-      title: "Quand devez-vous contacter le créateur ?",
+      title: "Quand contacter le créateur ?",
       body: "Dans l'ideal, 2 à 3 mois avant l'envoi pour prendre le temps de valider chaque étape de creation. Votre histoire est la source d'inspiration d'histoires datelier. Un certain nombre d'emotions s'exprime à travers elle et notre role est de les retranscrire sur des papiers de qualité, de belles textures et dans des nuances de couleurs tres raffinées."
     }
   ],
