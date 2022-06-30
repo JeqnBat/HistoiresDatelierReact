@@ -16,7 +16,8 @@ const CategoryView = ({ products }) => {
     let resetArr
     // If category matches products; filter grid /w product category
     if (category === 'mariage' || category === 'naissance' || category === 'bapteme') { 
-      resetArr = sortProducts(products, category).sort((a, b) => a.id - b.id)
+      resetArr = sortProducts(products, category)
+      //.sort((a, b) => a.id - b.id)
     // Else display content
     } else if (category === 'sur-mesure' || category === 'conseils') {
       resetArr = products.map(({highlighted, ...rest}) => ({highlighted: true, ...rest}))

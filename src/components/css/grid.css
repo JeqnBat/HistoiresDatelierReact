@@ -41,7 +41,7 @@
   opacity: .8;
 }
 #grid > div.blur::after {
-  opacity: .85;
+  opacity: .7;
 }
 #grid > div.blur {
   pointer-events: none;

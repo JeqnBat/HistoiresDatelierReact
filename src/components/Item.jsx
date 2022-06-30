@@ -29,10 +29,16 @@ const Item = ({ details }) => {
           >
           </div>
         ))}
-      
       </div>
       <div>
-        <p>{details.name} - {details.price}</p> 
+        <div id='item-header'>
+          <div>
+            {details.name}
+          </div>
+          <div>
+            {details.price}
+          </div>
+        </div>
         <p>{details.category}</p>
         <ul>
           <li>{details.format}</li>
@@ -40,15 +46,15 @@ const Item = ({ details }) => {
         </ul>
         <div id="accessories">
           <div>
-            <div></div>
+            <div><i className="fa-solid fa-envelope-open"></i></div>
             <div>Enveloppes</div>
           </div>
           <div>
-            <div></div>
+            <div><i className="fa-solid fa-sun"></i></div>
             <div>Fleurs</div>
           </div>
           <div>
-            <div></div>
+            <div><i className="fa-solid fa-ribbon"></i></div>
             <div>Rubans</div>
           </div>
         </div>

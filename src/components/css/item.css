@@ -17,15 +17,30 @@
   height: inherit;
   margin: 0 10px;
 }
+/* Title & price */
+#item-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+#item > div > div#item-header > div:first-child {
+  font-family: var(--kalinsha);
+  font-size: 5rem;
+}
+#item > div > div#item-header > div:nth-child(2) {
+  width: 50px;
+  font-size: 2rem;
+}
 /* left section */
 #item > div.gallery > div:first-child {
   height: 394px;
   width: 394px;
   background-position: center!important;
   background-size: cover!important;
-  cursor: pointer;
+  border: 3px solid var(--primary);
 }
-#item > div.gallery > div:not(first-child) {
+#item > div.gallery > div:not(:first-child) {
   width: 72px;
   height: 72px;
   background-position: center!important;
@@ -59,11 +74,16 @@
   font-size: 1rem;
 }
 #item > div > div#accessories > div > div:first-child {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  background: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: var(--secondary);
+  color: var(--primary);
   margin-bottom: 10px;
+  font-size: 2rem;
 }
 @media only screen and (max-width: 550px) {
   #item {
@@ -77,8 +97,8 @@
   }
   #item > div.gallery > div:first-child {
     /* 1:1 aspect ratio trick */
-    height: calc(100vw - 40px);
-    width: calc(100vw - 40px);
+    height: calc(100vw - 46px);
+    width: calc(100vw - 46px);
   }
   #item > div.gallery > div:not(first-child) {
     width: 60px;
