@@ -38,7 +38,7 @@ const Router = ({ data, responsive, loaded }) => {
             </Route>
             {/* ATELIER 
             ________________________________________________________ */}
-            <Route path='latelier' element={<Atelier />} />
+            <Route path='atelier' element={<Atelier />} />
             {/* CONTACT 
             ________________________________________________________ */}
             <Route path='contact' element={<Contact />} />

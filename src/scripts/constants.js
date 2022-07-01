@@ -62,7 +62,7 @@ const appData =
     {
       name: "l'atelier",
       id: 3,
-      link: "latelier",
+      link: "atelier",
       highlight: false,
       img: "",
       subCategories: []

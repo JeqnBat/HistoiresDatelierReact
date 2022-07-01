@@ -14,8 +14,9 @@ const Controller = ({ data }) => {
 
   return (
     <nav id='controller' >
-      <span onClick={() => handleClick()}><div>Filtres</div>
-        <i className={toggleMenu ? 'fa-solid fa-angle-right' : 'fa-solid fa-angle-left'}></i>
+      <span onClick={() => handleClick()} className={toggleMenu ?  'hide-menu' : ''}>
+        <i className={toggleMenu ? 'fa-solid fa-angle-right' : 'fa-solid fa-xmark'}></i>
+        <div>Filtres</div>
       </span>
       <div className={toggleMenu ? 'hide-menu' : ''}>
         {data.controller.map((el, idx) => (

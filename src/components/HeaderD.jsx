@@ -4,8 +4,8 @@ import './css/header.css'
 
 const HeaderD = ({ data, pageName }) => {
   return (
-    <header className={pageName === 'home-page' ? '' : 'small-header'}>
-      <MainLogo data={data} small={pageName === 'home-page' ? false : true} />
+    <header className={pageName === '/' ? '' : 'small-header'}>
+      <MainLogo data={data} small={pageName === '/' ? false : true} />
       <MenuD data={data} />
     </header>
   )

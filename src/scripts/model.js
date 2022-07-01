@@ -10,7 +10,6 @@ const model = {
     homePage: false,
     products: false,
   },
-  pageName: null,
   appData: [],
   products: [],
   // ACTIONS

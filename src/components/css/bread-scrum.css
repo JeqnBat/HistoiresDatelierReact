@@ -1,0 +1,36 @@
+/**
+ * BREAD-SCRUM.CSS
+ */
+#bread-scrum {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: inherit;
+  font-size: .7rem;
+  font-family: monospace;
+  text-transform: uppercase;
+}
+#bread-scrum > a {
+  border-bottom: 2px solid transparent;
+  margin: 0 6px;
+  padding-bottom: 5px;
+}
+#bread-scrum > a:last-of-type {
+  border-bottom: 2px solid var(--secondary);
+}
+#bread-scrum > a::before {
+  border-bottom: 2px solid var(--primary);
+}
+#bread-scrum > a:not(:first-child)::before {
+  padding-bottom: 5px;
+  content: '> ';
+}
+#bread-scrum > a:hover {
+  border-bottom: 2px solid var(--secondary);
+}
+@media only screen and (max-width: 550px) {
+  #bread-scrum {
+    width: 100%;
+    height: 60px;
+  }
+}
