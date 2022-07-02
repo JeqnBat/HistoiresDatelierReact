@@ -1,8 +1,8 @@
 import { useLocation, Link } from 'react-router-dom'
 
-import './css/bread-scrum.css'
+import './css/bread-crum.css'
 
-const BreadScrum = ({ visible }) => {
+const BreadCrum = ({ visible }) => {
   const url = useLocation()
   const segments = url.pathname.split('/').filter(el => el.length > 0)
   console.log(segments);
@@ -74,4 +74,4 @@ const BreadScrum = ({ visible }) => {
   }
 }
 
-export default BreadScrum
+export default BreadCrum

@@ -2,7 +2,7 @@ import { Outlet, useLocation } from 'react-router-dom'
 import HeaderD from '../components/HeaderD'
 import HeaderM from '../components/HeaderM'
 import Footer from '../components/Footer'
-import BreadScrum from '../components/BreadScrum'
+import BreadCrum from '../components/BreadCrum'
 
 const Layout = ({ feed, responsive }) => {
   const url = useLocation()
@@ -12,7 +12,7 @@ const Layout = ({ feed, responsive }) => {
       <>
         <main>
           <HeaderM data={feed} />
-          <BreadScrum visible={url.pathname} />
+          <BreadCrum visible={url.pathname} />
           <Outlet />
         </main>
         <Footer data={feed} />
@@ -23,7 +23,7 @@ const Layout = ({ feed, responsive }) => {
       <>
         <main>
           <HeaderD data={feed} pageName={url.pathname} />
-          <BreadScrum visible={url.pathname} />
+          <BreadCrum visible={url.pathname} />
           <Outlet />
         </main>
         <Footer data={feed} />

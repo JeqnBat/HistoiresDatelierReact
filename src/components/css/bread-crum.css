@@ -1,7 +1,7 @@
 /**
- * BREAD-SCRUM.CSS
+ * BREAD-CRUM.CSS
  */
-#bread-scrum {
+#bread-crum {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -10,26 +10,26 @@
   font-family: monospace;
   text-transform: uppercase;
 }
-#bread-scrum > a {
+#bread-crum > a {
   border-bottom: 2px solid transparent;
   margin: 0 6px;
   padding-bottom: 5px;
 }
-#bread-scrum > a:last-of-type {
+#bread-crum > a:last-of-type {
   border-bottom: 2px solid var(--secondary);
 }
-#bread-scrum > a::before {
+#bread-crum > a::before {
   border-bottom: 2px solid var(--primary);
 }
-#bread-scrum > a:not(:first-child)::before {
+#bread-crum > a:not(:first-child)::before {
   padding-bottom: 5px;
   content: '> ';
 }
-#bread-scrum > a:hover {
+#bread-crum > a:hover {
   border-bottom: 2px solid var(--secondary);
 }
 @media only screen and (max-width: 550px) {
-  #bread-scrum {
+  #bread-crum {
     width: 100%;
     height: 60px;
   }
