@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import './css/focus-item.css'
 
-const FocusItem = ({ visible, item }) => {
+const FocusItem = ({ visible, item, events }) => {
   if (visible) {
     const style = {
       backgroundImage: `url(${item.imageUrl[0]})`,
@@ -8,15 +9,29 @@ const FocusItem = ({ visible, item }) => {
       backgroundPosition: 'center'
     }
     return (
-      <div id='screener'>
-        <div><i className='fa-solid fa-chevron-left'></i></div>
-        <div style={style}>
-          <div><i className='fa-solid fa-xmark'></i></div>
-          <div>
-            <span>fiche détaillée</span>
+      <div id='screener' onClick={events}>
+        <div id='previous' onClick={events}>
+          <i className='fa-solid fa-chevron-left'></i></div>
+        <div onClick={events}>
+          <div style={style}></div>
+          <div id='close' onClick={events}>
+            <i className='fa-solid fa-xmark'></i>
+            </div>
+          <div className='spacer'></div>
+          <div className='spacer'></div>
+          <div className='spacer'></div>
+          <div className='spacer'></div>
+          <div id='details' onClick={events}>
+            <Link to={`${item.category}/article=${item.id}`}>
+              <span>
+                fiche détaillée
+              </span>
+            </Link>
           </div>
         </div>
-        <div><i className="fa-solid fa-chevron-right"></i></div>
+        <div id='next' onClick={events}>
+          <i className="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
     )
   } else {

@@ -11,6 +11,7 @@
  2. CUSTOM FONTS
  3. CUSTOM TOOLS
  4. PAGES TEMPLATE
+ 5. ANIMATIONS
  
 */
  
@@ -130,4 +131,32 @@ main {
 	#wrapper > div:nth-child(3) {
 		display: none;
 	}
+}
+/* 5. ANIMATIONS
+________________________________________________________ */
+/* horizontal-slide left */
+@-webkit-keyframes slide-left {
+  0% { transform: translateX(0); }
+  .05% { transform: translateX(-45vw); opacity: 0; }
+  .051% { transform: translateX(45vw); opacity: 0; }
+	.10% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-left {
+  0% { transform: translateX(0); }
+  .05% { transform: translateX(-45vw); opacity: 0; }
+  .051% { transform: translateX(45vw); opacity: 0; }
+	.10% { transform: translateX(0); opacity: 1; }
+}
+/* horizontal-slide right */
+@-webkit-keyframes slide-right {
+  0% { transform: translateX(0); }
+  .05% { transform: translateX(45vw); opacity: 0; }
+  .051% { transform: translateX(-45vw); opacity: 0; }
+	.10% { transform: translateX(0); opacity: 1; }
+}
+@keyframes slide-right {
+  0% { transform: translateX(0); }
+  .05% { transform: translateX(45vw); opacity: 0; }
+  .051% { transform: translateX(-45vw); opacity: 0; }
+	.10% { transform: translateX(0); opacity: 1; }
 }

@@ -19,6 +19,11 @@
   justify-content: flex-start;
   width: 600px;
   height: 500px;
+  overflow: hidden;
+}
+#screener > div:nth-child(even) > div:first-of-type {
+  position: absolute;
+  inset: 0;
 }
 /* DARK BOTTOM TO MAKE BUTTONS MORE READABLE */
 #screener > div:nth-child(even)::before {
@@ -26,16 +31,18 @@
   content: ' ';
   inset: 0;
   background: linear-gradient(rgb(255,255,255,0) 80%, rgb(0,0,0,.4));
+  z-index: 5;
 }
 /* CLOSING 'X' MARK */
-#screener > div:nth-child(even) > div:first-child {
+#screener > div:nth-child(even) > div:nth-child(2) {
   align-self: flex-end;
   margin: 20px;
   cursor: pointer;
   color: var(--primary);
+  z-index: 10;
   filter: drop-shadow(0 0 5px darkgrey);
 }
-#screener > div:nth-child(even) > div:first-child:hover {
+#screener > div:nth-child(even) > div:nth-child(2):hover {
   color: var(--secondary);
 }
 /* BUTTONS */
@@ -43,27 +50,28 @@
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  flex-grow: 1;
   font-size: 1rem;
   color: var(--primary);
-  margin-bottom: 10px;;
+  margin-bottom: 10px;
+  z-index: 5;
 }
-#screener > div:nth-child(even) > div:last-child > span {
+#screener > div:nth-child(even) > div:last-child > a {
+  color: var(--primary);
   position: relative;
   filter: drop-shadow(0 0 4px dimgrey);
   padding: 10px 0;
   border-bottom: 2px solid transparent;
   cursor: pointer;
 }
-#screener > div:nth-child(even) > div:last-child > span::before {
+#screener > div:nth-child(even) > div:last-child > a::before {
   position: absolute;
   content: ' ';
   inset: 0;
   transform: scaleX(0);
   border-bottom: 2px solid white;
-  transition: all .2s ease-in-out;
+  transition: all .1s ease-in-out;
 }
-#screener > div:nth-child(even) > div:last-child > span:hover::before {
+#screener > div:nth-child(even) > div:last-child > a:hover::before {
   transform: scaleX(1);
 }
 /* SIDE ARROWS */
@@ -71,9 +79,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px;
-  height: 400px;
+  width: 60px;
+  height: auto;
   color: var(--primary);
+  cursor: pointer;
+  font-family: monospace;
+  padding: 0 10px;
+}
+/* PREV. */
+#screener > #previous::before {
+  font-size: .75rem;
+  content:'PREC.';
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+#screener > #next::after {
+  font-size: .75rem;
+  content:'SUIV.';
+  transform: translateX(10px);
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+#screener > #next:hover::after, #screener > #previous:hover::before {
+  opacity: 1;
 }
 @media only screen and (max-width: 550px) {
 }
