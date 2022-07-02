@@ -1,0 +1,79 @@
+/**
+ * FOCUS-ITEM.CSS
+ */
+#screener {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  background: rgb(40, 42, 44, .75);
+  z-index: 20;
+  transition: all .2s ease-in-out;
+}
+#screener > div:nth-child(even) {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 600px;
+  height: 500px;
+}
+/* DARK BOTTOM TO MAKE BUTTONS MORE READABLE */
+#screener > div:nth-child(even)::before {
+  position: absolute;
+  content: ' ';
+  inset: 0;
+  background: linear-gradient(rgb(255,255,255,0) 80%, rgb(0,0,0,.4));
+}
+/* CLOSING 'X' MARK */
+#screener > div:nth-child(even) > div:first-child {
+  align-self: flex-end;
+  margin: 20px;
+  cursor: pointer;
+  color: var(--primary);
+  filter: drop-shadow(0 0 5px darkgrey);
+}
+#screener > div:nth-child(even) > div:first-child:hover {
+  color: var(--secondary);
+}
+/* BUTTONS */
+#screener > div:nth-child(even) > div:last-child {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-grow: 1;
+  font-size: 1rem;
+  color: var(--primary);
+  margin-bottom: 10px;;
+}
+#screener > div:nth-child(even) > div:last-child > span {
+  position: relative;
+  filter: drop-shadow(0 0 4px dimgrey);
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+}
+#screener > div:nth-child(even) > div:last-child > span::before {
+  position: absolute;
+  content: ' ';
+  inset: 0;
+  transform: scaleX(0);
+  border-bottom: 2px solid white;
+  transition: all .2s ease-in-out;
+}
+#screener > div:nth-child(even) > div:last-child > span:hover::before {
+  transform: scaleX(1);
+}
+/* SIDE ARROWS */
+#screener > div:nth-child(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 400px;
+  color: var(--primary);
+}
+@media only screen and (max-width: 550px) {
+}

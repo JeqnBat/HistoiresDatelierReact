@@ -1,17 +1,16 @@
 import { useLocation, Link } from 'react-router-dom'
-
 import './css/bread-crum.css'
 
 const BreadCrum = ({ visible }) => {
   const url = useLocation()
   const segments = url.pathname.split('/').filter(el => el.length > 0)
-  console.log(segments);
+
   if (visible === '/') {
     return
     // if there are no sub categories
   } else if (segments.length === 1 ) {
     return (
-      <div id='bread-scrum'>
+      <div id='bread-crum'>
         <Link to='/'>
           <span><i className="fa-solid fa-house"></i></span>
         </Link>
@@ -22,7 +21,7 @@ const BreadCrum = ({ visible }) => {
     )
   } else if (segments.length === 2 ) {
     return (
-      <div id='bread-scrum'>
+      <div id='bread-crum'>
         <Link to='/'>
           <span><i className="fa-solid fa-house"></i></span>
         </Link>
@@ -36,7 +35,7 @@ const BreadCrum = ({ visible }) => {
     )
   } else if (segments.length === 3 ) {
     return (
-      <div id='bread-scrum'>
+      <div id='bread-crum'>
         <Link to='/'>
           <span><i className="fa-solid fa-house"></i></span>
         </Link>
@@ -53,7 +52,7 @@ const BreadCrum = ({ visible }) => {
     )
   } else if (segments.length === 4 ) {
     return (
-      <div id='bread-scrum'>
+      <div id='bread-crum'>
         <Link to='/'>
           <span><i className="fa-solid fa-house"></i></span>
         </Link>
