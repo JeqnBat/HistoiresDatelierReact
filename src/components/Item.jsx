@@ -2,6 +2,9 @@ import React, { useState } from 'react'
 import './css/item.css'
 
 const Item = ({ details }) => {
+  window.addEventListener('select', () => {
+    console.log('kikoo');
+  })
   const [image, setMainImage] = useState(details.imageUrl[0])
   const [selected, setSelected] = useState(null)
   const [...images] = details.imageUrl

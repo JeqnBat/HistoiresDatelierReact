@@ -12,6 +12,7 @@ const model = {
   },
   appData: [],
   products: [],
+  tailoredForm: {},
   // ACTIONS
   pickLayout: action((state, payload) => {
     state.responsive = payload
@@ -35,6 +36,9 @@ const model = {
   }),
   setItemView: action((state, payload) => {
     state.itemView = payload
+  }),
+  setTailoredForm: action((state, payload) => {
+    state.tailoredForm = payload
   }),
   // THUNK
   fetchAppData: thunk(async actions => {

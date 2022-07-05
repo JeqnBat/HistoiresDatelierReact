@@ -800,7 +800,97 @@ const products = {
       ],
       highlighted: true,
       selected: false
-    }
+    },
+    {
+      id: "32",
+      name: "article 33",
+      category: "bapteme",
+      format: "8cm x 11cm",
+      paper: "Old Mill",
+      price: "5€",
+      descr: "lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum",
+      imageUrl: [
+        "/img/products/fairepart/mariage/4.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/3.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "33",
+      name: "article 34",
+      category: "bapteme",
+      format: "8cm x 11cm",
+      paper: "Old Mill",
+      price: "5€",
+      descr: "lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum",
+      imageUrl: [
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/3.webp",
+        "/img/products/fairepart/mariage/4.webp",
+        "/img/products/fairepart/mariage/5.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "34",
+      name: "article 35",
+      category: "bapteme",
+      format: "8cm x 11cm",
+      paper: "Old Mill",
+      price: "5€",
+      descr: "lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum",
+      imageUrl: [
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/4.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "35",
+      name: "article 36",
+      category: "mariage",
+      format: "8cm x 11cm",
+      paper: "Old Mill",
+      price: "5€",
+      descr: "lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum",
+      imageUrl: [
+        "/img/products/fairepart/mariage/8.webp",
+        "/img/products/fairepart/mariage/7.webp",
+        "/img/products/fairepart/mariage/6.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/4.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "36",
+      name: "article 37",
+      category: "bapteme",
+      format: "8cm x 11cm",
+      paper: "Old Mill",
+      price: "5€",
+      descr: "lorem ipsum lorem ipsumlorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsumlorem ipsum lorem ipsumlorem ipsum",
+      imageUrl: [
+        "/img/products/fairepart/mariage/3.webp",
+        "/img/products/fairepart/mariage/2.webp",
+        "/img/products/fairepart/mariage/1.webp",
+        "/img/products/fairepart/mariage/5.webp",
+        "/img/products/fairepart/mariage/8.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
   ]
 }
 

@@ -1,25 +1,27 @@
 /**
 * WHATS-NEW.CSS
 */
-#whats-new > h1 {
-  text-align: center;
-}
-#check-insta a {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  font-size: 1.1rem;
-  color: inherit;
-  width: fit-content;
-}
-#check-insta > a > i {
-  margin-left: 10px;
-  transition: .2s all ease-in-out;
-}
-#check-insta:hover i {
-  transform: translateY(-4px);
-}
-#check-insta {
-  display: flex;
-  justify-content: flex-end;
+@media only screen and (min-width: 1400px) {
+  #whats-new > h1 {
+    text-align: center;
+  }
+  #check-insta a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: inherit;
+    width: fit-content;
+  }
+  #check-insta > a > i {
+    margin-left: 10px;
+    transition: .2s all ease-in-out;
+  }
+  #check-insta:hover i {
+    transform: translateY(-4px);
+  }
+  #check-insta {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

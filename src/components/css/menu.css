@@ -1,56 +1,58 @@
 /**
  * MENU.CSS
  */
-#menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 700px;
-}
-#menu > span {
-  position: relative;
-  font-size: 18px;
-  text-transform: uppercase;
-  border-bottom: 2px solid transparent;
-  padding: 16px 0;
-  transition: all .1s ease-in-out;
-}
-#menu > span:hover {
-  border-bottom: 2px solid var(--secondary);
-}
-#menu > span > i {
-  font-size: 1rem;
-  margin-left: 8px;
-}
-#menu > span > a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-#menu > span > ul {
-  position: absolute;
-  list-style: none;
-  text-transform: none;
-  width: 200px;
-  padding: 15px 20px;
-  transform: translateX(-10px);
-  background: var(--primary);
-  display: none;
-}
-#menu > span:hover > ul {
-  display: block;
-}
-#menu > span > ul > li {
-  padding: 10px;
-}
-#menu > span > ul > li > a {
-  color: var(--secondary);
-  text-decoration: none;
-}
-#menu > span > ul > li:first-child {
-  border-bottom: 1px solid lightgray;
-}
-#menu > span > ul > li::first-letter {
-  text-transform: uppercase;
+@media only screen and (min-width: 1400px) {
+  #menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+  }
+  #menu > span {
+    position: relative;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    padding: 16px 0;
+    transition: all .1s ease-in-out;
+  }
+  #menu > span:hover {
+    border-bottom: 2px solid var(--secondary);
+  }
+  #menu > span > i {
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+  #menu > span > a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  #menu > span > ul {
+    position: absolute;
+    list-style: none;
+    text-transform: none;
+    width: 200px;
+    padding: 15px 20px;
+    transform: translateX(-10px);
+    background: var(--primary);
+    display: none;
+  }
+  #menu > span:hover > ul {
+    display: block;
+  }
+  #menu > span > ul > li {
+    padding: 10px;
+  }
+  #menu > span > ul > li > a {
+    color: var(--secondary);
+    text-decoration: none;
+  }
+  #menu > span > ul > li:first-child {
+    border-bottom: 1px solid lightgray;
+  }
+  #menu > span > ul > li::first-letter {
+    text-transform: uppercase;
+  }
 }
 @media only screen and (max-width: 550px) {
   .active {

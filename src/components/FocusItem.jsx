@@ -14,9 +14,12 @@ const FocusItem = ({ visible, item, events }) => {
           <i className='fa-solid fa-chevron-left'></i></div>
         <div onClick={events}>
           <div style={style}></div>
-          <div id='close' onClick={events}>
-            <i className='fa-solid fa-xmark'></i>
+          <div>
+            <div>{item.category}</div>
+            <div id='close' onClick={events}>
+              <i className='fa-solid fa-xmark'></i>
             </div>
+          </div>
           <div className='spacer'></div>
           <div className='spacer'></div>
           <div className='spacer'></div>

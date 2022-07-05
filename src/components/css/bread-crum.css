@@ -1,34 +1,36 @@
 /**
  * BREAD-CRUM.CSS
  */
-#bread-crum {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  width: inherit;
-  font-size: .7rem;
-  font-family: monospace;
-  text-transform: uppercase;
-  /* margin top with logo */
-  transform: translateY(20px);
-}
-#bread-crum > a {
-  border-bottom: 2px solid transparent;
-  margin: 0 6px;
-  padding-bottom: 5px;
-}
-#bread-crum > a:last-of-type {
-  border-bottom: 2px solid var(--secondary);
-}
-#bread-crum > a::before {
-  border-bottom: 2px solid var(--primary);
-}
-#bread-crum > a:not(:first-child)::before {
-  padding-bottom: 5px;
-  content: '> ';
-}
-#bread-crum > a:hover {
-  border-bottom: 2px solid var(--secondary);
+@media only screen and (min-width: 1400px) {
+  #bread-crum {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: inherit;
+    font-size: .7rem;
+    font-family: monospace;
+    text-transform: uppercase;
+    /* margin top with logo */
+    transform: translateY(20px);
+  }
+  #bread-crum > a {
+    border-bottom: 2px solid transparent;
+    margin: 0 6px;
+    padding-bottom: 5px;
+  }
+  #bread-crum > a:last-of-type {
+    border-bottom: 2px solid var(--secondary);
+  }
+  #bread-crum > a::before {
+    border-bottom: 2px solid var(--primary);
+  }
+  #bread-crum > a:not(:first-child)::before {
+    padding-bottom: 5px;
+    content: '> ';
+  }
+  #bread-crum > a:hover {
+    border-bottom: 2px solid var(--secondary);
+  }
 }
 @media only screen and (max-width: 550px) {
   #bread-crum {

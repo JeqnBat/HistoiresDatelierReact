@@ -1,79 +1,81 @@
 /** 
  * GRID.CSS
  */
-#grid {
-  display: grid;
-  grid-template-columns: repeat(10, auto);
-  grid-template-rows: repeat(12, 60px);
-  width: inherit;
-  gap: 10px;
-}
-.hide {
-  display: none!important;
-}
-#grid > div {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 120px;
-  grid-column: span 2;
-  grid-row: span 3;
-  opacity: 1;
-  background-size: cover!important;
-  background-position: center!important;
-  background-repeat: no-repeat!important;
-  cursor: pointer;
-}
-#grid > div > a {
-  height: 100%;
-  width: 100%;
-  z-index: 5;
-}
-#grid > div::after {
-  position: absolute;
-  inset: 0;
-  content: '';
-  background: var(--primary);
-  opacity: 0;
-  transition: all .2s ease-in-out;
-}
-#grid > div:hover {
-  opacity: .8;
-}
-#grid > div.blur::after {
-  opacity: .7;
-}
-#grid > div.blur {
-  pointer-events: none;
-}
-#grid > div:nth-child(1), #grid > div:nth-child(32),
-#grid > div:nth-child(6), #grid > div:nth-child(37),
-#grid > div:nth-child(3), #grid > div:nth-child(34),
-#grid > div:nth-child(7), #grid > div:nth-child(38) {
-  grid-row: span 2;
-}
-#grid > div:nth-child(2), #grid > div:nth-child(33),
-#grid > div:nth-child(5), #grid > div:nth-child(36),
-#grid > div:nth-child(25), #grid > div:nth-child(56) {
-  grid-row: span 4;
-}
-#grid > div:nth-child(15), #grid > div:nth-child(46) {
-  grid-row: span 6;
-  grid-column: span 4;
-}
-#grid > div:nth-child(22), #grid > div:nth-child(53),
-#grid > div:nth-child(23), #grid > div:nth-child(54),
-#grid > div:nth-child(24), #grid > div:nth-child(55) {
-  grid-row: span 6;
-}
-#grid > div:nth-child(27),
-#grid > div:nth-child(28),
-#grid > div:nth-child(29) {
-  grid-row: span 6;
-}
-#grid > div:nth-child(31) {
-  grid-row: span 6;
+@media only screen and (min-width: 1400px) {
+  #grid {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-template-rows: repeat(12, 60px);
+    width: inherit;
+    gap: 10px;
+  }
+  .hide {
+    display: none!important;
+  }
+  #grid > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 120px;
+    grid-column: span 2;
+    grid-row: span 3;
+    opacity: 1;
+    background-size: cover!important;
+    background-position: center!important;
+    background-repeat: no-repeat!important;
+    cursor: pointer;
+  }
+  #grid > div > a {
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+  }
+  #grid > div::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: var(--primary);
+    opacity: 0;
+    transition: all .2s ease-in-out;
+  }
+  #grid > div:hover {
+    opacity: .8;
+  }
+  #grid > div.blur::after {
+    opacity: .7;
+  }
+  #grid > div.blur {
+    pointer-events: none;
+  }
+  #grid > div:nth-child(1), #grid > div:nth-child(32),
+  #grid > div:nth-child(6), #grid > div:nth-child(37),
+  #grid > div:nth-child(3), #grid > div:nth-child(34),
+  #grid > div:nth-child(7), #grid > div:nth-child(38) {
+    grid-row: span 2;
+  }
+  #grid > div:nth-child(2), #grid > div:nth-child(33),
+  #grid > div:nth-child(5), #grid > div:nth-child(36),
+  #grid > div:nth-child(25), #grid > div:nth-child(56) {
+    grid-row: span 4;
+  }
+  #grid > div:nth-child(15), #grid > div:nth-child(46) {
+    grid-row: span 6;
+    grid-column: span 4;
+  }
+  #grid > div:nth-child(22), #grid > div:nth-child(53),
+  #grid > div:nth-child(23), #grid > div:nth-child(54),
+  #grid > div:nth-child(24), #grid > div:nth-child(55) {
+    grid-row: span 6;
+  }
+  #grid > div:nth-child(27),
+  #grid > div:nth-child(28),
+  #grid > div:nth-child(29) {
+    grid-row: span 6;
+  }
+  #grid > div:nth-child(31) {
+    grid-row: span 6;
+  }
 }
 @media only screen and (max-width: 550px) {
   #grid {

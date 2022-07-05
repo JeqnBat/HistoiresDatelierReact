@@ -1,22 +1,24 @@
 /**
  * HEADER.CSS
  */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 200px;
-  width: var(--section-width);
-  transition: all .3s ease-in-out;
-}
-header.small-header {
-  height: 145px;
-}
-#home-spacer {
-  margin: 0;
-  padding: 0;
-  width: inherit;
-  height: calc(100vh - 220px);
+@media only screen and (min-width: 1400px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+    width: var(--section-width);
+    transition: all .3s ease-in-out;
+  }
+  header.small-header {
+    height: 145px;
+  }
+  #home-spacer {
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    height: calc(100vh - 220px);
+  }
 }
 /* RESPONSIVE */
 @media only screen and (max-width: 550px) {

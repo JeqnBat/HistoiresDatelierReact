@@ -1,17 +1,26 @@
 /**
  * TAILORED.CSS
  */
-#tailored {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media only screen and (min-width: 1400px) {
+  #tailored {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #tailored > div:first-of-type {
+    width: 100%;
+  }
+  #tailored > form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
 }
-#tailored > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+@media only screen and (max-width: 550px) {
 }
+
 /* Entry animation */
 @-webkit-keyframes slide-down {
   0% { height: 0; }
@@ -22,7 +31,4 @@
   0% { height: 0; }
   .1% { height: 250px; }
   100% { height: 250px; }
-}
-
-@media only screen and (max-width: 550px) {
 }
