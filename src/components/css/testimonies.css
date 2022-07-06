@@ -1,70 +1,85 @@
 /**
  * TESTIMONIES.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #testimonies {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 1100px;
-  }
-  #testimonies > div:first-child {
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  #testimonies > div:first-child > h3 {
-    padding: 15px;
-    border-left: 2px solid var(--secondary);
-  }
-  #testimonies > div:nth-child(2) {
-    display: flex;
-    flex-direction: column;
-    width: 220px;
-  }
-  /* Left column spans */
-  #testimonies > div:nth-child(2) > span {
-    margin: 5px;
-    font-size: 1.2rem;
-  }
-  /* Author span */
-  #testimonies > div:nth-child(2) > span:first-child {
-    font-size: 2.2rem;
-    font-family: var(--kalinsha);
-  }
-  /* Block quote */
-  #testimonies > div:nth-child(3) {
-    width: 600px;
-    line-height: 40px;
-    height: 220px;
-    display: flex;
-    align-items: center;
-    font-style: italic;
-  }
-  /* Right arrow */
-  #testimonies > div:nth-child(4) {
-    width: 30px;
-    height: 30px;
-    align-self: center;
-    transition: all .1s ease-in-out;
-    cursor: pointer;
-  }
-  #testimonies > div:nth-child(4):hover {
-    transform: translateX(-4px);
-  }
-  /* Left arrow */
-  #testimonies > div:nth-child(5) {
-    width: 30px;
-    height: 30px;
-    align-self: center;
-    transition: all .1s ease-in-out;
-    cursor: pointer;
-  }
-  #testimonies > div:nth-child(5):hover {
-    transform: translateX(4px);
-  }
+#testimonies {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 1100px;
 }
-/* RESPONSIVE */
-@media only screen and (max-width: 550px) {
+#testimonies > div:first-child {
+  width: 100%;
+  margin-bottom: 10px;
+}
+#testimonies > div:first-child > h3 {
+  padding: 15px;
+  border-left: 2px solid var(--secondary);
+}
+#testimonies > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+/* Left column spans */
+#testimonies > div:nth-child(2) > span {
+  margin: 5px;
+  font-size: 1.2rem;
+}
+/* Author span */
+#testimonies > div:nth-child(2) > span:first-child {
+  font-size: 2.2rem;
+  font-family: var(--kalinsha);
+}
+/* Block quote */
+#testimonies > div:nth-child(3) {
+  width: 600px;
+  line-height: 40px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  font-style: italic;
+}
+/* Right arrow */
+#testimonies > div:nth-child(4) {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+#testimonies > div:nth-child(4):hover {
+  transform: translateX(-4px);
+}
+/* Left arrow */
+#testimonies > div:nth-child(5) {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+  transition: all .1s ease-in-out;
+  cursor: pointer;
+}
+#testimonies > div:nth-child(5):hover {
+  transform: translateX(4px);
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   #testimonies {
     width: 100%;
   }

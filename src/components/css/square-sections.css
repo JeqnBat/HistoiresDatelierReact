@@ -1,42 +1,60 @@
 /**
  * SQUARE SECTIONS.CSS
  */
-@media only screen and (max-width: 550px) {
-  .square-sections {
-    position: relative;
-  }
-  .square-sections-item {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 90vw;
-    width: 90vw;
-    margin: 2.5vw auto;
-    z-index: 2;
-    background-size: cover;
-    background-position: center;
-    transition: all .2s ease-in-out;
-  }
-  .slide-left {
-    transform: translateX(-90vw);
-  }
-  .square-sections-item p {
-    color: var(--primary);
-    z-index: 2;
-    text-transform: uppercase;
-    font-weight: 100;
-  }
-  .square-sections-item::before {
-    position: absolute;
-    content: ' ';
-    inset: 0;
-    background: black;
-    opacity: .85;
-  }
-  .square-sections-item-descr {
-    position: absolute;
-    inset: 22.5vw 20px;
-    z-index: 0;
-  }
+.square-sections {
+  position: relative;
+}
+.square-sections-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vw;
+  width: 90vw;
+  margin: 2.5vw auto;
+  z-index: 2;
+  background-size: cover;
+  background-position: center;
+  transition: all .2s ease-in-out;
+}
+.slide-left {
+  transform: translateX(-90vw);
+}
+.square-sections-item p {
+  color: var(--primary);
+  z-index: 2;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+.square-sections-item::before {
+  position: absolute;
+  content: ' ';
+  inset: 0;
+  background: black;
+  opacity: .85;
+}
+.square-sections-item-descr {
+  position: absolute;
+  inset: 22.5vw 20px;
+  z-index: 0;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 }

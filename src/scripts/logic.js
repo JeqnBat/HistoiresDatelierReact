@@ -2,7 +2,7 @@
 const probe = () => {
   const deviceParameters = {
     touchScreen: !!navigator.maxTouchPoints,
-    width: window.innerWidth < 550 ? true : false
+    width: window.innerWidth < 500 ? true : false
   }
   return Object.values(deviceParameters).every(Boolean)
 }

@@ -63,8 +63,25 @@
 #advice-section-menu > div:hover {
   opacity: .9;
 }
-
-@media only screen and (max-width: 550px) {
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   /* Outside of Scope careful */
   #wrapper > div > div.spacinho:first-child {
     display: none;

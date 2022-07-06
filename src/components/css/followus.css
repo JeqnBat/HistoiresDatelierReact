@@ -1,23 +1,41 @@
 /**
  * FOLLOWUS.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #follow-us {
-    display: flex;
-    flex-wrap: wrap;
-    width: 180px;
-    text-align: center;
-  }
-  #follow-us i {
-    margin: 5px;
-  }
-  #follow-us h3 {
-    width: inherit;
-  }
-  #social-icons {
-    width: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+#follow-us {
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  text-align: center;
+}
+#follow-us i {
+  margin: 5px;
+}
+#follow-us h3 {
+  width: inherit;
+}
+#social-icons {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 }

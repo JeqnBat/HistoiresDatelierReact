@@ -1,27 +1,45 @@
 /**
-* WHATS-NEW.CSS
-*/
-@media only screen and (min-width: 1400px) {
-  #whats-new > h1 {
-    text-align: center;
-  }
-  #check-insta a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    font-size: 1.1rem;
-    color: inherit;
-    width: fit-content;
-  }
-  #check-insta > a > i {
-    margin-left: 10px;
-    transition: .2s all ease-in-out;
-  }
-  #check-insta:hover i {
-    transform: translateY(-4px);
-  }
-  #check-insta {
-    display: flex;
-    justify-content: flex-end;
-  }
+ * WHATS-NEW.CSS
+ */
+#whats-new > h1 {
+  text-align: center;
+}
+#check-insta a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: inherit;
+  width: fit-content;
+}
+#check-insta > a > i {
+  margin-left: 10px;
+  transition: .2s all ease-in-out;
+}
+#check-insta:hover i {
+  transform: translateY(-4px);
+}
+#check-insta {
+  display: flex;
+  justify-content: flex-end;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 }

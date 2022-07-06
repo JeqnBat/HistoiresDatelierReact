@@ -11,7 +11,8 @@
  2. CUSTOM FONTS
  3. CUSTOM TOOLS
  4. PAGES TEMPLATE
- 5. ANIMATIONS
+ 5. RESPONSIVE
+ 6. ANIMATIONS
  
 */
  
@@ -22,7 +23,8 @@ ________________________________________________________ */
   --secondary: #282a2c;
 	--kalinsha: 'kallinsharegular';
 	--arnopro: 'ArnoPro';
-	--section-width: 1100px;
+	--medium: 1100px;
+	--small: 900px;
 	--spacer: 100px;
 	--spacinho: 50px;
 }
@@ -118,9 +120,32 @@ main {
 	padding: 0;
 }
 #wrapper > div:first-of-type {
-	width: 1100px;
+	width: var(--medium);
 }
-@media only screen and (max-width: 550px) {
+/* 5. RESPONSIVE
+________________________________________________________ */
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+	#wrapper > div:first-of-type {
+		width: var(--small);
+	}
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 	main {
 		width: auto;
 		margin: 20px;
@@ -132,7 +157,7 @@ main {
 		display: none;
 	}
 }
-/* 5. ANIMATIONS
+/* 6. ANIMATIONS
 ________________________________________________________ */
 /* horizontal-slide left */
 @-webkit-keyframes slide-left {

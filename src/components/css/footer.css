@@ -1,56 +1,74 @@
 /**
  * FOOTER.CSS
  */
-@media only screen and (min-width: 1400px) {
-  footer {
-    position: relative;
-    width: 100%;
-    background: linear-gradient(var(--secondary), black);
-    color: var(--primary);
-    z-index: 1;
-  }
+footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(var(--secondary), black);
+  color: var(--primary);
+  z-index: 1;
+}
+#footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: var(--medium);
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  font-size: 1.25rem;
+  text-align: center;
+}
+#footer-wrapper a {
+  color: var(--primary);
+}
+#footer-wrapper > div:first-child {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#footer-wrapper > div:not(:first-child) {
+  margin-top: 50px;
+}
+#footer-wrapper > div > div:first-child {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid var(--primary);
+}
+#footer-wrapper > div > a > section#logo {
+  width: 190px;
+}
+#footer-wrapper > div > a > section#logo > span:first-child {
+  font-size: 2rem;
+}
+#footer-wrapper > div > a > section#logo > span:nth-child(2) {
+  font-size: .75rem;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
   #footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: var(--section-width);
-    height: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 0 auto;
-    font-size: 1.25rem;
-    text-align: center;
-  }
-  #footer-wrapper a {
-    color: var(--primary);
-  }
-  #footer-wrapper > div:first-child {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  #footer-wrapper > div:not(:first-child) {
-    margin-top: 50px;
-  }
-  #footer-wrapper > div > div:first-child {
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid var(--primary);
-  }
-  #footer-wrapper > div > a > section#logo {
-    width: 190px;
-  }
-  #footer-wrapper > div > a > section#logo > span:first-child {
-    font-size: 2rem;
-  }
-  #footer-wrapper > div > a > section#logo > span:nth-child(2) {
-    font-size: .75rem;
+    width: var(--small);
   }
 }
-/* RESPONSIVE */
-@media only screen and (max-width: 550px) {
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   footer {
     flex-direction: column;
     justify-content: center;

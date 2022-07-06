@@ -1,65 +1,81 @@
 /**
  * controller.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #controller {
-    position: sticky;
-    top: 80px;
-    width: 100px;
-    z-index: 0;
-  }
-  #controller > div {
-    width: 90px;
-    transform: translateX(0);
-    transition: all .2s ease-in-out
-  }
-  #controller > div.hide-menu {
-    transform: translateX(-90px);
-  }
-  #controller > span {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: .8rem;
-    font-family: monospace;
-    text-transform: uppercase;
-    cursor: pointer;
-    transition: all .1s ease-in-out;
-  }
-  #controller > span.hide-menu {
-    transform: translateX(-15px);
-  }
-  #controller > span:hover {
-    color: dodgerblue;
-  }
-  #controller > span > i {
-    padding: 0 5px;
-    font-size: 1rem;
-  }
-  #controller > div > a > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: inherit;
-    height: 90px;
-    cursor: pointer;
-  }
-  #controller > div > a > div.active {
-    background: lightgrey;
-  }
-  #controller > div > a > div:hover {
-    background: lightgrey;
-  }
-  #controller > div > a > div > i {
-    font-size: 2rem;
-    margin: 15px;
-  }
-  #controller > div > a > div > span {
-    font-size: 1rem;
-  }
+#controller {
+  position: sticky;
+  top: 80px;
+  width: 100px;
+  z-index: 0;
 }
-@media only screen and (max-width: 550px) {
+#controller > div {
+  width: 90px;
+  transform: translateX(0);
+  transition: all .2s ease-in-out
+}
+#controller > div.hide-menu {
+  transform: translateX(-90px);
+}
+#controller > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: .8rem;
+  font-family: monospace;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+#controller > span.hide-menu {
+  transform: translateX(-15px);
+}
+#controller > span:hover {
+  color: dodgerblue;
+}
+#controller > span > i {
+  padding: 0 5px;
+  font-size: 1rem;
+}
+#controller > div > a > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  width: inherit;
+  height: 90px;
+  cursor: pointer;
+}
+#controller > div > a > div.active {
+  background: lightgrey;
+}
+#controller > div > a > div:hover {
+  background: lightgrey;
+}
+#controller > div > a > div > i {
+  font-size: 2rem;
+  margin: 15px;
+}
+#controller > div > a > div > span {
+  font-size: 1rem;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   #controller {
     width: 100%;
     height: calc(100% - 52px);

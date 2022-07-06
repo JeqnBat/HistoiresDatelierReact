@@ -1,31 +1,46 @@
 /**
  * QUOTE.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #quote {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px;
-    width: 630px;
-    text-align: center;
-  }
-  #quote > span {
-    font-size: 5rem;
-  }
-  #quote > span:last-child {
-    padding-top: 120px;
-  }
-  #descr > h1 {
-    margin-top: 0;
-    text-align: center;
-  }
-  #descr {
-    width: 800px;
-  }
-} 
-/* RESPONSIVE */
-@media (max-width: 550px) {
+#quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  width: 630px;
+  text-align: center;
+}
+#quote > span {
+  font-size: 5rem;
+}
+#quote > span:last-child {
+  padding-top: 120px;
+}
+#descr > h1 {
+  margin-top: 0;
+  text-align: center;
+}
+#descr {
+  width: 800px;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   #quote {
     display: none;
   }

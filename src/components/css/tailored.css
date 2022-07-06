@@ -1,24 +1,40 @@
 /**
  * TAILORED.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #tailored {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  #tailored > div:first-of-type {
-    width: 100%;
-  }
-  #tailored > form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
+#tailored {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-@media only screen and (max-width: 550px) {
+#tailored > div:first-of-type {
+  width: 100%;
+}
+#tailored > form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 }
 
 /* Entry animation */

@@ -1,27 +1,45 @@
 /**
  * HEADER.CSS
  */
-@media only screen and (min-width: 1400px) {
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: var(--medium);
+  transition: all .3s ease-in-out;
+}
+header.small-header {
+  height: 145px;
+}
+#home-spacer {
+  margin: 0;
+  padding: 0;
+  width: inherit;
+  height: calc(100vh - 220px);
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
   header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 200px;
-    width: var(--section-width);
-    transition: all .3s ease-in-out;
-  }
-  header.small-header {
-    height: 145px;
-  }
-  #home-spacer {
-    margin: 0;
-    padding: 0;
-    width: inherit;
-    height: calc(100vh - 220px);
+    width: var(--small);
   }
 }
-/* RESPONSIVE */
-@media only screen and (max-width: 550px) {
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   header {
     flex-wrap: wrap;
     justify-content: center;

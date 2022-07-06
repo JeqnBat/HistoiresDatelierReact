@@ -1,31 +1,55 @@
 /**
  * MAIN-LOGO.CSS
  */
-@media only screen and (min-width: 1400px) {
+#logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 290px;
+  height: 190px;
+  transition: all .3s ease-in-out;
+}
+#logo > span:first-of-type {
+  display: flex;
+  align-items: center;
+  height: 75px;
+  font-size: 3rem;
+  font-family: var(--kalinsha);
+}
+#logo > span:nth-child(2) {
+  line-height: 15px;
+  font-size: .9rem;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+/* Not Homepage */
+#logo.small {
+  transform: scale(.75);
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
   #logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 290px;
-    height: 190px;
-    transition: all .3s ease-in-out;
+    width: 250px;
   }
   #logo > span:first-of-type {
-    display: flex;
-    align-items: center;
-    height: 75px;
-    font-size: 3rem;
-    font-family: var(--kalinsha);
+    font-size: 2.6rem;
   }
-  #logo > span:nth-child(2) {
-    line-height: 15px;
-    font-size: .9rem;
-    letter-spacing: 6px;
-    text-transform: uppercase;
-  }
-  /* Not Homepage */
-  #logo.small {
-    transform: scale(.75);
-  }
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
 }

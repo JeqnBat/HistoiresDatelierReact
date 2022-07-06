@@ -1,93 +1,109 @@
 /**
  * ITEM.CSS
  */
-@media only screen and (min-width: 1400px) {
-  #item {
-    width: inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 480px;
-  }
-  #item > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 400px;
-    height: inherit;
-    margin: 0 10px;
-  }
-  /* Title & price */
-  #item-header {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 100%;
-  }
-  #item > div > div#item-header > div:first-child {
-    font-family: var(--kalinsha);
-    font-size: 5rem;
-  }
-  #item > div > div#item-header > div:nth-child(2) {
-    width: 50px;
-    font-size: 2rem;
-  }
-  /* left section */
-  #item > div.gallery > div:first-child {
-    height: 394px;
-    width: 394px;
-    background-position: center!important;
-    background-size: cover!important;
-    border: 3px solid var(--primary);
-  }
-  #item > div.gallery > div:not(:first-child) {
-    width: 72px;
-    height: 72px;
-    background-position: center!important;
-    background-size: cover!important;
-    cursor: pointer;
-    border: 3px solid var(--primary);
-  }
-  #item > div.gallery > div.selected {
-    border: 3px solid var(--secondary);
-  }
-  #item > div.gallery > div:first-child:hover {
-    border: 3px solid var(--primary);
-  }
-  #item > div.gallery > div:hover {
-    border: 3px solid var(--secondary);
-  }
-  /* right section */
-  #item > div > p {
-    width: 100%;
-    text-align: center;
-  }
-  #item > div > div#accessories {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  }
-  #item > div > div#accessories > div {
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1rem;
-  }
-  #item > div > div#accessories > div > div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-    background: var(--secondary);
-    color: var(--primary);
-    margin-bottom: 10px;
-    font-size: 2rem;
-  }
+#item {
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 480px;
 }
-@media only screen and (max-width: 550px) {
+#item > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 400px;
+  height: inherit;
+  margin: 0 10px;
+}
+/* Title & price */
+#item-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+}
+#item > div > div#item-header > div:first-child {
+  font-family: var(--kalinsha);
+  font-size: 5rem;
+}
+#item > div > div#item-header > div:nth-child(2) {
+  width: 50px;
+  font-size: 2rem;
+}
+/* left section */
+#item > div.gallery > div:first-child {
+  height: 394px;
+  width: 394px;
+  background-position: center!important;
+  background-size: cover!important;
+  border: 3px solid var(--primary);
+}
+#item > div.gallery > div:not(:first-child) {
+  width: 72px;
+  height: 72px;
+  background-position: center!important;
+  background-size: cover!important;
+  cursor: pointer;
+  border: 3px solid var(--primary);
+}
+#item > div.gallery > div.selected {
+  border: 3px solid var(--secondary);
+}
+#item > div.gallery > div:first-child:hover {
+  border: 3px solid var(--primary);
+}
+#item > div.gallery > div:hover {
+  border: 3px solid var(--secondary);
+}
+/* right section */
+#item > div > p {
+  width: 100%;
+  text-align: center;
+}
+#item > div > div#accessories {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+#item > div > div#accessories > div {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1rem;
+}
+#item > div > div#accessories > div > div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+  background: var(--secondary);
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 2rem;
+}
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
   #item {
     flex-wrap: wrap;
     height: auto;
