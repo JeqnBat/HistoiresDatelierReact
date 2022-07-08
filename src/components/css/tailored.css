@@ -7,9 +7,21 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+/* SEMI MESURE TOP TOOLTIP */
 #tailored > div:first-of-type {
   width: 100%;
+  font-size: 1.25rem;
 }
+#tailored > div:first-of-type > span {
+  margin: 10px;
+}
+#tailored > div:first-of-type > i {
+  font-size: 1rem;
+}
+#tailored > div:first-of-type > div {
+  background: red;
+}
+/* SUR MESURE FORM */
 #tailored > form {
   display: flex;
   align-items: center;

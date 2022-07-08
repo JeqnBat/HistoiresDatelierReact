@@ -4,7 +4,7 @@ import './css/focus-item.css'
 const FocusItem = ({ visible, item, events }) => {
   if (visible) {
     const style = {
-      backgroundImage: `url(${item.imageUrl[0]})`,
+      backgroundImage: `url(${item.images[0]})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }
@@ -14,11 +14,8 @@ const FocusItem = ({ visible, item, events }) => {
           <i className='fa-solid fa-chevron-left'></i></div>
         <div onClick={events}>
           <div style={style}></div>
-          <div>
-            <div>{item.category}</div>
-            <div id='close' onClick={events}>
-              <i className='fa-solid fa-xmark'></i>
-            </div>
+          <div id='close' onClick={events}>
+            <i className='fa-solid fa-xmark'></i>
           </div>
           <div className='spacer'></div>
           <div className='spacer'></div>

@@ -8,15 +8,16 @@ const ItemView = ({ products }) => {
     smoothUp()
   }, [])
 
-  let { id } = useParams('id')
-  let details = products.find(item => item.id === id)
+  const { id } = useParams('id')
+  const product = products.faireParts.find(item => item.id === id)
+  const accessories = products.accessories
 
   if (!id) {
     return <h1>404…</h1>
   } else {
     return (
       <>
-        <Item details={details} />
+        <Item product={product} accessories={accessories} />
         <div className='spacer'></div>
       </>
     )

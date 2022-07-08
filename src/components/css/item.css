@@ -4,9 +4,31 @@
 #item {
   width: inherit;
   display: flex;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: center;
-  height: 480px;
+}
+/* ITEM TITLE */
+#item > div:first-of-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#item > div:first-of-type > span:first-of-type {
+  font-family: var(--kalinsha);
+  font-size: 5rem;
+  text-transform: capitalize;
+}
+#item > div:first-of-type > span:nth-child(2) {
+  font-family: var(--arnopro);
+  font-size: 1rem;
+  line-height: 1rem;
+  text-transform: capitalize;
+  margin: 25px;
+  padding-top: 15px;
+  border-top: 1px solid black;
 }
 #item > div {
   display: flex;
@@ -14,25 +36,9 @@
   align-items: center;
   flex-wrap: wrap;
   width: 400px;
-  height: inherit;
   margin: 0 10px;
 }
-/* Title & price */
-#item-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  width: 100%;
-}
-#item > div > div#item-header > div:first-child {
-  font-family: var(--kalinsha);
-  font-size: 5rem;
-}
-#item > div > div#item-header > div:nth-child(2) {
-  width: 50px;
-  font-size: 2rem;
-}
-/* left section */
+/* LEFT SECTION */
 #item > div.gallery > div:first-child {
   height: 394px;
   width: 394px;
@@ -57,23 +63,105 @@
 #item > div.gallery > div:hover {
   border: 3px solid var(--secondary);
 }
-/* right section */
-#item > div > p {
-  width: 100%;
-  text-align: center;
+#item > div.gallery > span {
+  margin: 15px 0;
+  font-size: 1.25rem;
 }
-#item > div > div#accessories {
+/* RIGHT SECTION */
+/* Price */
+#item > div:nth-child(3) > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#item > div:nth-child(3) > div > span:first-of-type {
+  font-size: 3rem;
+}
+#item > div:nth-child(3) > ul {
+  list-style: none;
+  width: 100%;
+}
+#item > div:nth-child(3) > ul > li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: nowrap;
+}
+#item > div:nth-child(3) > ul > li > span.item-prop {
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-family: monospace;
+  color: slategrey;
+}
+#item > div:nth-child(3) > ul > li > span:nth-child(2) {
+  height: 1rem;
+  border-bottom: 1px dotted lightgrey;
+  width: 100%;
+  margin: 0 10px;
+}
+#item > div:nth-child(3) > ul > li > span:nth-child(3) {
+  white-space: nowrap;
+  text-align: right;
+}
+/* ACCESSORIES SECTION
+________________________________________________________ */
+/* Wrapper */
+#item > div:nth-child(3) > div#accessories {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   width: 100%;
 }
-#item > div > div#accessories > div {
-  margin: 0 auto;
+/* Title */
+#item > div:nth-child(3) > div#accessories > div:first-of-type {
+  width: 100%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  margin: 20px;
   text-align: center;
-  font-size: 1rem;
 }
-#item > div > div#accessories > div > div:first-child {
+/* TOOLTIP
+________________________________________________________ */
+/* Tooltip container */
+#item > div:nth-child(3) > div#accessories > div {
+  position: relative;
+}
+/* Tooltip itself */
+#item > div:nth-child(3) > div#accessories > div > div.tooltip {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+  width: 200px;
+  border-radius: 4px;
+  top: -90px;
+  left: -65px;
+  font-size: 1rem;
+  color: var(--primary);
+  background: var(--secondary);
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+/* Tooltip bottom 'angle down' */
+#item > div:nth-child(3) > div#accessories > div > div.tooltip::after {
+  position: absolute;
+  content: ' ';
+  bottom: 0;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background:  var(--secondary);
+  width: 20px;
+  height: 7px;
+  transform: rotate(180deg) translateY(-7px);
+}
+#item > div:nth-child(3) > div#accessories > div > div:nth-child(1):hover + div.tooltip {
+  opacity: 1;
+}
+/* Round button */
+#item > div:nth-child(3) > div#accessories > div > div:nth-child(1) {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,7 +171,28 @@
   background: var(--secondary);
   color: var(--primary);
   margin-bottom: 10px;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .1s ease-in-out;
+}
+/* Transition on purchased */
+#item > div:nth-child(3) > div#accessories > div > div > i {
+  z-index: 5;
+}
+#item > div:nth-child(3) > div#accessories > div > div:nth-child(1)::before {
+  position: absolute;
+  content: ' ';
+  border-radius: 35px;
+  transform: scale(0);
+  inset: 0;
+  background: var(--active);
+  transition: all .2s ease-in-out;
+}
+#item > div:nth-child(3) > div#accessories > div > div.purchased::before {
+  transform: scale(1);
+}
+#item > div:nth-child(3) > div#accessories > div > div:nth-child(1):hover {
+  opacity: .9;
 }
 /* BIG SCREEN > 1920
 ________________________________________________________ */

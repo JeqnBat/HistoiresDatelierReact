@@ -34,7 +34,11 @@ const Tailored = () => {
         animationIterationCount: 'infinite'
       }}
     >
-      <div>/!\tip semi mesure</div>
+      <div>
+        <span>semi mesure</span>
+        <i className="fa-solid fa-circle-info"></i>
+        <div>description</div>
+      </div>
       <form onSubmit={handleSubmit}>
         <label>
           Papier

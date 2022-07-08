@@ -10,8 +10,8 @@ import CategoryView from './categories/CategoryView'
 import ItemView from './categories/item/ItemView'
 
 const FairePart = ({ data }) => {
-  const { faireParts, loaded } = useStoreState(state => ({
-    faireParts: state.products.faireParts,
+  const { products, loaded } = useStoreState(state => ({
+    products: state.products,
     loaded: state.loaded.products
   }))
   const { setPageName, fetchProductsData } = useStoreActions(actions => ({
@@ -35,15 +35,15 @@ const FairePart = ({ data }) => {
           {/* Center div - Grid */}
           <div>
             <Routes>
-              <Route path='/' element={<All products={faireParts} />} />
-              <Route path=':category' element={<CategoryView products={faireParts} />} >
-                <Route path='article=:id' element={<ItemView products={faireParts} />} />
+              <Route path='/' element={<All products={products.faireParts} />} />
+              <Route path=':category' element={<CategoryView products={products.faireParts} />} >
+                <Route path='article=:id' element={<ItemView products={products} />} />
               </Route>
             </Routes>
-            <Grid products={faireParts} />
+            <Grid products={products.faireParts} />
           </div>
           {/* Right div */}
-          <div style={{width: '100px'}}></div>
+          <div style={{maxWidth: '100px'}}></div>
         </section>
         <div className="spacer"></div>
       </>

@@ -9,7 +9,7 @@ section#product-header {
   text-align: center;
 }
 section#product-header > .sider {
-  width: 90px;
+  max-width: 90px;
 }
 /* BIG SCREEN > 1920
 ________________________________________________________ */

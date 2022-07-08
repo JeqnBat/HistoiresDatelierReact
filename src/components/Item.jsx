@@ -1,27 +1,41 @@
 import React, { useState } from 'react'
 import './css/item.css'
 
-const Item = ({ details }) => {
-  window.addEventListener('select', () => {
-    console.log('kikoo');
-  })
-  const [image, setMainImage] = useState(details.imageUrl[0])
+const Item = ({ product, accessories }) => {
+  const [image, setMainImage] = useState(product.images[0])
   const [selected, setSelected] = useState(null)
-  const [...images] = details.imageUrl
+  const [extras, setExtras] = useState(accessories)
+  const [price, setPrice] = useState(product.price)
+
+  const addExtra = (el) => {
+    // how does 'extras' Array updates ??
+    const item = extras.find(item => item.name === el.name )
+    if (!item.purchased) {
+      item.purchased = !item.purchased
+      setPrice(Number(price) + Number(el.price))
+    } else {
+      item.purchased = !item.purchased
+      setPrice(Number(price) - Number(el.price))
+    }
+  }
 
   const handleClick = (payload) => {
-    setMainImage(images[payload])
+    setMainImage(product.images[payload])
     setSelected(payload)
   }
 
   return (
     <div id='item'>
+      <div>
+        <span>{product.name}</span>
+        <span>{product.category}</span>
+      </div>
       <div className='gallery'>
         <div style={{
           background: `url(${image})`
         }}>
         </div>
-        {images.map((el, idx) => (
+        {product.images.map((el, idx) => (
           <div 
             key={idx}
             onClick={() => handleClick(idx)}
@@ -32,36 +46,61 @@ const Item = ({ details }) => {
           >
           </div>
         ))}
+        <span>{product.descr}</span>
       </div>
       <div>
-        <div id='item-header'>
-          <div>
-            {details.name}
-          </div>
-          <div>
-            {details.price}
-          </div>
+        <div>
+          <span>{price}</span>
+          <span>€</span>
         </div>
-        <p>{details.category}</p>
         <ul>
-          <li>{details.format}</li>
-          <li>{details.paper}</li>
+          <li>
+            <span className='item-prop'>Format</span>
+            <span></span>
+            <span>{product.format}</span>
+          </li>
+          <li>
+            <span className='item-prop'>Papier</span>
+            <span></span>
+            <span>{product.paper}</span>
+          </li>
+          <li>
+            <span className='item-prop'>Typographie</span>
+            <span></span>
+            <span>{product.typography}</span>
+          </li>
+          <li>
+            <span className='item-prop'>Motifs</span>
+            <span></span>
+            <span>{product.pattern}</span>
+          </li>
+          <li>
+            <span className='item-prop'>Impression</span>
+            <span></span>
+            <span>{product.verso ? 'recto / verso' : 'recto'}</span>
+          </li>
+          <li>
+            <span className='item-prop'>Pli</span>
+            <span></span>
+            <span>{product.fold ? 'oui' : 'non'}</span>
+          </li>
         </ul>
         <div id="accessories">
-          <div>
-            <div><i className="fa-solid fa-envelope-open"></i></div>
-            <div>Enveloppes</div>
+          <div>accessoires</div>
+            {extras.map((el, idx) => (
+              <div key={idx}>
+                <div 
+                  onClick={() => addExtra(el)}
+                  className={el.purchased ? 'purchased' : ''}
+                >
+                  <i className={el.class}></i>
+                </div>
+                <div className='tooltip'>
+                  <span>{el.descr}</span>
+                </div>
+              </div>
+            ))}
           </div>
-          <div>
-            <div><i className="fa-solid fa-sun"></i></div>
-            <div>Fleurs</div>
-          </div>
-          <div>
-            <div><i className="fa-solid fa-ribbon"></i></div>
-            <div>Rubans</div>
-          </div>
-        </div>
-        <p>{details.descr}</p>
       </div>
     </div>
   )
