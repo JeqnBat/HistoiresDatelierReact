@@ -1,41 +1,67 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './css/item.css'
 
 const Item = ({ product, accessories }) => {
-  const [image, setMainImage] = useState(product.images[0])
+  const [image, setMainImage] = useState(product.img[0])
   const [selected, setSelected] = useState(null)
   const [extras, setExtras] = useState(accessories)
   const [price, setPrice] = useState(product.price)
+  const location = useLocation()
+  const [currentLocation, setLocation] = useState(location.pathname)
 
+
+  // WTFFFFFFFFF
+  const navigate = () => {
+    if (currentLocation.slice(-1) <= 0) {
+      setLocation(currentLocation)
+    } else {
+      setLocation(currentLocation )
+    }  
+  }
   const addExtra = (el) => {
     // how does 'extras' Array updates ??
     const item = extras.find(item => item.name === el.name )
-    if (!item.purchased) {
-      item.purchased = !item.purchased
-      setPrice(Number(price) + Number(el.price))
-    } else {
-      item.purchased = !item.purchased
-      setPrice(Number(price) - Number(el.price))
-    }
+      if (!item.purchased) {
+        item.purchased = !item.purchased
+        setPrice(Number(price) + Number(el.price))
+      } else {
+        item.purchased = !item.purchased
+        setPrice(Number(price) - Number(el.price))
+      }
   }
 
   const handleClick = (payload) => {
-    setMainImage(product.images[payload])
+    setMainImage(product.img[payload])
     setSelected(payload)
   }
+
+  useEffect(() => {
+    console.log(location.pathname);
+  }, [location])
 
   return (
     <div id='item'>
       <div>
-        <span>{product.name}</span>
-        <span>{product.category}</span>
+        <div></div>
+        <div>
+          <span>{product.name}</span>
+          <span>{product.category}</span>
+        </div>
+        <div>
+          <span 
+            onClick={location.pathname.slice(-1) <= 0 ? location.pathname.slice(-1) : location.pathname.slice(-1) - 1}>
+            <i className="fa-solid fa-angle-left"></i>
+          </span>
+          <span><i className="fa-solid fa-angle-right"></i></span>
+        </div>
       </div>
       <div className='gallery'>
         <div style={{
           background: `url(${image})`
         }}>
         </div>
-        {product.images.map((el, idx) => (
+        {product.img.map((el, idx) => (
           <div 
             key={idx}
             onClick={() => handleClick(idx)}
@@ -97,6 +123,7 @@ const Item = ({ product, accessories }) => {
                 </div>
                 <div className='tooltip'>
                   <span>{el.descr}</span>
+                  <div style={{backgroundImage: `url(${el.img})`}}></div>
                 </div>
               </div>
             ))}

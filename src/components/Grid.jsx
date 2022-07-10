@@ -56,7 +56,7 @@ const Grid = ({ products }) => {
           <div
             id={product.id} 
             key={product.id}
-            style={{backgroundImage: `url(${product.images[0]})`}}
+            style={{backgroundImage: `url(${product.img[0]})`}}
             className={product.highlighted ? '' : 'blur'}
             onClick={(e) => handleClick(e)}
           > 

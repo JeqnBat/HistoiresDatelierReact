@@ -8,29 +8,93 @@
   align-items: flex-start;
   justify-content: center;
 }
-/* ITEM TITLE */
+/* Item header container */
 #item > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Item title div container */
+#item > div:first-of-type > div:nth-child(2) {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: auto;
 }
-#item > div:first-of-type > span:first-of-type {
+/* Item title div siders */
+#item > div:first-of-type > div:first-of-type, #item > div:first-of-type > div:nth-child(3) {
+  width: 180px;
+  height: 50px;
+}
+/* Right sider navigation arrows container */
+#item > div:first-of-type > div:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Arrows span */
+#item > div:first-of-type > div:nth-child(3) > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  font-size: 1rem;
+  margin: 4px;
+  opacity: 0.2;
+  transition: all .1s ease-in-out;
+}
+#item > div:first-of-type > div:nth-child(3) > span:hover {
+  opacity: 1;
+}
+/* Arrows <i> */
+#item > div:first-of-type > div:nth-child(3) > span > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--secondary);
+  color: var(--primary);
+  border-radius: 20px;
+}
+/* Left arrow before */
+#item > div:first-of-type > div:nth-child(3) > span:first-of-type::before {
+  margin-right: 10px;
+  content: 'PREC.';
+  font-size: .8rem;
+  opacity: 0;
+}
+/* Right arrow after */
+#item > div:first-of-type > div:nth-child(3) > span:nth-child(2)::after {
+  margin-left: 10px;
+  content: 'SUIV.';
+  font-size: .8rem;
+  opacity: 0;
+}
+/* Arrows hover effect */
+#item > div:first-of-type > div:nth-child(3) > span:first-of-type:hover::before, #item > div:first-of-type > div:nth-child(3) > span:nth-child(2):hover::after{
+  opacity: 1;
+}
+/* Item title */
+#item > div > div:nth-child(2) > span:first-of-type {
   font-family: var(--kalinsha);
   font-size: 5rem;
   text-transform: capitalize;
 }
-#item > div:first-of-type > span:nth-child(2) {
+/* Item category */
+#item > div > div:nth-child(2) > span:nth-child(2) {
   font-family: var(--arnopro);
   font-size: 1rem;
   line-height: 1rem;
   text-transform: capitalize;
   margin: 25px;
   padding-top: 15px;
-  border-top: 1px solid black;
+  border-top: 1px solid var(--secondary);
 }
-#item > div {
+/* 2 remaining DIVs width=400px => 1. left gallery // 2. right item specs */
+#item > div:not(:first-of-type) {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -38,7 +102,7 @@
   width: 400px;
   margin: 0 10px;
 }
-/* LEFT SECTION */
+/* Left section */
 #item > div.gallery > div:first-child {
   height: 394px;
   width: 394px;
@@ -133,28 +197,38 @@ ________________________________________________________ */
   position: absolute;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 80px;
   width: 200px;
+  padding: 10px;
   border-radius: 4px;
-  top: -90px;
-  left: -65px;
+  top: -108px;
+  left: -74px;
   font-size: 1rem;
   color: var(--primary);
   background: var(--secondary);
   opacity: 0;
   transition: all .1s ease-in-out;
 }
+/* Tooltip picture */
+#item > div:nth-child(3) > div#accessories > div > div.tooltip > div {
+  height: 70px;
+  width: 70px;
+  margin-left: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Tooltip bottom 'angle down' */
 #item > div:nth-child(3) > div#accessories > div > div.tooltip::after {
   position: absolute;
   content: ' ';
   bottom: 0;
+  left: 98px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   background:  var(--secondary);
   width: 20px;
   height: 7px;
-  transform: rotate(180deg) translateY(-7px);
+  transform: rotate(180deg) translateY(-6px);
 }
 #item > div:nth-child(3) > div#accessories > div > div:nth-child(1):hover + div.tooltip {
   opacity: 1;

@@ -1,9 +1,11 @@
 /** 
- *  INDEX (copy & paste const name)
+ *  INDEX (ctrl+F const name + F3)
  *  
- *  1   appData
+ *  1   
+ * appData
  * 
- *  2   products
+ *  2   
+ * products
  */
 const appData =
 {
@@ -237,7 +239,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/naissance/1.webp",
         "/img/products/fairepart/naissance/2.webp",
         "/img/products/fairepart/naissance/3.webp",
@@ -259,7 +261,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/naissance/2.webp",
         "/img/products/fairepart/naissance/6.webp",
         "/img/products/fairepart/naissance/7.webp",
@@ -281,7 +283,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/naissance/3.webp",
         "/img/products/fairepart/naissance/1.webp",
         "/img/products/fairepart/naissance/2.webp",
@@ -303,7 +305,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/naissance/4.webp",
         "/img/products/fairepart/naissance/7.webp",
         "/img/products/fairepart/naissance/8.webp",
@@ -325,7 +327,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/naissance/5.webp",
         "/img/products/fairepart/naissance/2.webp",
         "/img/products/fairepart/naissance/3.webp",
@@ -338,7 +340,7 @@ const products = {
     {
       id: "5",
       name: "article 6",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -347,7 +349,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/bapteme/6.webp",
         "/img/products/fairepart/bapteme/5.webp",
         "/img/products/fairepart/bapteme/4.webp",
@@ -360,7 +362,7 @@ const products = {
     {
       id: "6",
       name: "article 7",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -369,7 +371,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/bapteme/7.webp",
         "/img/products/fairepart/bapteme/5.webp",
         "/img/products/fairepart/bapteme/4.webp",
@@ -382,7 +384,7 @@ const products = {
     {
       id: "7",
       name: "article 8",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -391,7 +393,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/bapteme/8.webp",
         "/img/products/fairepart/bapteme/5.webp",
         "/img/products/fairepart/bapteme/4.webp",
@@ -404,7 +406,7 @@ const products = {
     {
       id: "8",
       name: "article 9",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -413,7 +415,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/bapteme/2.webp",
         "/img/products/fairepart/bapteme/5.webp",
         "/img/products/fairepart/bapteme/4.webp",
@@ -426,7 +428,7 @@ const products = {
     {
       id: "9",
       name: "article 10",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -435,7 +437,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/bapteme/4.webp",
         "/img/products/fairepart/bapteme/5.webp",
         "/img/products/fairepart/bapteme/4.webp",
@@ -457,7 +459,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/1.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -479,7 +481,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/7.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -501,7 +503,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/6.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -523,7 +525,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/8.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -545,7 +547,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -567,7 +569,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/1.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -589,7 +591,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/3.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -611,7 +613,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/7.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -624,7 +626,7 @@ const products = {
     {
       id: "18",
       name: "article 19",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -633,7 +635,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -646,7 +648,7 @@ const products = {
     {
       id: "19",
       name: "article 20",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -655,7 +657,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/6.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -668,7 +670,7 @@ const products = {
     {
       id: "20",
       name: "article 21",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -677,7 +679,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/8.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -690,7 +692,7 @@ const products = {
     {
       id: "21",
       name: "article 22",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -699,7 +701,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -712,7 +714,7 @@ const products = {
     {
       id: "22",
       name: "article 23",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -721,7 +723,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/3.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -743,7 +745,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -765,7 +767,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/4.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -787,7 +789,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/7.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -809,7 +811,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/6.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -831,7 +833,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/8.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -853,7 +855,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -875,7 +877,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/8.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -897,7 +899,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/1.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -910,7 +912,7 @@ const products = {
     {
       id: "31",
       name: "article 32",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -919,7 +921,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/5.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -932,7 +934,7 @@ const products = {
     {
       id: "32",
       name: "article 33",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -941,7 +943,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/4.webp",
         "/img/products/fairepart/mariage/6.webp",
         "/img/products/fairepart/mariage/1.webp",
@@ -954,7 +956,7 @@ const products = {
     {
       id: "33",
       name: "article 34",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -963,7 +965,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/1.webp",
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/3.webp",
@@ -976,7 +978,7 @@ const products = {
     {
       id: "34",
       name: "article 35",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -985,7 +987,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/6.webp",
         "/img/products/fairepart/mariage/7.webp",
         "/img/products/fairepart/mariage/8.webp",
@@ -1007,7 +1009,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/8.webp",
         "/img/products/fairepart/mariage/7.webp",
         "/img/products/fairepart/mariage/6.webp",
@@ -1020,7 +1022,7 @@ const products = {
     {
       id: "36",
       name: "article 37",
-      category: "bapteme",
+      category: "baptême",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -1029,7 +1031,7 @@ const products = {
       verso: false,
       fold: false,
       descr: "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte.",
-      images: [
+      img: [
         "/img/products/fairepart/mariage/3.webp",
         "/img/products/fairepart/mariage/2.webp",
         "/img/products/fairepart/mariage/1.webp",

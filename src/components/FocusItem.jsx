@@ -4,7 +4,7 @@ import './css/focus-item.css'
 const FocusItem = ({ visible, item, events }) => {
   if (visible) {
     const style = {
-      backgroundImage: `url(${item.images[0]})`,
+      backgroundImage: `url(${item.img[0]})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center'
     }
