@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 import './css/item.css'
 
-const Item = ({ product, accessories, prev, next }) => {
+const Item = ({ product, accessories, events }) => {
   const [image, setMainImage] = useState(product.img[0])
   const [selected, setSelected] = useState(null)
   const [extras, setExtras] = useState(accessories)
@@ -33,15 +32,11 @@ const Item = ({ product, accessories, prev, next }) => {
           <span>{product.category}</span>
         </div>
         <div>
-          <span>
-            <Link to={prev}>
-              <i className='fa-solid fa-angle-left'></i>
-            </Link>
+          <span id='prev' onClick={events}>
+            <i className='fa-solid fa-angle-left'></i>
           </span>
-          <span>
-            <Link to={next}>
-              <i className='fa-solid fa-angle-right'></i>
-            </Link>
+          <span id='next' onClick={events}>
+            <i className='fa-solid fa-angle-right'></i>
           </span>
         </div>
       </div>

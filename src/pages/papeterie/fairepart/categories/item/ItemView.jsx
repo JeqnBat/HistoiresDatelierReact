@@ -1,30 +1,32 @@
-import React, { useEffect } from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useState, useEffect } from 'react'
+import { useParams, Location } from 'react-router-dom'
 import { smoothUp } from '../../../../../scripts/logic'
 import Item from  '../../../../../components/Item'
 
 const ItemView = ({ products }) => {
+  const accessories = products.accessories
+  const { id } = useParams('id')
+  const [product, setProduct] = useState(products.faireParts.find(product => product.id === id))
+
   useEffect(() => {
     smoothUp()
   }, [])
 
-  const { id } = useParams('id')
-  const product = products.faireParts.find(item => item.id === id)
-  const productIndex = products.faireParts.findIndex(item => item.id === id)
-  const accessories = products.accessories
-
-  let  prevProduct, prevLink, nextProduct, nextLink
-  if (productIndex <= 0) {
-    prevProduct = null
-    prevLink = '/#'
-  } else if (productIndex >= products.length) {
-    nextProduct = null
-    nextLink = '/#'
-  } else {
-    prevProduct = products.faireParts[productIndex - 1]
-    prevLink = `../../${prevProduct.category}/article=${prevProduct.id}`
-    nextProduct = products.faireParts[productIndex + 1]
-    nextLink = `../../${nextProduct.category}/article=${nextProduct.id}`
+  const events = (e) => {
+    // Prevent bubbling so 'screener click' does not remove other events
+    e.stopPropagation()
+    switch (e.currentTarget.id) {
+      case 'prev':
+        let prevProductID = product.id > 0 ? (Number(product.id) - 1).toString() : product.id
+        setProduct(products.faireParts.find(el => el.id === prevProductID))
+        break
+      case 'next':
+        let nextProductID = product.id < products.faireParts.length - 1 ? (Number(product.id) + 1).toString() : product.id
+        setProduct(products.faireParts.find(el => el.id === nextProductID))
+        break
+      default:
+        break
+    }
   }
   
   if (!id) {
@@ -32,7 +34,7 @@ const ItemView = ({ products }) => {
   } else {
     return (
       <>
-        <Item product={product} accessories={accessories} prev={prevLink} next={nextLink} />
+        <Item product={product} accessories={accessories} events={events} />
         <div className='spacer'></div>
       </>
     )
