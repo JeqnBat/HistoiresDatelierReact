@@ -340,7 +340,7 @@ const products = {
     {
       id: "5",
       name: "article 6",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -362,7 +362,7 @@ const products = {
     {
       id: "6",
       name: "article 7",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -384,7 +384,7 @@ const products = {
     {
       id: "7",
       name: "article 8",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -406,7 +406,7 @@ const products = {
     {
       id: "8",
       name: "article 9",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -428,7 +428,7 @@ const products = {
     {
       id: "9",
       name: "article 10",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -626,7 +626,7 @@ const products = {
     {
       id: "18",
       name: "article 19",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -648,7 +648,7 @@ const products = {
     {
       id: "19",
       name: "article 20",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -670,7 +670,7 @@ const products = {
     {
       id: "20",
       name: "article 21",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -692,7 +692,7 @@ const products = {
     {
       id: "21",
       name: "article 22",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -714,7 +714,7 @@ const products = {
     {
       id: "22",
       name: "article 23",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -912,7 +912,7 @@ const products = {
     {
       id: "31",
       name: "article 32",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -934,7 +934,7 @@ const products = {
     {
       id: "32",
       name: "article 33",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -956,7 +956,7 @@ const products = {
     {
       id: "33",
       name: "article 34",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -978,7 +978,7 @@ const products = {
     {
       id: "34",
       name: "article 35",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",
@@ -1022,7 +1022,7 @@ const products = {
     {
       id: "36",
       name: "article 37",
-      category: "baptême",
+      category: "bapteme",
       format: "8cm x 11cm",
       paper: "Old Mill",
       typography: "arnoPro",

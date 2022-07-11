@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './css/item.css'
 
-const Item = ({ product, accessories }) => {
+const Item = ({ product, accessories, prev, next }) => {
   const [image, setMainImage] = useState(product.img[0])
   const [selected, setSelected] = useState(null)
   const [extras, setExtras] = useState(accessories)
   const [price, setPrice] = useState(product.price)
-  const location = useLocation()
-  const [currentLocation, setLocation] = useState(location.pathname)
 
-
-  // WTFFFFFFFFF
-  const navigate = () => {
-    if (currentLocation.slice(-1) <= 0) {
-      setLocation(currentLocation)
-    } else {
-      setLocation(currentLocation )
-    }  
-  }
   const addExtra = (el) => {
     // how does 'extras' Array updates ??
     const item = extras.find(item => item.name === el.name )
@@ -35,11 +24,6 @@ const Item = ({ product, accessories }) => {
     setMainImage(product.img[payload])
     setSelected(payload)
   }
-
-  useEffect(() => {
-    console.log(location.pathname);
-  }, [location])
-
   return (
     <div id='item'>
       <div>
@@ -49,11 +33,16 @@ const Item = ({ product, accessories }) => {
           <span>{product.category}</span>
         </div>
         <div>
-          <span 
-            onClick={location.pathname.slice(-1) <= 0 ? location.pathname.slice(-1) : location.pathname.slice(-1) - 1}>
-            <i className="fa-solid fa-angle-left"></i>
+          <span>
+            <Link to={prev}>
+              <i className='fa-solid fa-angle-left'></i>
+            </Link>
           </span>
-          <span><i className="fa-solid fa-angle-right"></i></span>
+          <span>
+            <Link to={next}>
+              <i className='fa-solid fa-angle-right'></i>
+            </Link>
+          </span>
         </div>
       </div>
       <div className='gallery'>
