@@ -47,32 +47,32 @@
 #grid > div.blur {
   pointer-events: none;
 }
-#grid > div:nth-child(1), #grid > div:nth-child(32),
-#grid > div:nth-child(6), #grid > div:nth-child(37),
-#grid > div:nth-child(3), #grid > div:nth-child(34),
-#grid > div:nth-child(7), #grid > div:nth-child(38) {
+#grid > div:nth-child(31n + 1),
+#grid > div:nth-child(31n + 6),
+#grid > div:nth-child(31n + 3),
+#grid > div:nth-child(31n + 7) {
   grid-row: span 2;
 }
-#grid > div:nth-child(2), #grid > div:nth-child(33),
-#grid > div:nth-child(5), #grid > div:nth-child(36),
-#grid > div:nth-child(25), #grid > div:nth-child(56) {
+#grid > div:nth-child(31n + 2),
+#grid > div:nth-child(31n + 5),
+#grid > div:nth-child(31n + 25) {
   grid-row: span 4;
 }
-#grid > div:nth-child(15), #grid > div:nth-child(46) {
+#grid > div:nth-child(31n + 15) {
   grid-row: span 6;
   grid-column: span 4;
 }
-#grid > div:nth-child(22), #grid > div:nth-child(53),
-#grid > div:nth-child(23), #grid > div:nth-child(54),
-#grid > div:nth-child(24), #grid > div:nth-child(55) {
+#grid > div:nth-child(31n + 22),
+#grid > div:nth-child(31n + 23),
+#grid > div:nth-child(31n + 24) {
   grid-row: span 6;
 }
-#grid > div:nth-child(27),
-#grid > div:nth-child(28),
-#grid > div:nth-child(29) {
+#grid > div:nth-child(31n + 27),
+#grid > div:nth-child(31n + 28),
+#grid > div:nth-child(31n + 29) {
   grid-row: span 6;
 }
-#grid > div:nth-child(31) {
+#grid > div:nth-child(31n + 31) {
   grid-row: span 6;
 }
 /* BIG SCREEN > 1920

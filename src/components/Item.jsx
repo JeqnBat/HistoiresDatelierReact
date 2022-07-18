@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './css/item.css'
 
-const Item = ({ product, accessories, events }) => {
+const Item = ({ product, accessories }) => {
   const [image, setMainImage] = useState(product.img[0])
   const [selected, setSelected] = useState(null)
   const [extras, setExtras] = useState(accessories)
@@ -10,35 +10,25 @@ const Item = ({ product, accessories, events }) => {
   const addExtra = (el) => {
     // how does 'extras' Array updates ??
     const item = extras.find(item => item.name === el.name )
-      if (!item.purchased) {
-        item.purchased = !item.purchased
-        setPrice(Number(price) + Number(el.price))
-      } else {
-        item.purchased = !item.purchased
-        setPrice(Number(price) - Number(el.price))
-      }
+    if (!item.purchased) {
+      item.purchased = !item.purchased
+      setPrice(Number(price) + Number(el.price))
+    } else {
+      item.purchased = !item.purchased
+      setPrice(Number(price) - Number(el.price))
+    }
   }
 
   const handleClick = (payload) => {
     setMainImage(product.img[payload])
     setSelected(payload)
   }
+  
   return (
     <div id='item'>
       <div>
-        <div></div>
-        <div>
-          <span>{product.name}</span>
-          <span>{product.category}</span>
-        </div>
-        <div>
-          <span id='prev' onClick={events}>
-            <i className='fa-solid fa-angle-left'></i>
-          </span>
-          <span id='next' onClick={events}>
-            <i className='fa-solid fa-angle-right'></i>
-          </span>
-        </div>
+        <span>{product.name}</span>
+        <span>{product.category}</span>
       </div>
       <div className='gallery'>
         <div style={{
