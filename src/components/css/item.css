@@ -243,6 +243,12 @@ ________________________________________________________ */
     height: auto;
     margin: 0;
   }
+  /* BODY */
+  /* 2 remaining DIVs width=100% => 1. top gallery // 2. bottom item specs */
+  #item > div:not(:first-of-type) {
+    width: 100%;
+    margin: 0;
+  }
   #item > div.gallery > div:first-child {
     /* 1:1 aspect ratio trick */
     height: calc(100vw - 46px);
@@ -251,5 +257,28 @@ ________________________________________________________ */
   #item > div.gallery > div:not(:first-child) {
     width: calc((100vw / 5) - 14px);
     height: calc((100vw / 5) - 14px);
+  }
+  /* Item specs */
+  #item > div:nth-child(3) > ul {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+  }
+  /* TOOL TIPS */
+  /* Item accessories tooltip */
+  #item > div:nth-child(3) > div#accessories > div > div.tooltip {
+    width: auto;
+  }
+  /* Tooltip picture */
+  #item > div:nth-child(3) > div#accessories > div > div.tooltip > div {
+    display: none;
+  }
+  /* Tooltip width */
+  #item > div:nth-child(3) > div#accessories > div > div.tooltip {
+    left: -10px;
+  }
+  /* Tooltip down angle */
+  #item > div:nth-child(3) > div#accessories > div > div.tooltip::after {
+    left: 33px;
   }
 }

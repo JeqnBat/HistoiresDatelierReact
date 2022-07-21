@@ -5,10 +5,18 @@ const FollowUs = ({ data }) => {
     <section id='follow-us'>
       <h3>{data.homePage.followUs}</h3>
       <nav id="social-icons">
-        <i className="fa-brands fa-facebook-f"></i>
+        <a href="https://www.facebook.com/HistoiresdAtelier" target="blank">
+          <i className="fa-brands fa-facebook-f"></i>
+        </a>
+
         <i className="fa-brands fa-pinterest-p"></i>
-        <i className="fa-brands fa-instagram"></i>
-        <i className="fa-brands fa-linkedin-in"></i>
+
+        <a href="https://www.instagram.com/histoiresdatelier" target="blank">
+          <i className="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/histoires-d-atelier" target="blank">
+          <i className="fa-brands fa-linkedin-in"></i>
+        </a>
       </nav>
     </section>
   )

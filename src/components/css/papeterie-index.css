@@ -1,0 +1,64 @@
+/**
+ * PAPETERIE INDEX.CSS
+ */
+section#papeterie-index {
+  text-align: center;
+}
+section#papeterie-index > nav {
+  display: flex;
+  gap: 20px;
+}
+section#papeterie-index > nav > div {
+  position: relative;
+  height: 300px;
+  width: 300px;
+}
+section#papeterie-index > nav > div::before {
+  content: ' ';
+  position: absolute;
+  inset: 0;
+  background: var(--secondary);
+  opacity: .9;
+  transition: all .1s ease-in-out;
+}
+section#papeterie-index > nav > div:hover::before {
+  opacity: .2;
+}
+section#papeterie-index > nav > div > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  color: var(--primary);
+}
+section#papeterie-index > nav > div {
+  background-size: cover;
+  background-position: center;
+}
+
+/* BIG SCREEN > 1920
+________________________________________________________ */
+@media only screen and (min-width: 1921px) {
+}
+/* MEDIUM SCREEN > 1365
+________________________________________________________ */
+@media only screen and (max-width: 1920px) {
+}
+/* SMALL SCREEN > 1023
+________________________________________________________ */
+@media only screen and (max-width: 1365px) {
+}
+/* TABLET > 500
+________________________________________________________ */
+@media only screen and (max-width: 1023px) {
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
+  section#papeterie-index > nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}

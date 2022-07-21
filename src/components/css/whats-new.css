@@ -16,8 +16,8 @@
   margin-left: 10px;
   transition: .2s all ease-in-out;
 }
-#check-insta:hover i {
-  transform: translateY(-4px);
+#check-insta > a:hover {
+  opacity: .75;
 }
 #check-insta {
   display: flex;
