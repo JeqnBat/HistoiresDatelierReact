@@ -4,22 +4,43 @@
 #tailored {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 /* SEMI MESURE TOP TOOLTIP */
 #tailored > div:first-of-type {
-  width: 100%;
+  width: auto;
   font-size: 1.25rem;
 }
+/* Span */
 #tailored > div:first-of-type > span {
+  position: relative;
   margin: 10px;
+}
+/* Span::after = tooltip */
+#tailored > div:first-of-type > span::after {
+  position: absolute;
+  content: 
+    'Vous voulez modifier la typographie, la couleur et/ou le papier d\'un modèle existant ? Cliquez sur ce modèle pour accéder à sa fiche détaillée puis sur semi-mesure';
+  color: var(--primary);
+  background: var(--secondary);
+  width: 500px;
+  top: -65px;
+  left: 0;
+  padding: 12px;
+  font-size: .7rem;
+  border-radius: 4px;
+  font-family: monospace;
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+/* Span::after = tooltip:hover */
+#tailored > div:first-of-type:hover > span::after {
+  opacity: 1;
 }
 #tailored > div:first-of-type > i {
   font-size: 1rem;
-}
-#tailored > div:first-of-type > div {
-  background: red;
+  cursor: pointer;
 }
 /* SUR MESURE FORM */
 #tailored > form {
