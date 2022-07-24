@@ -38,6 +38,10 @@ const Tailored = () => {
         <span>semi mesure</span>
         <i className="fa-solid fa-circle-info"></i>
       </div>
+      <div>
+        Sur-mesure cute welcome screen
+      </div>
+      <div>toggle the form +</div>
       <form onSubmit={handleSubmit}>
         <label>
           Papier
@@ -110,6 +114,10 @@ const Tailored = () => {
         </label>
         <input type='submit' value='envoyer' />
       </form>
+      <div>
+        these are your infos, do you validate ?<br />
+        <span>no, come back</span><span>yes validate</span>
+      </div>
     </div>
   )
 }

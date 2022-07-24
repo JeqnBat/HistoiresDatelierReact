@@ -42,7 +42,7 @@ const Grid = ({ products }) => {
   /* COMPONENTS LOGIC ____________________________________ */
   let a = useLocation()
   let url = a.pathname.match(/[^\/]*$/)[0]
-  let showArticle = Boolean(url.includes('article'))
+  let showArticle = Boolean(url.includes('article')) || Boolean(url.includes('sur-mesure'))
 
   return (
     <>

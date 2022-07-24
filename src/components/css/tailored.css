@@ -3,9 +3,8 @@
  */
 #tailored {
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
 }
 /* SEMI MESURE TOP TOOLTIP */
 #tailored > div:first-of-type {
@@ -41,6 +40,18 @@
 #tailored > div:first-of-type > i {
   font-size: 1rem;
   cursor: pointer;
+}
+/* SUR MESURE CUTE WELCOME SCREEN */
+#tailored > div:nth-child(2) {
+  padding: 10px;
+  width: 100%;
+  height: 200px;
+}
+/* SUR MESURE TOGGLE FORM FORM BUTTON */
+#tailored > div:nth-child(3) {
+  align-self: center;
+  border: 2px solid var(--secondary);
+  padding: 10px;
 }
 /* SUR MESURE FORM */
 #tailored > form {
