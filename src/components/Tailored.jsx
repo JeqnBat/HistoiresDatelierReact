@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './css/tailored.css'
 
 const Tailored = () => {
-  const { setTailoredForm } = useStoreActions(actions => actions)
+  const [seeForm, setSeeForm] = useState(false)
   const [form, setForm] = useState({
     paper       : 'a',
     format      : '8x11',
@@ -14,10 +14,15 @@ const Tailored = () => {
     answerCard  : false,
     inspiration : ''
   })
+  console.log(form.rectoVerso);
+  const { setTailoredForm } = useStoreActions(actions => actions)
   const handleChange = (e) => {
     let key = e.target.name
     let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
     setForm({...form, [key]: value})
+  }
+  const handleClick = () => {
+    setSeeForm(true)
   }
   const handleSubmit = (e) => {
     // envoyer ça au state global
@@ -41,8 +46,12 @@ const Tailored = () => {
       <div>
         Sur-mesure cute welcome screen
       </div>
-      <div>toggle the form +</div>
-      <form onSubmit={handleSubmit}>
+      <div
+        onClick={handleClick}
+      >toggle the form +</div>
+      <form 
+        className={seeForm ? '' : 'hide'}
+        onSubmit={handleSubmit}>
         <label>
           Papier
           <select name='paper' value={form.paper} onChange={handleChange}>
@@ -114,6 +123,15 @@ const Tailored = () => {
         </label>
         <input type='submit' value='envoyer' />
       </form>
+      <div id='custom-article-props'>
+        <div>{form.paper}</div>
+        <div>{form.format}</div>
+        <div>{form.typo}</div>
+        <div>{form.motifs}</div>
+        <div>{form.rectoVerso ? 'recto verso' : 'recto seul'}</div>
+        <div>{form.pli ? 'avec pli' : 'sans pli'}</div>
+        <div>{form.answerCard ? 'avec carton réponse' : 'sans carton réponse'}</div>
+      </div>
       <div>
         these are your infos, do you validate ?<br />
         <span>no, come back</span><span>yes validate</span>

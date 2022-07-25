@@ -66,6 +66,10 @@ a {
 	text-decoration: none;
 	color: var(--secondary);
 }
+/* Classes Toolkit */
+.hide {
+  display: none!important;
+}
 /* 2. CUSTOM FONTS
 ________________________________________________________ */
 @font-face {

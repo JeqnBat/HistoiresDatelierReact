@@ -60,6 +60,16 @@
   justify-content: center;
   width: 100%;
 }
+/* ENCADRÉ PROPRIÉTÉS SUR MESURE */
+#custom-article-props {
+  width: fit-content;
+  background: lightgreen;
+  padding: 10px;
+  font-family: monospace;
+  font-size: .75rem;
+  border-radius: 4px;
+  border: 1px solid green;
+}
 /* BIG SCREEN > 1920
 ________________________________________________________ */
 @media only screen and (min-width: 1921px) {
