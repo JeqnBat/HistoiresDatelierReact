@@ -16,26 +16,18 @@
   position: relative;
   margin: 10px;
 }
-/* Span::after = tooltip */
-#tailored > div:first-of-type > span::after {
-  position: absolute;
-  content: 
-    'Vous voulez modifier la typographie, la couleur et/ou le papier d\'un modèle existant ? Cliquez sur ce modèle pour accéder à sa fiche détaillée puis sur semi-mesure';
-  color: var(--primary);
+/* Tooltip DIV */
+#tailored > div:first-of-type > div {
   background: var(--secondary);
-  width: 500px;
-  top: -65px;
-  left: 0;
-  padding: 12px;
-  font-size: .7rem;
-  border-radius: 4px;
-  font-family: monospace;
-  opacity: 0;
-  transition: all .1s ease-in-out;
+  color: var(--primary);
+  padding: 20px;
+  transition: all .2s ease-in-out;
+  max-height: 100px;
 }
-/* Span::after = tooltip:hover */
-#tailored > div:first-of-type:hover > span::after {
-  opacity: 1;
+#tailored > div:first-of-type > div.show {
+  max-height: 0;
+  padding-bottom: 0;
+  padding-top: 0;
 }
 #tailored > div:first-of-type > i {
   font-size: 1rem;

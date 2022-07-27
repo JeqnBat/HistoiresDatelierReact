@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './css/tailored.css'
 
 const Tailored = () => {
+  const [seeSemi, setSeeSemi] = useState(false)
   const [seeForm, setSeeForm] = useState(false)
   const [form, setForm] = useState({
     paper       : 'a',
@@ -14,7 +15,6 @@ const Tailored = () => {
     answerCard  : false,
     inspiration : ''
   })
-  console.log(form.rectoVerso);
   const { setTailoredForm } = useStoreActions(actions => actions)
   const handleChange = (e) => {
     let key = e.target.name
@@ -23,6 +23,9 @@ const Tailored = () => {
   }
   const handleClick = () => {
     setSeeForm(true)
+  }
+  const handleSemi = () => {
+    setSeeSemi(!seeSemi)
   }
   const handleSubmit = (e) => {
     // envoyer ça au state global
@@ -39,9 +42,12 @@ const Tailored = () => {
         animationIterationCount: 'infinite'
       }}
     >
-      <div>
+      <div onClick={handleSemi}>
         <span>semi mesure</span>
-        <i className="fa-solid fa-circle-info"></i>
+        <i className='fa-solid fa-circle-info'></i>
+        <div
+          className={seeSemi ? 'show' : ''}
+        >Vous voulez modifier la typographie, la couleur et/ou le papier d'un modèle existant ? Cliquez sur ce modèle pour accéder à sa fiche détaillée puis sur semi-mesure</div>
       </div>
       <div>
         Sur-mesure cute welcome screen
