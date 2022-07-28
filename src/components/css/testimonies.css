@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 1100px;
+  width: var(--medium);
 }
 #testimonies > div:first-child {
   width: 100%;
@@ -72,6 +72,12 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
+  #testimonies {
+    width: var(--small);
+  }
+  #testimonies > div:nth-child(3) {
+    width: 500px;
+  }
 }
 /* TABLET > 500
 ________________________________________________________ */

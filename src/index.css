@@ -16,7 +16,7 @@
  
 */
  
-/* 1. BODY & GLOBAL STYLES
+/* 1. VARIABLES, BODY & GLOBAL STYLES
 ________________________________________________________ */
 :root {
   --primary: rgb(240, 239, 234);
@@ -25,7 +25,7 @@ ________________________________________________________ */
 	--kalinsha: 'kallinsharegular';
 	--arnopro: 'ArnoPro';
 	--medium: 1100px;
-	--small: 900px;
+	--small: 820px;
 	--spacer: 100px;
 	--spacinho: 50px;
 }
