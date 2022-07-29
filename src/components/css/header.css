@@ -29,13 +29,13 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
-  header {
-    width: var(--small);
-  }
 }
 /* TABLET > 500
 ________________________________________________________ */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+  header {
+    width: var(--small);
+  }
 }
 /* MOBILE < 500
 ________________________________________________________ */

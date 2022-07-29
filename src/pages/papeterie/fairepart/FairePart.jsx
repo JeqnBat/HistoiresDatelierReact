@@ -43,7 +43,7 @@ const FairePart = ({ data }) => {
             <Grid products={products.faireParts} />
           </div>
           {/* Right div */}
-          <div style={{maxWidth: '100px'}}></div>
+          <div style={{width: '100px'}}></div>
         </section>
         <div className="spacer"></div>
       </>

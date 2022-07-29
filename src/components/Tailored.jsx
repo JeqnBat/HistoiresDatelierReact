@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './css/tailored.css'
 
 const Tailored = () => {
-  const [seeSemi, setSeeSemi] = useState(false)
+  const [seeSemi, setSeeSemi] = useState(true)
   const [seeForm, setSeeForm] = useState(false)
   const [form, setForm] = useState({
     paper       : 'a',

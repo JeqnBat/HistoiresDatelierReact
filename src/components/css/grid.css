@@ -30,13 +30,14 @@
 #grid > div::after {
   position: absolute;
   inset: 0;
-  content: '';
+  content: ' ';
   background: var(--primary);
   opacity: 0;
   transition: all .2s ease-in-out;
 }
 #grid > div:hover {
   opacity: .8;
+  background-color: red;
 }
 #grid > div.blur::after {
   opacity: .7;

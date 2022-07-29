@@ -66,22 +66,23 @@
 }
 /* BIG SCREEN > 1920
 ________________________________________________________ */
-@media only screen and (min-width: 1921px) {
+@media only screen and (min-width: 1920px) {
 }
 /* MEDIUM SCREEN > 1365
 ________________________________________________________ */
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 1919px) {
 }
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
-  #services {
-    width: var(--small);
-  }
+
 }
 /* TABLET > 500
 ________________________________________________________ */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+  #services {
+    width: var(--small);
+  }
 }
 /* MOBILE < 500
 ________________________________________________________ */
