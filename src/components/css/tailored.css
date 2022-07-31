@@ -22,12 +22,9 @@
   color: var(--primary);
   padding: 20px;
   transition: all .2s ease-in-out;
-  max-height: 100px;
 }
 #tailored > div:first-of-type > div.show {
-  max-height: 0;
-  padding-bottom: 0;
-  padding-top: 0;
+  transform: scale(0);
 }
 #tailored > div:first-of-type > i {
   font-size: 1rem;
