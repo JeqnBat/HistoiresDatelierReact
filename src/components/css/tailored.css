@@ -23,6 +23,7 @@
   padding: 20px;
   transition: all .2s ease-in-out;
 }
+/* affecter .show à au next sibling, le faire apparaître via transform scaleY
 #tailored > div:first-of-type > div.show {
   transform: scale(0);
 }
