@@ -20,12 +20,13 @@
 #tailored > div:first-of-type > div {
   background: var(--secondary);
   color: var(--primary);
-  padding: 20px;
+  padding: 0 20px;
+  max-height: 0;
   transition: all .2s ease-in-out;
 }
-/* affecter .show à au next sibling, le faire apparaître via transform scaleY
 #tailored > div:first-of-type > div.show {
-  transform: scale(0);
+  max-height: 120px;
+  padding: 20px;
 }
 #tailored > div:first-of-type > i {
   font-size: 1rem;
