@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import './css/tailored.css'
 
 const Tailored = () => {
-  const [seeSemi, setSeeSemi] = useState(true)
+  const [seeSemi, setSeeSemi] = useState(false)
   const [seeForm, setSeeForm] = useState(false)
   const [form, setForm] = useState({
     paper       : 'a',
@@ -16,6 +16,7 @@ const Tailored = () => {
     inspiration : ''
   })
   const { setTailoredForm } = useStoreActions(actions => actions)
+  
   const handleChange = (e) => {
     let key = e.target.name
     let value = e.target.type === 'checkbox' ? e.target.checked : e.target.value
