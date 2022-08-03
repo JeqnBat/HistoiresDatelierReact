@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: var(--medium);
+  width: inherit;
 }
 #testimonies > div:first-child {
   width: 100%;

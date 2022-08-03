@@ -113,7 +113,7 @@ main {
   align-items: center;
   justify-content: center;
 	flex-wrap: wrap;
-  width: 100%;
+  width: var(--medium);
   margin: 0 auto;
 }
 #wrapper {
