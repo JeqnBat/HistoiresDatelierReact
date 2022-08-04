@@ -1,4 +1,5 @@
 import { Outlet, useLocation } from 'react-router-dom'
+import { useStoreState } from 'easy-peasy'
 import HeaderD from '../components/HeaderD'
 import HeaderM from '../components/HeaderM'
 import Footer from '../components/Footer'
@@ -6,7 +7,8 @@ import BreadCrum from '../components/BreadCrum'
 
 const Layout = ({ feed, responsive }) => {
   const url = useLocation()
-
+  const pageName = useStoreState(state => state.pageName)
+  console.log(pageName === 'home-page');
   if (responsive) {
     return (
       <>
@@ -21,7 +23,7 @@ const Layout = ({ feed, responsive }) => {
   } else {
     return (
       <>
-        <main>
+        <main className={pageName === 'home-page' ? '' : 'products'}>
           <HeaderD data={feed} pageName={url.pathname} />
           <BreadCrum visible={url.pathname} />
           <Outlet />
