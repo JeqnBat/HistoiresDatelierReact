@@ -67,10 +67,6 @@ a {
 	text-decoration: none;
 	color: var(--secondary);
 }
-/* Classes Toolkit */
-.hide {
-  display: none!important;
-}
 /* 2. CUSTOM FONTS
 ________________________________________________________ */
 @font-face {
@@ -98,6 +94,12 @@ ________________________________________________________ */
 	width: 100%;
 	height: var(--spacinho);
 }
+.hide {
+  display: none!important;
+}
+.sider {
+	width: 30%;
+}
 /* 4. PAGES TEMPLATE
 ________________________________________________________ */
 /* Loading screen */
@@ -113,15 +115,15 @@ main {
   align-items: center;
   justify-content: center;
 	flex-wrap: wrap;
-  width: var(--medium);
+  width: 100%;
   margin: 0 auto;
 }
 #wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	flex-wrap: nowrap;
-	width: 100%;
+	flex-wrap: wrap;
+	width: inherit;
 	margin: 0;
 	padding: 0;
 }
@@ -141,6 +143,9 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
+	#wrapper > div:first-of-type {
+		width: var(--small);
+	}
 }
 /* TABLET > 500
 ________________________________________________________ */
@@ -160,6 +165,9 @@ ________________________________________________________ */
 		width: 100%;
 	}
 	#wrapper > div:nth-child(3) {
+		display: none;
+	}
+	.sider {
 		display: none;
 	}
 }

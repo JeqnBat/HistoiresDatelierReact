@@ -8,7 +8,6 @@
   text-align: center;
 }
 #squares {
-  width: inherit;
   display: flex;
   align-items: center;
   justify-content: space-evenly;

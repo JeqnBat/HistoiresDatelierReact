@@ -13,7 +13,7 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: inherit;
+  width: var(--medium);
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;

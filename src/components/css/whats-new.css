@@ -1,6 +1,9 @@
 /**
  * WHATS-NEW.CSS
  */
+#whats-new {
+  z-index: 0;
+}
 #whats-new > h1 {
   text-align: center;
 }

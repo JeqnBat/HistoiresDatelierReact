@@ -3,16 +3,17 @@
  */
 #quote {
   display: flex;
+}
+#quote > div:nth-child(2) {
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 200px;
-  width: 630px;
   text-align: center;
 }
-#quote > span {
+#quote > div:nth-child(2) > span {
   font-size: 5rem;
 }
-#quote > span:last-child {
+#quote > div:nth-child(2) > span:last-child {
   padding-top: 120px;
 }
 #descr > div > h1 {
@@ -28,7 +29,6 @@
 #descr > div:nth-child(2) {
   width: 60%;
 }
-
 /* BIG SCREEN > 1920
 ________________________________________________________ */
 @media only screen and (min-width: 1921px) {
@@ -43,7 +43,7 @@ ________________________________________________________ */
 }
 /* TABLET > 500
 ________________________________________________________ */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
 }
 /* MOBILE < 500
 ________________________________________________________ */
@@ -52,6 +52,9 @@ ________________________________________________________ */
     display: none;
   }
   #descr {
+    width: auto;
+  }
+  #descr > div:nth-child(2) {
     width: auto;
   }
 }

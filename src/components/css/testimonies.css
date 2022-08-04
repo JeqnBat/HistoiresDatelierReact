@@ -76,9 +76,6 @@ ________________________________________________________ */
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
-  #testimonies {
-    width: var(--small);
-  }
   #testimonies > div:nth-child(3) {
     width: 500px;
   }
@@ -86,9 +83,6 @@ ________________________________________________________ */
 /* MOBILE < 500
 ________________________________________________________ */
 @media only screen and (max-width: 500px) {
-  #testimonies {
-    width: 100%;
-  }
   #testimonies > div:first-child {
     margin-bottom: 0;
   }
