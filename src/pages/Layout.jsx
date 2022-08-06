@@ -23,7 +23,7 @@ const Layout = ({ feed, responsive }) => {
   } else {
     return (
       <>
-        <main className={pageName === 'home-page' ? '' : 'products'}>
+        <main className={pageName === 'home-page' ? 'home-page' : ''}>
           <HeaderD data={feed} pageName={url.pathname} />
           <BreadCrum visible={url.pathname} />
           <Outlet />
