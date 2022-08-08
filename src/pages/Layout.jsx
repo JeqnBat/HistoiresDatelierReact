@@ -8,7 +8,7 @@ import BreadCrum from '../components/BreadCrum'
 const Layout = ({ feed, responsive }) => {
   const url = useLocation()
   const pageName = useStoreState(state => state.pageName)
-  console.log(pageName === 'home-page');
+
   if (responsive) {
     return (
       <>
