@@ -59,14 +59,14 @@ ________________________________________________________ */
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
   #footer-wrapper {
-    width: var(--small);
+    width: var(--medium);
   }
 }
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
   #footer-wrapper {
-    width: var(--xs);
+    width: auto;
   }
 }
 /* MOBILE < 500

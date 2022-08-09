@@ -25,7 +25,7 @@ ________________________________________________________ */
 	--kalinsha: 'kallinsharegular';
 	--arnopro: 'ArnoPro';
 	--medium: 1100px;
-	--small: 820px;
+	--small: 900px;
 	--xs: 600px;
 	--spacer: 100px;
 	--spacinho: 50px;
@@ -151,7 +151,7 @@ ________________________________________________________ */
 		width: var(--small);
 	}
 	main.home-page {
-		width: var(--small);
+		width: var(--medium);
 	}
 }
 /* TABLET > 500
@@ -159,6 +159,9 @@ ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
 	#wrapper > div:first-of-type {
 		width: var(--xs);
+	}
+	main.home-page {
+		width: var(--small);
 	}
 }
 /* MOBILE < 500

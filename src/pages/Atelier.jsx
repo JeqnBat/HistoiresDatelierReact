@@ -1,6 +1,8 @@
+import Workshop from '../components/Workshop'
+
 const Atelier = () => {
   return (
-    <div>presentation</div>
+    <Workshop />
   )
 }
 

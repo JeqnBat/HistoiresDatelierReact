@@ -1,31 +1,42 @@
 /**
- * MAIN-LOGO.CSS
+ * WORKSHOP.CSS
  */
-#logo {
+#workshop {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 290px;
-  height: 190px;
-  transition: all .3s ease-in-out;
+  justify-content: flex-start;
+  width: inherit
 }
-#logo > span:first-of-type {
+/* HEADER WRAPPER */
+#workshop > div:first-of-type {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  height: 75px;
-  font-size: 3rem;
+  justify-content: center;
+  gap: 20px;
   font-family: var(--kalinsha);
+  font-size: 2.5rem;
 }
-#logo > span:nth-child(2) {
-  line-height: 15px;
-  font-size: .9rem;
-  letter-spacing: 6px;
-  text-transform: uppercase;
+/* HEADER PIC */
+#workshop > div:first-of-type > img {
+  width: 150px;
 }
-/* Not Homepage */
-#logo.small {
-  transform: scale(.75);
+/* SECTIONS */
+#workshop > section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+  width: var(--medium);
+}
+#workshop > section > img {
+  width: 300px;
+}
+#workshop > section > div > h1 {
+  margin: 0 0 20px 0;
+  font-family: var(--arnopro);
+  font-size: 2rem;
 }
 /* BIG SCREEN > 1920
 ________________________________________________________ */
@@ -38,21 +49,15 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
-  #logo {
-    width: 250px;
-  }
-  #logo > span:first-of-type {
-    font-size: 2.6rem;
+  #workshop > section {
+    width: var(--small);
   }
 }
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
-  #logo {
-    width: 200px;
-  }
-  #logo > span:first-of-type {
-    font-size: 2rem;
+  #workshop > section {
+    width: var(--xs);
   }
 }
 /* MOBILE < 500
