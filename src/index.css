@@ -115,19 +115,16 @@ main {
 	flex-direction: column;
   align-items: center;
   justify-content: center;
-	width: 100%;
-
+	width: var(--medium);
   margin: 0 auto;
 }
-main.home-page {
-  width: var(--medium);
-}
+
 #wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	width: inherit;
+	width: 98vw;
 	margin: 0;
 	padding: 0;
 }
@@ -150,7 +147,7 @@ ________________________________________________________ */
 	#wrapper > div:first-of-type {
 		width: var(--small);
 	}
-	main.home-page {
+	main {
 		width: var(--medium);
 	}
 }
@@ -160,8 +157,8 @@ ________________________________________________________ */
 	#wrapper > div:first-of-type {
 		width: var(--xs);
 	}
-	main.home-page {
-		width: var(--small);
+	main {
+		width: 99%;
 	}
 }
 /* MOBILE < 500

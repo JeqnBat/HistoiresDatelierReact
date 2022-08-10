@@ -5,12 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: inherit;
+  width: 98vw;
   font-size: .7rem;
   font-family: monospace;
   text-transform: uppercase;
   /* margin top with logo */
-  transform: translateY(20px);
+  margin-top: 20px;
 }
 #bread-crum > a {
   border-bottom: 2px solid transparent;

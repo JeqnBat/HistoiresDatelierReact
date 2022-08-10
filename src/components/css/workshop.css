@@ -28,7 +28,7 @@
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
-  width: var(--medium);
+  width: inherit;
 }
 #workshop > section > img {
   width: 300px;
@@ -49,18 +49,23 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
-  #workshop > section {
-    width: var(--small);
-  }
 }
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
-  #workshop > section {
-    width: var(--xs);
-  }
 }
 /* MOBILE < 500
 ________________________________________________________ */
 @media only screen and (max-width: 500px) {
+  #workshop > section {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* inverse img / text order to fit mobile display */
+  #workshop :nth-child(5) > img {
+    order: 1;
+  }
+  #workshop :nth-child(5) > div {
+    order: 2;
+  }
 }
