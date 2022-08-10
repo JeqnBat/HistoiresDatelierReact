@@ -42,5 +42,4 @@ const smoothUp = () => {
   }
 }
 
-
 export { paragraphs, probe, sortProducts, smoothUp }

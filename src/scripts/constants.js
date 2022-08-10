@@ -1,5 +1,5 @@
 /** 
- *  INDEX (ctrl+F const name + F3)
+ *  INDEX
  *  
  *  1   
  * appData
@@ -7,6 +7,8 @@
  *  2   
  * products
  */
+/* 1. APP DATA
+________________________________________________________ */
 const appData =
 {
   title: "Histoires d'atelier",
@@ -223,7 +225,8 @@ const appData =
     }
   ]
 }
-
+/* 2. PRODUCTS
+________________________________________________________ */
 const products = {
   faireParts :
   [
@@ -1076,7 +1079,23 @@ const products = {
       img: "/img/products/accessories/card.webp",
       purchased: false
     }
-  ]
+  ],
+  weddingDesign : {
+    img: [
+      "/img/products/weddingDesign/wedding-design_1.webp",
+      "/img/products/weddingDesign/wedding-design_2.webp",
+      "/img/products/weddingDesign/wedding-design_3.webp",
+      "/img/products/weddingDesign/wedding-design_4.webp",
+      "/img/products/weddingDesign/wedding-design_1.webp",
+      "/img/products/weddingDesign/wedding-design_2.webp",
+      "/img/products/weddingDesign/wedding-design_3.webp",
+      "/img/products/weddingDesign/wedding-design_4.webp",
+      "/img/products/weddingDesign/wedding-design_1.webp",
+      "/img/products/weddingDesign/wedding-design_2.webp",
+      "/img/products/weddingDesign/wedding-design_3.webp",
+      "/img/products/weddingDesign/wedding-design_4.webp"
+    ]
+  }
 }
 
 

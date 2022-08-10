@@ -100,6 +100,19 @@ ________________________________________________________ */
 .sider {
 	width: 30%;
 }
+.gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+.gallery > div {
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-position: center;
+}
 /* 4. PAGES TEMPLATE
 ________________________________________________________ */
 /* Loading screen */
@@ -118,7 +131,6 @@ main {
 	width: var(--medium);
   margin: 0 auto;
 }
-
 #wrapper {
 	display: flex;
 	justify-content: space-between;
