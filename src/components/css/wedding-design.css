@@ -11,10 +11,25 @@
 .wd-gallery > div {
 	background-size: cover;
 	background-position: center;
+  cursor: pointer;
 }
 .wd-gallery > div:nth-child(2), div:nth-child(4), div:nth-child(5) {
   grid-row: span 2;
 }
 .wd-gallery > div:nth-child(6) {
   grid-row: span 1;
+}
+/* FOCUS ITEM */
+#screener {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  background: rgb(40, 42, 44, .75);
+  z-index: 20;
+  transition: all .2s ease-in-out;
+}
+#screener > div > img {
+  max-width: 500px;
 }

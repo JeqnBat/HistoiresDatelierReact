@@ -23,13 +23,13 @@ const WeddingDesign = () => {
   }, [])
 
   const openPopUp = (e) => {
-    console.log(e.currentTarget.style.backgroundImage);
-    let a = e.currentTarget.style.backgroundImage
+    console.log(e.currentTarget.style.backgroundImage.slice(5, -2));
+    let a = e.currentTarget.style.backgroundImage.slice(5, -2)
     setItem(a)
-    // setPopup(true)
+    setPopup(true)
   }
   const closePopup = () => {
-    // setPopup(false)
+    setPopup(false)
   }
 
   if (loaded) {
@@ -40,7 +40,7 @@ const WeddingDesign = () => {
           className={popUp ? '' : 'hide'}
           onClick={closePopup}
         >
-          <div style={{backgroundImage: `url(${item})`}}>{item}</div>
+          <div><img src={item} /></div>
         </div>
         <div className='spacinho'></div>
         <div className='wd-gallery'>
