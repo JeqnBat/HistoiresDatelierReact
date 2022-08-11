@@ -30,7 +30,7 @@ const Item = ({ product, accessories }) => {
         <span>{product.name}</span>
         <span>{product.category}</span>
       </div>
-      <div className='gallery'>
+      <div className='item-gallery'>
         <div style={{
           background: `url(${image})`
         }}>

@@ -1,9 +1,12 @@
-import { Routes, Route } from 'react-router-dom'
 import { useStoreActions, useStoreState } from 'easy-peasy'
-import { useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
+import '../components/css/wedding-design.css'
 
 const WeddingDesign = () => {
+  const [popUp, setPopup] = useState(false)
+  const [item, setItem] = useState(null)
+
   const { products, loaded } = useStoreState(state => ({
     products: state.products,
     loaded: state.loaded.products
@@ -14,20 +17,44 @@ const WeddingDesign = () => {
   }))
 
   useEffect(() => {
-    setPageName('faire-part')
+    setPageName('wedding-design')
     fetchProductsData()
     // eslint-disable-next-line
   }, [])
 
+  const openPopUp = (e) => {
+    console.log(e.currentTarget.style.backgroundImage);
+    let a = e.currentTarget.style.backgroundImage
+    setItem(a)
+    // setPopup(true)
+  }
+  const closePopup = () => {
+    // setPopup(false)
+  }
+
   if (loaded) {
     return (
-      <div className='gallery'>
-        {products.weddingDesign.img.map((el, idx) => (
-          <div 
-            key={idx}
-            style={{backgroundImage: `url(${el})`}}></div>
-        ))}
-      </div>
+      <>
+        <div 
+          id='screener'
+          className={popUp ? '' : 'hide'}
+          onClick={closePopup}
+        >
+          <div style={{backgroundImage: `url(${item})`}}>{item}</div>
+        </div>
+        <div className='spacinho'></div>
+        <div className='wd-gallery'>
+          {products.weddingDesign.img.map((el, idx) => (
+            <div 
+              key={idx}
+              style={{backgroundImage: `url(${el})`}}
+              onClick={(e) => openPopUp(e)}
+            >
+            </div>
+          ))}
+        </div>
+        <div className='spacinho'></div>
+      </>
     )
   } else {
     return <Loading />

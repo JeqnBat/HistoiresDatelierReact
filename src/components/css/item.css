@@ -50,14 +50,14 @@
   margin: 0 10px;
 }
 /* Left section */
-#item > div.gallery > div:first-child {
+#item > div.item-gallery > div:first-child {
   height: 394px;
   width: 394px;
   background-position: center!important;
   background-size: cover!important;
   border: 3px solid var(--primary);
 }
-#item > div.gallery > div:not(:first-child) {
+#item > div.item-gallery > div:not(:first-child) {
   width: 72px;
   height: 72px;
   background-position: center!important;
@@ -65,16 +65,16 @@
   cursor: pointer;
   border: 3px solid var(--primary);
 }
-#item > div.gallery > div.selected {
+#item > div.item-gallery > div.selected {
   border: 3px solid var(--secondary);
 }
-#item > div.gallery > div:first-child:hover {
+#item > div.item-gallery > div:first-child:hover {
   border: 3px solid var(--primary);
 }
-#item > div.gallery > div:hover {
+#item > div.item-gallery > div:hover {
   border: 3px solid var(--secondary);
 }
-#item > div.gallery > span {
+#item > div.item-gallery > span {
   margin: 15px 0;
   font-size: 1.25rem;
 }
@@ -249,12 +249,12 @@ ________________________________________________________ */
     width: 100%;
     margin: 0;
   }
-  #item > div.gallery > div:first-child {
+  #item > div.item-gallery > div:first-child {
     /* 1:1 aspect ratio trick */
     height: calc(100vw - 46px);
     width: calc(100vw - 46px);
   }
-  #item > div.gallery > div:not(:first-child) {
+  #item > div.item-gallery > div:not(:first-child) {
     width: calc((100vw / 5) - 14px);
     height: calc((100vw / 5) - 14px);
   }

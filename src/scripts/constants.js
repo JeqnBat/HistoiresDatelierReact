@@ -1086,14 +1086,14 @@ const products = {
       "/img/products/weddingDesign/wedding-design_2.webp",
       "/img/products/weddingDesign/wedding-design_3.webp",
       "/img/products/weddingDesign/wedding-design_4.webp",
+      "/img/products/weddingDesign/wedding-design_5.webp",
       "/img/products/weddingDesign/wedding-design_1.webp",
       "/img/products/weddingDesign/wedding-design_2.webp",
       "/img/products/weddingDesign/wedding-design_3.webp",
       "/img/products/weddingDesign/wedding-design_4.webp",
+      "/img/products/weddingDesign/wedding-design_5.webp",
       "/img/products/weddingDesign/wedding-design_1.webp",
-      "/img/products/weddingDesign/wedding-design_2.webp",
-      "/img/products/weddingDesign/wedding-design_3.webp",
-      "/img/products/weddingDesign/wedding-design_4.webp"
+      "/img/products/weddingDesign/wedding-design_2.webp"
     ]
   }
 }

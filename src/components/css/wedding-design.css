@@ -1,0 +1,20 @@
+/**
+ * WEDDING DESIGN.CSS
+ */
+.wd-gallery {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 140px);
+  width: inherit;
+	gap: 10px;
+}
+.wd-gallery > div {
+	background-size: cover;
+	background-position: center;
+}
+.wd-gallery > div:nth-child(2), div:nth-child(4), div:nth-child(5) {
+  grid-row: span 2;
+}
+.wd-gallery > div:nth-child(6) {
+  grid-row: span 1;
+}

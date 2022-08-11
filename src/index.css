@@ -1,8 +1,8 @@
 /**
  * AUTHOR   : JB
- * PROJECT  : Histoires d'atelier blue prints
+ * PROJECT  : Histoires d'atelier
  * DESCR    : Global App's styles
- * TAGS     : CSS3 WEB COMPONENTS 
+ * TAGS     : REACT APP
  */
 
 /* ==================== INDEX ====================
@@ -100,19 +100,6 @@ ________________________________________________________ */
 .sider {
 	width: 30%;
 }
-.gallery {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 10px;
-}
-.gallery > div {
-	width: 200px;
-	height: 200px;
-	background-size: cover;
-	background-position: center;
-}
 /* 4. PAGES TEMPLATE
 ________________________________________________________ */
 /* Loading screen */
@@ -136,7 +123,7 @@ main {
 	justify-content: space-between;
 	align-items: flex-start;
 	flex-wrap: wrap;
-	width: 98vw;
+	width: calc(100vw - 18px);
 	margin: 0;
 	padding: 0;
 }
