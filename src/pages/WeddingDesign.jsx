@@ -1,6 +1,7 @@
 import { useStoreActions, useStoreState } from 'easy-peasy'
 import { useState, useEffect } from 'react'
 import Loading from '../components/Loading'
+import ProductHeader from '../components/ProductHeader'
 import '../components/css/wedding-design.css'
 
 const WeddingDesign = () => {
@@ -35,12 +36,15 @@ const WeddingDesign = () => {
   if (loaded) {
     return (
       <>
+        <ProductHeader productName={'notre offre de wedding design'}/>
         <div 
           id='screener'
           className={popUp ? '' : 'hide'}
           onClick={closePopup}
         >
+          <div id='previous'></div>
           <div><img src={item} /></div>
+          <div id='next'></div>
         </div>
         <div className='spacinho'></div>
         <div className='wd-gallery'>

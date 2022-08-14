@@ -28,7 +28,7 @@ const FairePart = ({ data }) => {
   if (loaded) {
     return (
       <>
-        <ProductHeader />
+        <ProductHeader productName={'nos faire-part'} />
         <section id='wrapper'>
           {/* Left div - Controller */}
           <Controller data={data} />

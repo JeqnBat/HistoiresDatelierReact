@@ -33,3 +33,33 @@
 #screener > div > img {
   max-width: 500px;
 }
+/* SIDE ARROWS */
+#screener > div:nth-child(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: auto;
+  color: var(--primary);
+  cursor: pointer;
+  font-family: monospace;
+  padding: 0 10px;
+}
+/* PREV. */
+#screener > #previous::before {
+  font-size: .75rem;
+  content:'PREC.';
+  transform: translateX(-10px);
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+#screener > #next::after {
+  font-size: .75rem;
+  content:'SUIV.';
+  transform: translateX(10px);
+  opacity: 0;
+  transition: all .1s ease-in-out;
+}
+#screener > #next:hover::after, #screener > #previous:hover::before {
+  opacity: 1;
+}
