@@ -40,6 +40,8 @@ const Grid = ({ products }) => {
   }
 
   /* COMPONENTS LOGIC ____________________________________ */
+  /* Hide grid if user is one level above grid's root path */
+  /* I.E : user wants to display one item's details */
   let a = useLocation()
   let url = a.pathname.match(/[^\/]*$/)[0]
   let showArticle = Boolean(url.includes('article')) || Boolean(url.includes('sur-mesure'))
@@ -50,6 +52,7 @@ const Grid = ({ products }) => {
         visible={popUp}
         item={item}
         events={events}
+        showDetails={true}
       />
       <div id='grid' className={showArticle ? 'hide' : ''}>
         {products.map((product) => (

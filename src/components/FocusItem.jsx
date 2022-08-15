@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './css/focus-item.css'
 
-const FocusItem = ({ visible, item, events }) => {
+const FocusItem = ({ visible, item, events, showDetails }) => {
   if (visible) {
     const style = {
       backgroundImage: `url(${item.img[0]})`,
@@ -21,7 +21,7 @@ const FocusItem = ({ visible, item, events }) => {
           <div className='spacer'></div>
           <div className='spacer'></div>
           <div className='spacer'></div>
-          <div id='details' onClick={events}>
+          <div id='details' className={showDetails ? '' : 'hide'} onClick={events}>
             <Link to={`${item.category}/article=${item.id}`}>
               <span>
                 fiche détaillée
