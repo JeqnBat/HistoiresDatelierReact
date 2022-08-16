@@ -33,15 +33,13 @@ const FairePart = ({ data }) => {
           {/* Left div - Controller */}
           <Controller data={data} />
           {/* Center div - Grid */}
-          <div>
             <Routes>
               <Route path='/' element={<All products={products.faireParts} />} />
               <Route path=':category' element={<CategoryView products={products.faireParts} />} >
                 <Route path='article=:id' element={<ItemView products={products} />} />
               </Route>
             </Routes>
-            <Grid products={products.faireParts} />
-          </div>
+            <Grid products={products.faireParts} showDetails={true} />
           {/* Right div */}
           <div style={{width: '100px'}}></div>
         </section>

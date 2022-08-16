@@ -127,9 +127,6 @@ main {
 	margin: 0;
 	padding: 0;
 }
-#wrapper > div:first-of-type {
-	width: var(--medium);
-}
 /* 5. RESPONSIVE
 ________________________________________________________ */
 /* BIG SCREEN > 1920
@@ -143,9 +140,6 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
-	#wrapper > div:first-of-type {
-		width: var(--small);
-	}
 	main {
 		width: var(--medium);
 	}
@@ -153,9 +147,6 @@ ________________________________________________________ */
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
-	#wrapper > div:first-of-type {
-		width: var(--xs);
-	}
 	main {
 		width: 99%;
 	}
@@ -166,9 +157,6 @@ ________________________________________________________ */
 	main {
 		width: auto;
 		margin: 20px;
-	}
-	#wrapper > div:first-of-type {
-		width: 100%;
 	}
 	#wrapper > div:nth-child(3) {
 		display: none;

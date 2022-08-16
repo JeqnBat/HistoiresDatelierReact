@@ -1080,22 +1080,141 @@ const products = {
       purchased: false
     }
   ],
-  weddingDesign : {
-    img: [
-      "/img/products/weddingDesign/wedding-design_1.webp",
-      "/img/products/weddingDesign/wedding-design_2.webp",
-      "/img/products/weddingDesign/wedding-design_3.webp",
-      "/img/products/weddingDesign/wedding-design_4.webp",
-      "/img/products/weddingDesign/wedding-design_5.webp",
-      "/img/products/weddingDesign/wedding-design_1.webp",
-      "/img/products/weddingDesign/wedding-design_2.webp",
-      "/img/products/weddingDesign/wedding-design_3.webp",
-      "/img/products/weddingDesign/wedding-design_4.webp",
-      "/img/products/weddingDesign/wedding-design_5.webp",
-      "/img/products/weddingDesign/wedding-design_1.webp",
-      "/img/products/weddingDesign/wedding-design_2.webp"
-    ]
-  }
+  /* WEDDING DESIGN
+  ________________________________________________________ */
+  weddingDesign :
+  [
+    {
+      id: "0",
+      name: "Wedding Design 1",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_1.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "1",
+      name: "Wedding Design 2",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_2.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "2",
+      name: "Wedding Design 3",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_3.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "3",
+      name: "Wedding Design 4",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_4.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "4",
+      name: "Wedding Design 5",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_5.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "5",
+      name: "Wedding Design 6",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_2.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "6",
+      name: "Wedding Design 7",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_1.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "7",
+      name: "Wedding Design 8",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_5.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "8",
+      name: "Wedding Design 9",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_3.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "9",
+      name: "Wedding Design 10",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_4.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "10",
+      name: "Wedding Design 11",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_2.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "11",
+      name: "Wedding Design 12",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_5.webp"
+      ],
+      highlighted: true,
+      selected: false
+    },
+    {
+      id: "12",
+      name: "Wedding Design 13",
+      category: "wedding-design",
+      img: [
+        "/img/products/weddingDesign/wedding-design_2.webp"
+      ],
+      highlighted: true,
+      selected: false
+    }
+  ]
 }
 
 
