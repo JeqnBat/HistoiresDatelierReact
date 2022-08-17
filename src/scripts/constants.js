@@ -223,7 +223,12 @@ const appData =
       name: "conseils",
       link: "conseils"
     }
-  ]
+  ],
+  weddingDesign: {
+    title: 'Wedding Design',
+    subtitle: 'Décoratrice événementielle basée à Angers',
+    descr: 'Vous souhaitez une décoration qui vous ressemble ? Nous discutons, nous choississons les couleurs, les détails, le style que vous voulez, l’ambiance globale et tous les éléments de décoration. Je prends en charge votre décoration dans son entiereté, de .... à la....'
+  }
 }
 /* 2. PRODUCTS
 ________________________________________________________ */
@@ -1080,8 +1085,7 @@ const products = {
       purchased: false
     }
   ],
-  /* WEDDING DESIGN
-  ________________________________________________________ */
+  /* WEDDING DESIGN */
   weddingDesign :
   [
     {
@@ -1203,19 +1207,8 @@ const products = {
       ],
       highlighted: true,
       selected: false
-    },
-    {
-      id: "12",
-      name: "Wedding Design 13",
-      category: "wedding-design",
-      img: [
-        "/img/products/weddingDesign/wedding-design_2.webp"
-      ],
-      highlighted: true,
-      selected: false
     }
   ]
 }
-
 
 export { appData, products }

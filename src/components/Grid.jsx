@@ -4,7 +4,7 @@ import FocusItem from './FocusItem'
 import './css/grid.css'
 import './css/focus-item.css'
 
-const Grid = ({ products, showDetails }) => {
+const Grid = ({ products, showDetails, size }) => {
   /* CHILD COMPONENT 'FOCUSITEM' LOGIC ___________________ */
   const [popUp, setPopup] = useState(false)
   const [item, setItem] = useState(null)
@@ -57,7 +57,7 @@ const Grid = ({ products, showDetails }) => {
       <div 
         id='grid' 
         className={showArticle ? 'hide' : ''}
-        style={{gridTemplateRows: 'repeat(6, 60px)'}}
+        style={size === 'smaller' ? {gridTemplateRows: 'repeat(6, 60px)'} : {gridTemplateRows: 'repeat(12, 60px)'}}
       >
         {products.map((product) => (
           <div

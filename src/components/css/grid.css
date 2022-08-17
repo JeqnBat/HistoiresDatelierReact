@@ -4,7 +4,6 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(10, auto);
-  grid-template-rows: repeat(12, 60px);
   width: var(--medium);
   gap: 10px;
 }
@@ -15,7 +14,7 @@
   justify-content: center;
   min-height: 120px;
   grid-column: span 2;
-  grid-row: span 2;
+  grid-row: span 3;
   opacity: 1;
   background-size: cover!important;
   background-position: center!important;
