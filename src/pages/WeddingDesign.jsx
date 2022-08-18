@@ -34,7 +34,28 @@ const WeddingDesign = () => {
         <ProductHeader productName={page.title} />
         <div>{page.subtitle}</div>
         <br></br>
-        <div className='wedding-design-descr'>{page.descr}</div>
+        <div>{page.descr}</div>
+        <div className='spacinho'></div>
+        {/* new component here */}
+        <div id='content-slider'>
+          <div>
+            <div>picture A</div>
+            <div>text</div>
+          </div>
+          <div>
+            <div>picture B</div>
+            <div>text</div>
+          </div>
+          <div>
+            <div>picture C</div>
+            <div>text</div>
+          </div>
+          <div>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+          </div>
+        </div>
         <div className='spacinho'></div>
       </>
     )

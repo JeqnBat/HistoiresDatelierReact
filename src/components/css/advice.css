@@ -5,6 +5,7 @@
   position: relative;
   display: flex;
   min-height: 223px;
+  width: var(--medium);
   transition: all .2s ease-in-out;
 }
 #advice-section > div {
@@ -74,10 +75,16 @@ ________________________________________________________ */
 /* SMALL SCREEN > 1023
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
+  #advice-section {
+    width: var(--small);
+  }
 }
 /* TABLET > 500
 ________________________________________________________ */
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1024px) {
+  #advice-section {
+    width: var(--xs);
+  }
 }
 /* MOBILE < 500
 ________________________________________________________ */

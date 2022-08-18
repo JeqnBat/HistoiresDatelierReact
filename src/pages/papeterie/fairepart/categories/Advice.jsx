@@ -13,7 +13,6 @@ const Advice = () => {
 
   return (
     <>
-      <div className='spacinho'></div>
       <div id='advice-section'>
         {advice.map((el,idx) => (
           <div key={idx} className={active === idx ? 'fade-in' : ''}>
@@ -23,7 +22,6 @@ const Advice = () => {
           </div>
         ))}
       </div>
-      <div className='spacinho'></div>
       <div id='advice-section-menu'>
         {advice.map((el, idx) => (
           <div 
@@ -33,7 +31,6 @@ const Advice = () => {
           >{el.id}</div>
         ))}
       </div>
-      <div className='spacinho'></div>
     </>
   )
 }
