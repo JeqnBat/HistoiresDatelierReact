@@ -15,6 +15,15 @@
   width: 33%;
   text-align: center;
 }
+/* Step picture */
+#content-slider > div > div:first-of-type {
+  width: 200px;
+}
+/* Step text */
+#content-slider > div > div:nth-child(2) {
+  width: 200px;
+}
+/* Round icons bottom menu */
 #content-slider > div:last-child {
   width: 100%;
 }
@@ -35,4 +44,13 @@
 }
 #content-slider > div:last-child > span:hover {
   opacity: .9;
+}
+/* MOBILE < 500
+________________________________________________________ */
+@media only screen and (max-width: 500px) {
+  #content-slider {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 99%;
+  }
 }

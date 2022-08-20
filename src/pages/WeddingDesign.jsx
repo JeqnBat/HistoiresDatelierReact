@@ -39,16 +39,25 @@ const WeddingDesign = () => {
         {/* new component here */}
         <div id='content-slider'>
           <div>
-            <div>picture A</div>
-            <div>text</div>
+            <div>PIC 1</div>
+            <div>
+              <p>CRÉATION</p>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
+            </div>
           </div>
           <div>
-            <div>picture B</div>
-            <div>text</div>
+          <div>PIC 2</div>
+            <div>
+              <p>RÉALISATION</p>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
+            </div>
           </div>
           <div>
-            <div>picture C</div>
-            <div>text</div>
+          <div>PIC 3</div>
+            <div>
+              <p>INSTALLATION</p>
+              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
+            </div>
           </div>
           <div>
             <span>1</span>
