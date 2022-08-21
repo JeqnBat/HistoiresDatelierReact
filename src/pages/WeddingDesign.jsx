@@ -1,11 +1,13 @@
 import { useStoreActions, useStoreState } from 'easy-peasy'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Loading from '../components/Loading'
 import ProductHeader from '../components/ProductHeader'
 import Grid from '../components/Grid'
 import '../components/css/wedding-design.css'
 
 const WeddingDesign = () => {
+  const [activeStep, setActiveStep] = useState(false)
+
   const { page, products, loaded } = useStoreState(state => ({
     page: state.appData.weddingDesign,
     products: state.products,
@@ -60,9 +62,9 @@ const WeddingDesign = () => {
             </div>
           </div>
           <div>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
+            <span className={activeStep ? 'active' : ''}>1</span>
+            <span className={activeStep ? 'active' : ''}>2</span>
+            <span className={activeStep ? 'active' : ''}>3</span>
           </div>
         </div>
         <div className='spacinho'></div>
