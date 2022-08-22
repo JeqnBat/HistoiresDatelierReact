@@ -24,9 +24,9 @@ ________________________________________________________ */
 	--active: slategrey;
 	--kalinsha: 'kallinsharegular';
 	--arnopro: 'ArnoPro';
-	--medium: 1100px;
-	--small: 900px;
-	--xs: 600px;
+	--medium-y: 1100px;
+	--small-y: 900px;
+	--xs-y: 600px;
 	--spacer: 100px;
 	--spacinho: 50px;
 }
@@ -115,10 +115,10 @@ main {
 	flex-direction: column;
   align-items: center;
   justify-content: center;
-	width: var(--medium);
+	width: var(--medium-y);
   margin: 0 auto;
 }
-#wrapper {
+#content-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
@@ -141,7 +141,7 @@ ________________________________________________________ */
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
 	main {
-		width: var(--medium);
+		width: var(--medium-y);
 	}
 }
 /* TABLET > 500
@@ -158,7 +158,7 @@ ________________________________________________________ */
 		width: auto;
 		margin: 20px;
 	}
-	#wrapper > div:nth-child(3) {
+	#content-wrapper > div:nth-child(3) {
 		display: none;
 	}
 	.sider {

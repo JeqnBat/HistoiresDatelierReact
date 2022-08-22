@@ -13,7 +13,7 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-evenly;
-  width: var(--medium);
+  width: var(--medium-y);
   height: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -59,7 +59,7 @@ ________________________________________________________ */
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
   #footer-wrapper {
-    width: var(--medium);
+    width: var(--medium-y);
   }
 }
 /* TABLET > 500

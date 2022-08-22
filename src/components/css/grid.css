@@ -4,7 +4,7 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(10, auto);
-  width: var(--medium);
+  width: var(--medium-y);
   gap: 10px;
 }
 #grid > div {
@@ -36,7 +36,6 @@
 }
 #grid > div:hover {
   opacity: .8;
-  background-color: red;
 }
 #grid > div.blur::after {
   opacity: .7;
@@ -84,14 +83,14 @@ ________________________________________________________ */
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
   #grid {
-    width: var(--small);
+    width: var(--small-y);
   }
 }
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
   #grid {
-    width: var(--xs);
+    width: var(--xs-y);
   }
 }
 /* MOBILE < 500

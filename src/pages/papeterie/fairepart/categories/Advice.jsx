@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useStoreState } from 'easy-peasy'
+import BulletMenu from '../../../../components/BulletMenu'
 import '../../../../components/css/advice.css'
 
 const Advice = () => {
@@ -24,13 +25,10 @@ const Advice = () => {
       </div>
       <div id='advice-section-menu'>
         {advice.map((el, idx) => (
-          <div 
-            key={el.id}
-            className={active === idx ? 'active' : ''}
-            onClick={() => handleClick(idx)}
-          >{el.id}</div>
+          <BulletMenu id={el.id} idx={idx} active={active} event={() => handleClick(idx)} />
         ))}
       </div>
+      <div className='spacinho'></div>
     </section>
   )
 }

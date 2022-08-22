@@ -4,8 +4,8 @@
 #advice-section {
   position: relative;
   display: flex;
-  min-height: 223px;
-  width: var(--medium);
+  min-height: 230px;
+  width: inherit;
   transition: all .2s ease-in-out;
 }
 #advice-section > div {
@@ -76,21 +76,32 @@ ________________________________________________________ */
 ________________________________________________________ */
 @media only screen and (max-width: 1365px) {
   #advice-section {
-    width: var(--small);
+    min-height: 280px;
   }
 }
 /* TABLET > 500
 ________________________________________________________ */
 @media only screen and (max-width: 1024px) {
   #advice-section {
-    width: var(--xs);
+    min-height: 400px;
+  }
+  #advice-section > div {
+    flex-direction: column;
+    height: auto;
+  }
+  #advice-section > div > div:nth-child(3) {
+    width: 100%;
+  }
+  #advice-section > div > div:nth-child(2) {
+    width: 100%;
+    text-align: center;
   }
 }
 /* MOBILE < 500
 ________________________________________________________ */
 @media only screen and (max-width: 500px) {
   /* Outside of Scope careful */
-  #wrapper > div > div.spacinho:first-child {
+  #content-wrapper > div > div.spacinho:first-child {
     display: none;
   }
   /* */

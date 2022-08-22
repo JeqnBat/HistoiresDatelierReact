@@ -29,10 +29,11 @@ const FairePart = ({ data }) => {
     return (
       <>
         <ProductHeader productName={'nos faire-part'} />
-        <section id='wrapper'>
+        <section id='content-wrapper'>
           {/* Left div - Controller */}
           <Controller data={data} />
           {/* Center div - Grid */}
+          <div id='center-content'>
             <Routes>
               <Route path='/' element={<All products={products.faireParts} />} />
               <Route path=':category' element={<CategoryView products={products.faireParts} />} >
@@ -40,6 +41,7 @@ const FairePart = ({ data }) => {
               </Route>
             </Routes>
             <Grid products={products.faireParts} showDetails={true} />
+          </div>
           {/* Right div */}
           <div style={{width: '100px'}}></div>
         </section>

@@ -27,7 +27,7 @@ const WeddingDesign = () => {
   if (loaded) {
     return (
       <>
-        <section id='wrapper'>
+        <section id='content-wrapper'>
           <div style={{width: '100px'}}></div>
           <Grid products={products.weddingDesign} showDetails={false} size={'smaller'} />
           <div style={{width: '100px'}}></div>

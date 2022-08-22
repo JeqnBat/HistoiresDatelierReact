@@ -29,7 +29,6 @@ const Tailored = () => {
     setSeeSemi(!seeSemi)
   }
   const handleSubmit = (e) => {
-    // envoyer ça au state global
     setTailoredForm(form)
     e.preventDefault()
   }
