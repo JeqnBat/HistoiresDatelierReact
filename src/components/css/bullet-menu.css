@@ -1,0 +1,30 @@
+/**
+ * BULLET-SECTION.CSS
+ */
+#bullet-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#bullet-menu > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  line-height: 0;
+  margin: 0 5px;
+  font-size: 1rem;
+  color: var(--primary);
+  background: var(--secondary);
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+}
+#bullet-menu > div.active {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+#bullet-menu > div:hover {
+  opacity: .9;
+}

@@ -1,7 +1,8 @@
+import './css/bullet-menu.css'
+
 const BulletMenu = ({ id, idx, active, event }) => {
   return (
-    <div 
-      key={id}
+    <div
       className={active === idx ? 'active' : ''}
       onClick={event}
     >

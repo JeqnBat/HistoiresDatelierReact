@@ -3,11 +3,12 @@ import { useEffect, useState } from 'react'
 import Loading from '../components/Loading'
 import ProductHeader from '../components/ProductHeader'
 import Grid from '../components/Grid'
+import BulletMenu from '../components/BulletMenu'
 import '../components/css/wedding-design.css'
+import '../components/css/bullet-menu.css'
 
 const WeddingDesign = () => {
-  const [activeStep, setActiveStep] = useState(false)
-
+  const [activeStep, setActiveStep] = useState(0)
   const { page, products, loaded } = useStoreState(state => ({
     page: state.appData.weddingDesign,
     products: state.products,
@@ -23,6 +24,11 @@ const WeddingDesign = () => {
     fetchProductsData()
     // eslint-disable-next-line
   }, [])
+
+  const handleClick = (idx) => {
+    setActiveStep(idx)
+    console.log(activeStep);
+  }
 
   if (loaded) {
     return (
@@ -48,25 +54,27 @@ const WeddingDesign = () => {
             </div>
           </div>
           <div>
-          <div>PIC 2</div>
+            <div>PIC 2</div>
             <div>
               <p>RÉALISATION</p>
               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
             </div>
-          </div>
+            </div>
           <div>
-          <div>PIC 3</div>
+            <div>PIC 3</div>
             <div>
               <p>INSTALLATION</p>
               <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
             </div>
+            </div>
           </div>
-          <div>
-            <span className={activeStep ? 'active' : ''}>1</span>
-            <span className={activeStep ? 'active' : ''}>2</span>
-            <span className={activeStep ? 'active' : ''}>3</span>
+          <div className='spacinho'></div>
+
+          <div id='bullet-menu'>
+            {page.steps.map((el, idx) =>
+              <BulletMenu key={idx} id={el.id} idx={idx} active={activeStep} event={() => handleClick(idx)} />
+            )}
           </div>
-        </div>
         <div className='spacinho'></div>
       </>
     )

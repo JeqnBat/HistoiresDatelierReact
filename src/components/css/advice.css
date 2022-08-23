@@ -37,33 +37,6 @@
 #advice-section > div > div:nth-child(3) {
   width: 50%;
 }
-#advice-section-menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#advice-section-menu > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
-  line-height: 0;
-  margin: 0 5px;
-  font-size: 1rem;
-  color: var(--primary);
-  background: var(--secondary);
-  cursor: pointer;
-  transition: all .2s ease-in-out;
-}
-#advice-section-menu > div.active {
-  background-color: var(--primary);
-  color: var(--secondary);
-}
-#advice-section-menu > div:hover {
-  opacity: .9;
-}
 /* BIG SCREEN > 1920
 ________________________________________________________ */
 @media only screen and (min-width: 1921px) {

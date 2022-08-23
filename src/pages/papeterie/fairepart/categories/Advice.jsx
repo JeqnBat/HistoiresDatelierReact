@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useStoreState } from 'easy-peasy'
 import BulletMenu from '../../../../components/BulletMenu'
 import '../../../../components/css/advice.css'
+import '../../../../components/css/bullet-menu.css'
 
 const Advice = () => {
   const [active, setActive] = useState(0)
@@ -23,9 +24,9 @@ const Advice = () => {
           </div>
         ))}
       </div>
-      <div id='advice-section-menu'>
+      <div id='bullet-menu'>
         {advice.map((el, idx) => (
-          <BulletMenu id={el.id} idx={idx} active={active} event={() => handleClick(idx)} />
+          <BulletMenu key={idx} id={el.id} idx={idx} active={active} event={() => handleClick(idx)} />
         ))}
       </div>
       <div className='spacinho'></div>

@@ -227,7 +227,24 @@ const appData =
   weddingDesign: {
     title: 'Wedding Design',
     subtitle: 'Décoratrice événementielle basée à Angers',
-    descr: 'Vous souhaitez une décoration qui vous ressemble ? Nous discutons, nous choississons les couleurs, les détails, le style que vous voulez, l’ambiance globale et tous les éléments de décoration. Je prends en charge votre décoration dans son entiereté, de .... à la....'
+    descr: 'Vous souhaitez une décoration qui vous ressemble ? Nous discutons, nous choississons les couleurs, les détails, le style que vous voulez, l’ambiance globale et tous les éléments de décoration. Je prends en charge votre décoration dans son entiereté, de .... à la....',
+    steps: [
+      {
+        id: "1",
+        title: "CRÉATION",
+        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+      },
+      {
+        id: "2",
+        title: "RÉALISATION",
+        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+      },
+      {
+        id: "3",
+        title: "INSTALLATION",
+        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+      }
+    ]
   }
 }
 /* 2. PRODUCTS

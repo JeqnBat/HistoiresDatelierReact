@@ -23,28 +23,6 @@
 #content-slider > div > div:nth-child(2) {
   width: 200px;
 }
-/* Round icons bottom menu */
-#content-slider > div:last-child {
-  width: 100%;
-}
-#content-slider > div:last-child > span {
-  font-family: monospace;
-  font-weight: lighter;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--secondary);
-  color: var(--primary);
-  height: 50px;
-  width: 50px;
-  border-radius: 25px;
-  margin: 20px;
-  cursor: pointer;
-}
-#content-slider > div:last-child > span:hover {
-  opacity: .9;
-}
 /* MOBILE < 500
 ________________________________________________________ */
 @media only screen and (max-width: 500px) {
