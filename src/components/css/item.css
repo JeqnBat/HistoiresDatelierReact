@@ -248,6 +248,7 @@ ________________________________________________________ */
   #item > div:not(:first-of-type) {
     width: 100%;
     margin: 0;
+    justify-content: center;
   }
   #item > div.item-gallery > div:first-child {
     /* 1:1 aspect ratio trick */

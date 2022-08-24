@@ -161,8 +161,11 @@ ________________________________________________________ */
 	#content-wrapper > div:nth-child(3) {
 		display: none;
 	}
-	.sider {
+	/* .sider {
 		display: none;
+	} */
+	#content-wrapper {
+		justify-content: center;
 	}
 }
 /* 6. ANIMATIONS

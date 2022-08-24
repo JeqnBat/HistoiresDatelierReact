@@ -27,7 +27,6 @@ const WeddingDesign = () => {
 
   const handleClick = (idx) => {
     setActiveStep(idx)
-    console.log(activeStep);
   }
 
   if (loaded) {
