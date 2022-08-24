@@ -46,35 +46,27 @@ const WeddingDesign = () => {
         <div className='spacinho'></div>
         {/* new component here */}
         <div id='content-slider'>
-          <div>
-            <div>PIC 1</div>
-            <div>
-              <p>CRÉATION</p>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
+          {page.steps.map((el, idx) => (
+            <div 
+              key={idx} 
+              className={activeStep === idx ? 'fade-in' : ''}
+              style={{
+                backgroundImage: `url(${el.img})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
+            >
+              <p>{el.title}</p>
+              <span>{el.body}</span>
             </div>
-          </div>
-          <div>
-            <div>PIC 2</div>
-            <div>
-              <p>RÉALISATION</p>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
-            </div>
-            </div>
-          <div>
-            <div>PIC 3</div>
-            <div>
-              <p>INSTALLATION</p>
-              <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque ut alias suscipit aliquam quibusdam? Sed incidunt dicta odit perferendis similique corrupti tempore, sapiente harum, unde est deserunt autem iste ullam?</span>
-            </div>
-            </div>
-          </div>
-          <div className='spacinho'></div>
-
-          <div id='bullet-menu'>
-            {page.steps.map((el, idx) =>
-              <BulletMenu key={idx} id={el.id} idx={idx} active={activeStep} event={() => handleClick(idx)} />
-            )}
-          </div>
+          ))}
+        </div>
+        <div className='spacinho'></div>
+        <div id='bullet-menu'>
+          {page.steps.map((el, idx) =>
+            <BulletMenu key={idx} id={el.id} idx={idx} active={activeStep} event={() => handleClick(idx)} />
+          )}
+        </div>
         <div className='spacinho'></div>
       </>
     )

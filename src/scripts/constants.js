@@ -232,17 +232,36 @@ const appData =
       {
         id: "1",
         title: "CRÉATION",
-        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+        img: "/img/products/fairepart/naissance/3.webp",
+        body: "Pour que vos préparatifs soient une véritable expérience, tout en discrétion nous devenons le lien principal entre vous, vos prestataires et vos convives. Appréciez chaque moment des préparatifs de votre mariage à votre Jour J, confiez l’organisation complète du plus beau jour de votre vie afin que celui-ci soit unique. Nous vous accompagnons et conseillons dans tous les aspects de la conception à l’exécution de votre journée de mariage, en créant un planning complet qui nous permettra d’avancer ensemble pas à pas."
       },
       {
         id: "2",
         title: "RÉALISATION",
-        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+        img: "/img/products/fairepart/naissance/2.webp",
+        body: `Nous travaillons ensemble dans la
+        recherche du lieu de réception idéal, et
+        vous proposons une sélection de
+        prestataires qui correspondent à vos
+        envies, nous sommes présents lors de
+        chacun des rendez-vous afin de vous
+        accompagner et vous porter conseille à
+        chaque étape des préparatifs.
+        En veillant notamment à la gestion
+        administrative et financière de votre
+        mariage.`
       },
       {
         id: "3",
+        img: "/img/products/fairepart/naissance/1.webp",
         title: "INSTALLATION",
-        body: "Votre faire-part est le premier élément que les invités decouvriront avant d'assister à votre mariage, il permet de leur dévoiler l'univers que vous avez choisi pour ce grand jour."
+        body: `Le jour J, nous sommes présents afin de
+        veiller au bon déroulement de la
+        journée, répondre à vos besoins,
+        accueillir et guider vos invités mais
+        également coordonner l’ensemble des
+        prestataires afin de s’assurer que tout se
+        déroule comme vous l’avez souhaité.`
       }
     ]
   }
