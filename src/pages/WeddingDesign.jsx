@@ -43,7 +43,6 @@ const WeddingDesign = () => {
         <br></br>
         <div>{page.descr}</div>
         <div className='spacinho'></div>
-        {/* new component here */}
         <div id='content-slider'>
           {page.steps.map((el, idx) => (
             <div 

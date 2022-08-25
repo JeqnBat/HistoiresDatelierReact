@@ -10,7 +10,7 @@ const store = createStore(model)
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   // enable strict mode for production build
-  <StoreProvider store={store}>
-    <App />
-  </StoreProvider>
+    <StoreProvider store={store}>
+      <App />
+    </StoreProvider>
 )
