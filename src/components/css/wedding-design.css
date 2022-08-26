@@ -38,8 +38,7 @@
   background: var(--secondary);
   color: var(--primary);
   padding: 12px 25px 5px 25px;
-  line-height: auto;
-  z-index: 10;
+  z-index: 2;
 }
 #content-slider > div > span {
   width: 350px;
@@ -49,7 +48,7 @@
   font-size: 1.15rem;
   text-align: justify;
   align-self:flex-start;
-  z-index: 10;
+  z-index: 2;
 }
 /* MOBILE < 500
 ________________________________________________________ */
